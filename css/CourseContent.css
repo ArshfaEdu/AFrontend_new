@@ -1,0 +1,203 @@
+
+
+/* Header style */
+main.academy-contents-show > div > header{
+  z-index:4;
+}
+
+main.academy-contents-show > div > header > div > div{
+  justify-content: space-between;
+}
+
+/* Wrapper of course title */
+main.academy-contents-show > div > header > div > div > div{
+  margin: 0 !important;
+}
+main.academy-contents-show > div > header > div > div > div h3{
+  background-color: #5a6e79;
+  color: white !important;
+  padding: .3em 1em;
+  border-radius: 50px;
+  box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+}
+
+
+/* General style for left side of the page */
+main.academy-contents-show > div > section{
+  grid-column: 2/4;
+}
+
+/*-------- Start of styling Video player section ----------*/
+main.academy-contents-show > div > section:nth-of-type(1){
+ padding-top: 0 !important;
+ padding-bottom: 0 !important;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container{
+  max-width: none !important;
+  padding: 0;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child{
+  margin-left: 0;
+  margin-right: 0;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div{
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div h2{
+  grid-row: 2;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type{
+  grid-row: 1;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type .plyr{
+  border-radius: 0 !important;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:last-of-type{
+  grid-row: 3;
+}
+main.academy-contents-show > div > section:nth-of-type(1) .alert.alert-warning{
+  background-color: transparent;
+}
+
+/*-------- End of styling Video player section ----------*/
+
+main.academy-contents-show > div > div.sidebar-collapse{
+  grid-column: 1/2;
+  grid-row: 1;
+  position: sticky;
+  top: 110px;
+  border-left: 1px solid #f1f1f1;
+  height: 100vh;
+}
+
+/*-------- Start of styling Sidebar section ----------*/
+main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse{
+  border: none;
+  box-shadow: none !important;
+  height: 100vh !important;
+}
+
+main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll{
+  height: 100% !important;
+}
+main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll > div{
+  border-bottom: 2px solid #5c6c7940 !important;
+  background-color: #7898b636;
+  overflow: hidden;
+}
+main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll > div > .collapse > a{
+  background-color: #f2f5f7;
+}
+main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll > div > button{
+  color: #5c6c79 !important;
+  font-weight: 900;
+}
+main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar{
+  width: 5px;
+}
+main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-color: #5c6c7900;
+}
+main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll:hover::-webkit-scrollbar-thumb{
+  background-color: #5c6c79aa;
+}
+main.academy-contents-show > div > div.sidebar-collapse > button{
+   margin:0;
+   top:1.5%;
+display: none !important;
+}
+main.academy-contents-show > div > div.sidebar-collapse > #chaptersSidebarCollapse{
+  width: 100%;
+}
+@media (min-width: 576px){
+main.academy-contents-show .sidebar-collapse>.collapse,
+main.academy-contents-show .sidebar-collapse>.collapse {
+   transform: initial; 
+}
+
+main.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
+ transform: initial; 
+}
+}
+
+main.academy-contents-show .sidebar-collapse>.collapse,
+main.academy-contents-show .sidebar-collapse>.collapse{
+transform: initial; 
+}
+main.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
+ transform: initial; 
+}
+
+
+/*-------- End of styling Sidebar section ----------*/
+/* Main page styles*/
+main.academy-contents-show > div{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3fr 1fr;
+}
+/*-------- Start styling mobile ------------*/
+@media screen and (max-width: 767.99px) {
+  main.academy-contents-show > div{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 0 !important;
+  }
+
+  main.academy-contents-show > div > header{
+    position: static;
+  }
+
+  main.academy-contents-show > div > header > div > div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main.academy-contents-show > div > header > div > div > *{
+    margin: 0 !important;
+  }
+
+
+  main.academy-contents-show > div > header > div > div > div:last-child{
+    display: none !important;
+  }
+
+  main.academy-contents-show > div > section{
+    grid-column: 1;
+  }
+
+  main.academy-contents-show > div > div.sidebar-collapse {
+    position: fixed;
+    grid-column:initial;
+    grid-row:initial;
+    top: 0 !important;
+    width: 80%;
+    z-index: 6;
+    border-left: none;
+  }
+  main.academy-contents-show > div > div.sidebar-collapse > button{
+    display: inline-flex !important;
+    margin-top: 1rem;
+    top: 0 !important;
+  }
+  main.academy-contents-show > div > div.sidebar-collapse > button[aria-expanded=false]{
+    transform: translate(80vw);
+  }
+  main.academy-contents-show > div > div.sidebar-collapse > button[aria-expanded=true]{
+    transform: translate(0%);
+  }
+
+  main.academy-contents-show .sidebar-collapse>.collapse, main.academy-contents-show .sidebar-collapse>#chaptersSidebarCollapse{
+    transform: translate(100.5%);
+  }
+  main.academy-contents-show .sidebar-collapse>.collapse, main.academy-contents-show .sidebar-collapse>#chaptersSidebarCollapse.show{
+    transform: translate(0);
+    box-shadow: -200px 0 200px rgb(0 0 0 / 50%) !important;
+  }
+}
+/*-------- End styling mobile ------------*/

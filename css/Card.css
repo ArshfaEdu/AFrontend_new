@@ -1,0 +1,63 @@
+.card.lift {
+  background-color: #949FA66B;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 !important;
+}
+.card.lift img.card-img{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card.lift .card-body{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 1rem;
+}
+
+.card.lift .card-body > div{
+  display: none;
+}
+
+.card.lift .card-body .card-subtitle{
+  font-size: .8em;
+  text-align: center;
+  color: #917050;
+  font-weight: 700;
+}
+
+.card.lift .card-body > a[href*="categories"]{
+transition: transform .35s ease-in-out;
+
+}
+
+
+.card.lift .card-body >  a[href*="categories"]:hover{
+transform: scale(1.09);
+}
+
+.card.lift  .card-body .card-title{
+  font-weight: 900;
+  color: #3D3535 !important;
+  text-align: center;
+}
+.card.lift .card-footer > div:first-child{
+  justify-content: center !important;
+  color: #3D3535;
+}
+.card.lift .card-footer > div:first-child > div:first-child{
+  display: none !important;
+}
+.card.lift .card-footer > div:first-child ins{
+  font-size: 1em;
+  font-weight: 700;
+  color: #3D3535;
+}
+.card.lift .card-footer > div:last-child{
+  padding-bottom: 10px !important;
+  border-top: none !important;
+}
+
+
+.academy-user-account-courses .card.lift .card-footer > div:first-child{
+display: none !important
+}

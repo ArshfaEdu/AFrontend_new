@@ -1,0 +1,45 @@
+:root{
+  --ar-primary: #5BC3B5; 
+  --ar-secondary: #4493D0; 
+  --ar-accent: #756DB2; 
+  --ar-dark: #052237; 
+  --ar-white: #F5F5F5;
+  --ar-gradient: linear-gradient(180deg, var(--ar-primary) 0%, var(--ar-secondary) 100%);
+  --ar-specificGradient: linear-gradient(270deg, var(--ar-primary) 2.19%, var(--ar-secondary) 118.45%);
+  --ar-specificGredientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
+}
+body{
+  background-color: var(--ar-white);
+}
+
+
+.btn{
+  border-radius: 50px !important;
+  border: none;
+}
+.btn:hover{
+  color: var(--ar-primary) !important;
+}
+.btn:not([class*=btn-outline]){
+  border-color: initial !important;
+}
+.btn-primary{
+  color: var(--ar-white);
+  background-color: var(--ar-primary);
+  background: var(--ar-gradient);
+}
+.btn-secondary{
+  color: var(--ar-primary);
+  background: var(--ar-gradient);
+  background-size: 100%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--ar-primary);
+  border-color: var(--ar-gradient);
+}

@@ -1,204 +1,231 @@
 header.bg-white { 
-background-color: #ffffff !important;
-
-}
-header .navbar-light .navbar-nav {
-  padding-right : 50px !important;
-
-  }
-  
-header .navbar-light .navbar-nav .nav-link {
-    color: black;
-    font-size: 15px;
-     font-weight: bold;
-  }
-  
-body { 
-  background-color:#fff;
- }
- 
-.highlight {
-    background: linear-gradient(120deg, #a0cbc8 , #a0cbc8 );
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
-    background-position: 0 90%;
-    border-radius: 15%;
-}
-
-footer.footer.bg-white{
- background-color :  #0c343d !important;
-
-}
-footer *{color:#ffffff !important}
-
-
-/*========== For scrollbar =============*/
-/* May be soon :)*/
-
-
-/* ============ For Course content page ================*/
-
-body.academy-contents-show main > div{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
-}
-body.academy-contents-show main > div > header{
-    z-index:4;
-}
-body.academy-contents-show main > div > section:nth-of-type(1){
-   grid-column: 2/4;
-}
-body.academy-contents-show main > div > section:nth-of-type(2){
-    grid-column: 2/4;
-}
-body.academy-contents-show main > div > section:nth-of-type(2) .plyr .alert.alert-warning{
-    background-color: transparent;
-}
-body.academy-contents-show main > div > div.sidebar-collapse{
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    top: 0;
-    padding-top: 6rem;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse{
-    border: none;
-    box-shadow: none !important;
-}
-
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll{
-    padding-left: 6px;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll > div{
-    border-bottom: none !important;
-    margin: .8rem 0;
-    background-color: #7898b636;
-    border-radius: 10px;
-    overflow: hidden;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll > div > .collapse > a{
-    background-color: #f2f5f7;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll > div > button{
-    color: #5c6c79 !important;
-    font-weight: 900;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar{
-    width: 5px;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-    background-color: #5c6c7900;
-}
-body.academy-contents-show main .sidebar-collapse #chapterSidebarCollapse .sidebar-collapse-scroll:hover::-webkit-scrollbar-thumb{
-    background-color: #5c6c79aa;
-}
-body.academy-contents-show main > div > div.sidebar-collapse > button{
-     margin:0;
-     top:1.5%;
-display: none !important;
-}
-body.academy-contents-show main > div > div.sidebar-collapse > #chaptersSidebarCollapse{
-    width: 100%;
-}
-@media (min-width: 576px){
-body.academy-contents-show .sidebar-collapse>.collapse,
-body.academy-contents-show .sidebar-collapse>.collapsing {
-     transform: initial; 
-  }
-
-body.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
-   transform: initial; 
-}
-}
-
-body.academy-contents-show .sidebar-collapse>.collapse,
-body.academy-contents-show .sidebar-collapse>.collapsing{
-  transform: initial; 
-}
-body.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
-   transform: initial; 
-}
-
-
-/* ============ For Course Card ================*/
-.card.lift {
-    background-color: #949FA66B;
-    border-radius: 20px;
-    overflow: hidden;
-padding: 0 !important;
-}
-.card.lift img.card-img{
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.card.lift .card-body{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 1rem;
-}
-
-.card.lift .card-body > div{
-    display: none;
-}
-
-.card.lift .card-body .card-subtitle{
-    font-size: .8em;
-    text-align: center;
-    color: #917050;
-    font-weight: 700;
-}
-
-.card.lift .card-body > a[href*="categories"]{
-transition: transform .35s ease-in-out;
-
-}
-
-
-.card.lift .card-body >  a[href*="categories"]:hover{
-transform: scale(1.09);
-}
-
-.card.lift  .card-body .card-title{
-    font-weight: 900;
-    color: #3D3535 !important;
-    text-align: center;
-}
-.card.lift .card-footer > div:first-child{
-    justify-content: center !important;
-    color: #3D3535;
-}
-.card.lift .card-footer > div:first-child > div:first-child{
+    background-color: #ffffff !important;
+    
+    }
+    header .navbar-light .navbar-nav {
+      padding-right : 50px !important;
+    
+      }
+      
+    header .navbar-light .navbar-nav .nav-link {
+        color: black;
+        font-size: 15px;
+         font-weight: bold;
+      }
+      
+    body { 
+      background-color:#fff;
+     }
+     
+    .highlight {
+        background: linear-gradient(120deg, #a0cbc8 , #a0cbc8 );
+        background-repeat: no-repeat;
+        background-size: 100% 40%;
+        background-position: 0 90%;
+        border-radius: 15%;
+    }
+    
+    footer.footer.bg-white{
+     background-color :  #0c343d !important;
+    
+    }
+    footer *{color:#ffffff !important}
+    
+    
+    /*========== For scrollbar =============*/
+    /* May be soon :)*/
+    
+    
+    /* ============ For Course content page ================*/
+    
+    body.academy-contents-show main > div{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 3fr 1fr;
+    }
+    body.academy-contents-show main > div > header{
+        z-index:4;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1){
+       grid-column: 2/4;
+       padding-top: 0 !important;
+       padding-bottom: 0 !important;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container{
+        max-width: none !important;
+        padding: 0;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child > div{
+        display: grid;
+        grid-template-rows: 10fr 1fr 1fr;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child > div h2{
+        grid-row: 2;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type{
+        grid-row: 1;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type .plyr{
+        border-radius: 0 !important;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) > .container > .row:last-child > div > div:last-of-type{
+        grid-row: 3;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(2){
+        grid-column: 2/4;
+    }
+    body.academy-contents-show main > div > section:nth-of-type(1) .alert.alert-warning{
+        background-color: transparent;
+    }
+    body.academy-contents-show main > div > div.sidebar-collapse{
+        grid-column: 1/2;
+        grid-row: 1;
+        position: sticky;
+        top: 110px;
+        border-left: 1px solid #f1f1f1;
+    }
+    body.academy-contents-show main .sidebar-collapse #chaptersSidebarCollapse{
+        border: none;
+        box-shadow: none !important;
+        height: 100vh !important;
+    }
+    
+    body.academy-contents-show main .sidebar-collapse .sidebar-collapse-scroll{
+        height: 100% !important;
+    }
+    body.academy-contents-show main .sidebar-collapse .sidebar-collapse-scroll > div{
+        border-bottom: 2px solid #5c6c7940 !important;
+        background-color: #7898b636;
+        overflow: hidden;
+    }
+    body.academy-contents-show main .sidebar-collapse .sidebar-collapse-scroll > div > .collapse > a{
+        background-color: #f2f5f7;
+    }
+    body.academy-contents-show main .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll > div > button{
+        color: #5c6c79 !important;
+        font-weight: 900;
+    }
+    body.academy-contents-show main .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar{
+        width: 5px;
+    }
+    body.academy-contents-show main .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #5c6c7900;
+    }
+    body.academy-contents-show main .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll:hover::-webkit-scrollbar-thumb{
+        background-color: #5c6c79aa;
+    }
+    body.academy-contents-show main > div > div.sidebar-collapse > button{
+         margin:0;
+         top:1.5%;
     display: none !important;
-}
-.card.lift .card-footer > div:first-child ins{
-    font-size: 1em;
-    font-weight: 700;
-    color: #3D3535;
-}
-.card.lift .card-footer > div:last-child{
-    padding-bottom: 10px !important;
-    border-top: none !important;
-}
-
-.card.lift .card-footer > div:last-child a{
-background-color: #C5B2A0 !important;
-    width: 60%;
-    margin: .25rem auto;
-    display: block;
-    border-radius: 50px;
-    box-shadow: 0 6px 2px -1px rgb(0 0 0 / 18%);
-    transform: translateY(-0.1px);
-    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
-}
-
-.card.lift .card-footer > div:last-child a:hover{
-    transform: translateY(0);
-    box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
-}
-
-.academy-user-account-courses .card.lift .card-footer > div:first-child{
-display: none !important
-}
-
+    }
+    body.academy-contents-show main > div > div.sidebar-collapse > #chaptersSidebarCollapse{
+        width: 100%;
+    }
+    @media (min-width: 576px){
+    body.academy-contents-show .sidebar-collapse>.collapse,
+    body.academy-contents-show .sidebar-collapse>.collapsing {
+         transform: initial; 
+      }
+    
+    body.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
+       transform: initial; 
+    }
+    }
+    
+    body.academy-contents-show .sidebar-collapse>.collapse,
+    body.academy-contents-show .sidebar-collapse>.collapsing{
+      transform: initial; 
+    }
+    body.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
+       transform: initial; 
+    }
+    
+    /* ============ For Course Card ================*/
+    .card.lift {
+        background-color: #949FA66B;
+        border-radius: 20px;
+        overflow: hidden;
+    padding: 0 !important;
+    }
+    .card.lift img.card-img{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .card.lift .card-body{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+    
+    .card.lift .card-body > div{
+        display: none;
+    }
+    
+    .card.lift .card-body .card-subtitle{
+        font-size: .8em;
+        text-align: center;
+        color: #917050;
+        font-weight: 700;
+    }
+    
+    .card.lift .card-body > a[href*="categories"]{
+    transition: transform .35s ease-in-out;
+    
+    }
+    
+    
+    .card.lift .card-body >  a[href*="categories"]:hover{
+    transform: scale(1.09);
+    }
+    
+    .card.lift  .card-body .card-title{
+        font-weight: 900;
+        color: #3D3535 !important;
+        text-align: center;
+    }
+    .card.lift .card-footer > div:first-child{
+        justify-content: center !important;
+        color: #3D3535;
+    }
+    .card.lift .card-footer > div:first-child > div:first-child{
+        display: none !important;
+    }
+    .card.lift .card-footer > div:first-child ins{
+        font-size: 1em;
+        font-weight: 700;
+        color: #3D3535;
+    }
+    .card.lift .card-footer > div:last-child{
+        padding-bottom: 10px !important;
+        border-top: none !important;
+    }
+    
+    .card.lift .card-footer > div:last-child a{
+    background-color: #C5B2A0 !important;
+        width: 60%;
+        margin: .25rem auto;
+        display: block;
+        border-radius: 50px;
+        box-shadow: 0 6px 2px -1px rgb(0 0 0 / 18%);
+        transform: translateY(-0.1px);
+        transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+    }
+    
+    .card.lift .card-footer > div:last-child a:hover{
+        transform: translateY(0);
+        box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+    }
+    
+    .academy-user-account-courses .card.lift .card-footer > div:first-child{
+    display: none !important
+    }
+    
