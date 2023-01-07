@@ -12,6 +12,11 @@ body{
   background-color: var(--ar-white);
 }
 
+.btn-general{
+  color: var(--ar-white);
+  background-color: var(--ar-primary);
+  background: var(--ar-specificGradient);
+}
 
 .btn{
   border-radius: 50px !important;
@@ -42,4 +47,9 @@ body{
   border-style: solid;
   border-color: var(--ar-primary);
   border-color: var(--ar-gradient);
+}
+
+header.bg-white { 
+  background-color: var(--ar-white) !important;
+  border-bottom: none !important;
 }
