@@ -1,6 +1,6 @@
 const { src, dest, watch, series } = require("gulp");
 const minifyCSS = require("gulp-clean-css");
-const sourceMap = require("gulp-sourcemaps");
+const minifyJS = require("gulp-uglify");
 const concat = require("gulp-concat");
 
 const bundleCSS = () => {
@@ -10,8 +10,20 @@ const bundleCSS = () => {
     .pipe(dest("./dist"));
 };
 
-const Watch = () => {
-  watch("./css/**/!(main).css", bundleCSS);
+const bundleJS = () => {
+  return src([
+    "./js/**/lockWebsite.js",
+    "./js/**/functions.js",
+    "./js/**/observer.js",
+  ])
+    .pipe(minifyJS())
+    .pipe(concat("bundle.min.js"))
+    .pipe(dest("./dist"));
 };
 
-exports.default = series(bundleCSS, Watch);
+const Watch = () => {
+  watch("./css/**/**.css", bundleCSS);
+  watch("./js/**/**.js", bundleJS);
+};
+
+exports.default = series(bundleCSS, bundleJS, Watch);

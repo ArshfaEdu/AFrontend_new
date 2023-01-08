@@ -10,13 +10,16 @@
 }
 
 @font-face {
-  font-family: "Arshfa";
-  src: url(https://abdulazizyas.github.io/AFrontend/dist/BMBCDinkumMedium.ttf) format("truetype");
+  font-family: 'Arshfa';
+  src: url(https://cdn.jsdelivr.net/gh/AbdulazizYas/AFrontend/dist/BMBCDinkumMedium.ttf) format("truetype");
 }
 
 body{
   background-color: var(--ar-white);
-  font-family: "Arshfa",Arial, Helvetica, sans-serif Verdana, Tahoma;
+  font-family: 'Arshfa',Arial, Helvetica, sans-serif, Verdana, Tahoma !important;
+}
+*{
+  font-family: 'Arshfa',Arial, Helvetica, sans-serif, Verdana, Tahoma !important;
 }
 
 .btn-general{
