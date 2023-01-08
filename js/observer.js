@@ -1,3 +1,4 @@
+console.log("before observing");
 let splitted_url = location.href.split("#")[0];
 splitted_url = splitted_url.split("/");
 let page = splitted_url[splitted_url.length - 2];
@@ -16,7 +17,7 @@ const observer = new MutationObserver((mutations, observer) =>
     let url = location.href.split("#")[0];
     url = url.split("/");
     let pageRoute = url[url.length - 2];
-
+    console.log("observing...");
     try {
       // add style to main tag based on page
       addStyle(pagesToObserve, pageRoute);
