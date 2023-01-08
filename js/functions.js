@@ -23,9 +23,6 @@ function courseInfo() {
   // reference the overview section to insert nav before it
   const overview = document.querySelector("#overview");
 
-  console.log("overview: " + (overview ? "exist" : "does not exist"));
-  console.log("nav: " + (nav ? "exist" : "does not exist"));
-
   // insert the saved node before overview section
   document
     .querySelector("main > .container > .row > div:first-child")
@@ -54,8 +51,6 @@ function courseInfo() {
       )
       .forEach((content) => (content.style.display = "none"));
     document.querySelector(navContent).style.display = "block";
-
-    console.log("clicked");
   }
   links.forEach((el) => el.addEventListener("click", click));
 }
@@ -64,16 +59,19 @@ function courseContent() {}
 
 function addStyle(pagesToObserve, pageRoute) {
   const main = document.querySelector("main");
-
+  console.log("before undefined");
   if (pagesToObserve[pageRoute] === undefined) {
     return;
   }
-
+  console.log("before contains");
   if (main.classList.contains(pagesToObserve[pageRoute])) {
     return;
   }
+
+  console.log("Now adding class");
   main.setAttribute("class", "");
   main.classList.add(pagesToObserve[pageRoute]);
+  console.log("added");
 }
 
 function clearOther(pagesToObserve) {
