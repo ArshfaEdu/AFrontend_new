@@ -38,6 +38,5 @@ const observer = new MutationObserver((mutations, observer) =>
     }
   })
 );
-if (Object.keys(pagesToObserve).includes(page)) {
-  observer.observe(document.body, { subtree: true, childList: true });
-}
+
+observer.observe(document.body, { subtree: true, childList: true });
