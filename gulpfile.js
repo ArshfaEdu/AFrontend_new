@@ -4,11 +4,9 @@ const sourceMap = require("gulp-sourcemaps");
 const concat = require("gulp-concat");
 
 const bundleCSS = () => {
-  return src("./css/**/!(main).css")
-    .pipe(sourceMap.init())
+  return src(["./css/**/main.css", "./css/**/!(main).css"])
     .pipe(minifyCSS())
     .pipe(concat("bundle.min.css"))
-    .pipe(sourceMap.write())
     .pipe(dest("./dist"));
 };
 
