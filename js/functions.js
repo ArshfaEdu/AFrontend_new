@@ -64,12 +64,18 @@ function courseContent() {}
 
 function addStyle(pagesToObserve, pageRoute) {
   const main = document.querySelector("main");
+
+  if (pagesToObserve[pageRoute] === undefined) {
+    return;
+  }
+
   if (main.classList.contains(pagesToObserve[pageRoute])) {
     return;
   }
   main.setAttribute("class", "");
   main.classList.add(pagesToObserve[pageRoute]);
 }
+
 function clearOther(pagesToObserve) {
   const main = document.querySelector("main");
   for (const page in pagesToObserve) {
