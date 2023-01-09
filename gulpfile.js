@@ -6,7 +6,7 @@ const concat = require("gulp-concat");
 const bundleCSS = () => {
   return src(["./css/**/main.css", "./css/**/!(main).css"])
     .pipe(minifyCSS())
-    .pipe(concat("bundle.min.css"))
+    .pipe(concat("arshfa.min.css"))
     .pipe(dest("./dist"));
 };
 
@@ -17,7 +17,7 @@ const bundleJS = () => {
     "./js/**/observer.js",
   ])
     .pipe(minifyJS())
-    .pipe(concat("bundle.min.js"))
+    .pipe(concat("arshfa.min.js"))
     .pipe(dest("./dist"));
 };
 

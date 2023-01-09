@@ -29,17 +29,25 @@ main.academy-courses-show > .container > .row > div:first-child nav{
 
 main.academy-courses-show > .container > .row > div:first-child nav .nav-link{
   transition: all .2s ease-in-out !important;
+  border-radius: 50px;
 }
 main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active){
   background: var(--ar-specificGradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: var(--ar-primary);
+}
+main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active):hover, main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active):focus{
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-color: #e8efef;
+  color: var(--ar-primary);
 }
 
 main.academy-courses-show > .container > .row > div:first-child nav .nav-link.active{
   background: var(--ar-gradient);
   color: #fff!important;
-  border-radius: 2rem;
 }
 
 main.academy-courses-show > .container > .row > div:first-child nav .nav-link.active::after{
