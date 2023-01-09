@@ -1,12 +1,15 @@
 .card.lift {
-  background-color: #949FA66B;
-  border-radius: 20px;
+  background-color: #fff;
+  border-radius: 30px;
   overflow: hidden;
-  padding: 0 !important;
+  padding: 0!important;
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
 }
 .card.lift img.card-img{
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  height: 65%;
+  object-fit: cover
 }
 .card.lift .card-body{
   display: flex;
@@ -27,18 +30,26 @@
 
 .card.lift .card-body > a[href*="categories"]{
 transition: transform .35s ease-in-out;
-
+display: none;
 }
 
 
-.card.lift .card-body >  a[href*="categories"]:hover{
+/* .card.lift .card-body >  a[href*="categories"]:hover{
 transform: scale(1.09);
-}
+} */
 
 .card.lift  .card-body .card-title{
   font-weight: 900;
-  color: #3D3535 !important;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.card.lift  .card-body .card-title::after{
+  display: none;
+}
+.card.lift .card-footer{
+  margin-top: 0 !important;
+  margin-bottom: 50px;
 }
 .card.lift .card-footer > div:first-child{
   justify-content: center !important;
@@ -53,11 +64,24 @@ transform: scale(1.09);
   color: #3D3535;
 }
 .card.lift .card-footer > div:last-child{
-  padding-bottom: 10px !important;
-  border-top: none !important;
+  padding-bottom: 10px!important;
+  border-top: none!important;
+  padding: 0 30px;
+}
+.card.lift .card-footer > div:last-child > div{
+  column-gap: 10px;
 }
 
+.card.lift button.btn{
+  display: inline-block;
+    width: 50%;
+}
+.card.lift a.btn{
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
 
-/* .academy-user-account-courses .card.lift .card-footer > div:first-child{
+main.academy-user-account-courses .card.lift .card-footer > div:first-child{
 display: none !important
-} */
+}
