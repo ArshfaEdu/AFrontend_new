@@ -55,7 +55,7 @@ main.academy-courses-show > .container > .row > div:first-child nav .nav-link.ac
 }
 
 
-main > .container > .row > div:first-child > div:not(:first-of-type):not(#overview){
+main > .container > .row > div:first-child > div:not(:first-of-type){
   display: none;
 }
 main > .container > .row > div:first-child > div:not(:first-of-type).active{

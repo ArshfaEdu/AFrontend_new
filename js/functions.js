@@ -20,9 +20,9 @@ function courseInfo() {
   //     if (el.getAttribute("id") !== "overview") el.style.display = "none";
   //   });
 
-  // reference the overview section to insert nav before it
+  // reference the overview section to insert nav before it and add active class
   const overview = document.querySelector("#overview");
-
+  overview.classList.add("active");
   // insert the saved node before overview section
   document
     .querySelector("main > .container > .row > div:first-child")
