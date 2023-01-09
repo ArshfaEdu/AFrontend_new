@@ -65,7 +65,7 @@ main.academy-courses-show > .container > .row > div:first-child nav .nav-link.ac
   }
 }
 main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type){
-  display: block;
+  display: none;
   opacity: 0;
 }
 main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type).active{
