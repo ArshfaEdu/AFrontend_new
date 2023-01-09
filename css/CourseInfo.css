@@ -55,11 +55,21 @@ main.academy-courses-show > .container > .row > div:first-child nav .nav-link.ac
 }
 
 
-main > .container > .row > div:first-child > div:not(:first-of-type){
-  display: none;
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
-main > .container > .row > div:first-child > div:not(:first-of-type).active{
-  display: block;
+main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type){
+  opacity: 0;
+}
+main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type).active{
+  
+  animation: fadeIn .25s ease-in-out forwards;
 }
 
 /*=========== Left side ===========*/
