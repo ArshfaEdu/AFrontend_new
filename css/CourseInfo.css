@@ -73,11 +73,32 @@ main.academy-courses-show > .container > .row > div:first-child > div:not(:first
   animation: fadeIn .25s ease-in-out forwards;
 }
 
+
+/* ----- Overview -----*/
+main.academy-courses-show #overview h2, main.academy-courses-show #overview h3{
+  background: linear-gradient(270deg, #4AA5C6 -9.98%, #58BFB8 23.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--ar-primary) !important;
+  font-size: 2.5rem;
+}
+main.academy-courses-show #overview p, main.academy-courses-show #overview li{
+  color: var(--ar-dark);
+}
+main.academy-courses-show #overview .list-style-v2 li:before{
+  background-color: var(--ar-primary);
+}
+
 /*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
-  border: none !important;
-  border-radius: 20px !important;
-  background: linear-gradient(290deg, #c6cdd4, #f4f5f7);
+  border: none!important;
+  border-radius: 30px!important;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+}
+main.academy-courses-show > .container > .row > div:last-child > div > div{
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
 }
 main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr){
   justify-content: center;
@@ -88,31 +109,9 @@ main.academy-courses-show > .container > .row > div:last-child > div > div > div
 main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr) ins{
   font: 2.25em;
   font-weight: 800;
+  color: var(--ar-dark) !important;
 }
 main.academy-courses-show > .container > .row > div:last-child > div > div .list-group li{
   display: none !important;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div .btn-primary{
-  background-color: #0d4d5c !important;
-    margin: .25rem auto;
-    display: block;
-    border-radius: 50px;
-    box-shadow: 0 6px 2px -1px rgb(0 0 0 / 18%);
-    transform: translateY(-0.1px);
-    color: white !important;
-    transition: transform .2s ease-in-out,opacity .2s ease-in-out, box-shadow .2s ease-in-out;
-}
-main.academy-courses-show > .container > .row > div:last-child > div > div .btn-primary:hover{
-  transform: translateY(0);
-    box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
-}
-main.academy-courses-show > .container > .row > div:last-child > div > div .btn-primary{
-  background-color: #C5B2A0  !important;
-  margin: .25rem auto;
-  display: block;
-  border-radius: 50px;
-  box-shadow: 0 6px 2px -1px rgb(0 0 0 / 18%);
-  transform: translateY(-0.1px);
-  color: white !important;
-  transition: transform .2s ease-in-out,opacity .2s ease-in-out, box-shadow .2s ease-in-out;
-}
+
