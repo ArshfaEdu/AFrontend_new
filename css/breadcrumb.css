@@ -3,7 +3,7 @@ nav ol.breadcrumb .breadcrumb-item{
   padding: 2px 10px;
   color: #fff;
 }
-main.academy-courses-show nav ol.breadcrumb .breadcrumb-item a{
+nav ol.breadcrumb .breadcrumb-item a{
   color: #fff !important;
 }
 nav ol.breadcrumb .breadcrumb-item + .breadcrumb-item:before{
