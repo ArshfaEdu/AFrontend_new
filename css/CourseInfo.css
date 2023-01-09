@@ -1,4 +1,4 @@
-
+/*=========== Right side ===========*/
 main.academy-courses-show > .container > .row > div:first-child > h1{
   font-size: 4rem;
   font-weight: 500;
@@ -53,6 +53,16 @@ main.academy-courses-show > .container > .row > div:first-child nav .nav-link.ac
 main.academy-courses-show > .container > .row > div:first-child nav .nav-link.active::after{
   display: none !important;
 }
+
+
+main > .container > .row > div:first-child > div:not(:first-of-type):not(#overview){
+  display: none;
+}
+main > .container > .row > div:first-child > div:not(:first-of-type).active{
+  display: block;
+}
+
+/*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
   border: none !important;
   border-radius: 20px !important;

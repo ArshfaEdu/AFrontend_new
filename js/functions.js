@@ -12,13 +12,13 @@ function courseInfo() {
     .forEach((el) => el.remove());
 
   // Hide all sections' contents except overview section
-  document
-    .querySelectorAll(
-      "main > .container > .row > div:first-child > div:not(:first-of-type)"
-    )
-    .forEach((el) => {
-      if (el.getAttribute("id") !== "overview") el.style.display = "none";
-    });
+  // document
+  //   .querySelectorAll(
+  //     "main > .container > .row > div:first-child > div:not(:first-of-type)"
+  //   )
+  //   .forEach((el) => {
+  //     if (el.getAttribute("id") !== "overview") el.style.display = "none";
+  //   });
 
   // reference the overview section to insert nav before it
   const overview = document.querySelector("#overview");
@@ -49,8 +49,8 @@ function courseInfo() {
       .querySelectorAll(
         "main > .container > .row > div:first-child > div:not(:first-of-type)"
       )
-      .forEach((content) => (content.style.display = "none"));
-    document.querySelector(navContent).style.display = "block";
+      .forEach((content) => content.classList.remove("active"));
+    document.querySelector(navContent).classList.add("active");
   }
   links.forEach((el) => el.addEventListener("click", click));
 }
