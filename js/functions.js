@@ -35,6 +35,7 @@ function courseInfo() {
 
   // click listener for nav links
   function click(e) {
+    e.preventDefault();
     // toggle active class for nav links
     links.forEach((el) => {
       if (el.classList.contains("active")) {
