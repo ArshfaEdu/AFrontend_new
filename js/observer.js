@@ -7,7 +7,7 @@ const pagesToObserve = {
   userCourses: "academy-user-account-courses",
 };
 
-const observer = new MutationObserver((mutations, observer) =>
+const observer = new MutationObserver((mutations) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
       if (mutation.addedNodes.length === 0) return;

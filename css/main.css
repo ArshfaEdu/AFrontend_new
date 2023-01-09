@@ -5,8 +5,10 @@
   --ar-dark: #052237; 
   --ar-white: #F5F5F5;
   --ar-gradient: linear-gradient(180deg, var(--ar-primary) 0%, var(--ar-secondary) 100%);
+
   --ar-specificGradient: linear-gradient(270deg, var(--ar-primary) 2.19%, var(--ar-secondary) 118.45%);
-  --ar-specificGredientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
+
+  --ar-specificGradientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
 }
 
 @font-face {

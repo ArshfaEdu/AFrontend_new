@@ -44,7 +44,7 @@ transform: scale(1.09);
   font-size: 24px;
   margin-bottom: 0;
 }
-.card.lift  .card-body .card-title::after{
+.card.lift  .card-body .stretched-link:after{
   display: none;
 }
 .card.lift .card-footer{
