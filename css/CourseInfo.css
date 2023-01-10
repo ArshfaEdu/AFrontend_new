@@ -88,6 +88,35 @@ main.academy-courses-show #overview p, main.academy-courses-show #overview li{
 main.academy-courses-show #overview .list-style-v2 li:before{
   background-color: var(--ar-primary);
 }
+main.academy-courses-show #curriculum > div{
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  border-radius: 30px !important;
+}
+main.academy-courses-show #curriculum > div > button{
+  flex-direction: row-reverse;
+}
+main.academy-courses-show #curriculum > div > button > div {
+  width: initial !important;
+  margin-left: auto;
+}
+main.academy-courses-show #curriculum > div > button > div > span {
+  text-align: right;
+}
+main.academy-courses-show #curriculum > div > button > div > span:first-child {
+  font-size: 1.5em;
+}
+main.academy-courses-show #curriculum > div > button > span svg {
+  width: 2rem;
+}
+main.academy-courses-show #curriculum > div a.m-chapter-item {
+  border-top: 0 !important;
+}
+main.academy-courses-show #curriculum > div a.m-chapter-item > div:first-child .chapter-icon svg {
+  stroke: var(--ar-secondary);
+}
+main.academy-courses-show #curriculum > div a.m-chapter-item > div:last-child {
+  display: none !important;
+}
 
 /*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
