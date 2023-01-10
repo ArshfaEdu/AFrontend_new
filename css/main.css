@@ -66,7 +66,7 @@ header.bg-white {
   border-bottom: none !important;
 }
 
-.app-layout > header nav .navbar.nav > .nav-item a.nav-link{
+header nav .navbar-nav > .nav-item a.nav-link{
   background-color: var(--ar-primary);
   color: #fff;
   background: var(--ar-specificGradient);
