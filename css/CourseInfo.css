@@ -168,6 +168,10 @@ main.academy-courses-show #reviews > div:first-child > div:first-child > div:fir
 main.academy-courses-show #reviews > div:first-child > div:first-child > div:last-child > div > div:last-child > div:last-child{
   color: #000 !important;
 }
+main.academy-courses-show #reviews > div:first-child > div:first-child > div:last-child > div > div:first-child > div{
+  background-color: var(--ar-primary) !important;
+  background: var(--ar-specificGradientReverse) !important;
+}
 
 /*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
