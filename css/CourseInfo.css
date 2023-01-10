@@ -165,6 +165,9 @@ main.academy-courses-show #instructors > div .media-body h4{
 main.academy-courses-show #instructors>div:hover h4{
   color: #fff !important;
 }
+main.academy-courses-show #instructors>div:hover .media-body > a{
+  position: relative;
+}
 
 /* ----- Reviews -----*/
 main.academy-courses-show #reviews .review-stars svg.review-star{
