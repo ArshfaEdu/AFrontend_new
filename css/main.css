@@ -66,6 +66,14 @@ header.bg-white {
   border-bottom: none !important;
 }
 
+.app-layout > header nav .navbar.nav > .nav-item a.nav-link{
+  background-color: var(--ar-primary);
+  color: #fff;
+  background: var(--ar-specificGradient);
+  padding: 4px 0;
+  border-radius: 30px;
+} 
+
 header .navbar-light .navbar-nav {
   padding-right : 50px !important;
 
