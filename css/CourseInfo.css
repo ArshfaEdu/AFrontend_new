@@ -158,6 +158,10 @@ main.academy-courses-show #instructors > div .media-body{
   padding-right: 1.5em;
   padding-left: 3em;
 }
+
+main.academy-courses-show #instructors>div .media-body > a{
+  position: relative;
+}
 main.academy-courses-show #instructors > div .media-body h4{
   font-size: 1.25em;
   transition: color .2s ease-in-out;
@@ -165,9 +169,7 @@ main.academy-courses-show #instructors > div .media-body h4{
 main.academy-courses-show #instructors>div:hover h4{
   color: #fff !important;
 }
-main.academy-courses-show #instructors>div:hover .media-body > a{
-  position: relative;
-}
+
 
 /* ----- Reviews -----*/
 main.academy-courses-show #reviews .review-stars svg.review-star{
