@@ -65,22 +65,22 @@ header.bg-white {
   /* background-color: var(--ar-light) !important; */
   border-bottom: none !important;
 }
-header nav .navbar-nav{
+header nav > div > .navbar-nav{
   column-gap: 5px;
 }
-header nav .navbar-nav > .nav-item a.nav-link{
+header nav > div > .navbar-nav > .nav-item a.nav-link{
   background-color: var(--ar-primary);
   color: #fff;
   background: var(--ar-specificGradient);
   padding: 4px 0;
   border-radius: 30px;
 } 
-header nav .navbar-nav > .nav-item a.nav-link .badge{
+header nav > div > .navbar-nav > .nav-item a.nav-link .badge{
   background-color: #fff;
   color: var(--ar-primary);
   border: 1px solid var(--ar-primary);
 }
-header nav .navbar-nav > .nav-item:not(:last-child) a.nav-link{
+header nav > div > .navbar-nav > .nav-item:not(:last-child) a.nav-link{
   border-radius: 50%;
   padding: 4px !important;
 }
