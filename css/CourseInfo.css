@@ -217,6 +217,13 @@ main.academy-courses-show > .container > .row > div:last-child > div > div{
   padding-left: 1.75rem !important;
   padding-right: 1.75rem !important;
 }
+main.academy-courses-show > .container > .row > div:last-child > div > div > div:first-child{
+  margin-bottom: 2rem !important;
+}
+main.academy-courses-show > .container > .row > div:last-child > div > div > div:first-child .plyr{
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+}
 main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr){
   justify-content: center;
 }
