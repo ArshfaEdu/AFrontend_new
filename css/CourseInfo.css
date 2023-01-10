@@ -112,6 +112,7 @@ main.academy-courses-show #curriculum > div > button > span svg {
 }
 main.academy-courses-show #curriculum > div a.m-chapter-item {
   border-top: 0 !important;
+  background-color: initial;
 }
 main.academy-courses-show #curriculum > div a.m-chapter-item > div:first-child .chapter-icon svg {
   stroke: var(--ar-secondary);
@@ -127,11 +128,25 @@ main.academy-courses-show #instructors.active{
   align-items: baseline;
 }
 main.academy-courses-show #instructors > div{
-  background-color: #fff;
   border-radius: 50px;
   box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
   overflow: hidden;
   transition: all .2s ease-in-out;
+  position: relative;
+  background-color: var(--ar-primary);
+  background: var(--ar-specificGradientReverse);
+}
+main.academy-courses-show #instructors>div:hover::before{
+  opacity: 0;
+}
+main.academy-courses-show #instructors>div::before{
+  position: absolute;
+    content: "";
+    inset: 0;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    background-color: #fff;
 }
 main.academy-courses-show #instructors > div > div:first-child{
   padding: 0 !important;
@@ -145,6 +160,10 @@ main.academy-courses-show #instructors > div .media-body{
 }
 main.academy-courses-show #instructors > div .media-body h4{
   font-size: 1.25em;
+  transition: color .2s ease-in-out;
+}
+main.academy-courses-show #instructors>div:hover h4{
+  color: #fff !important;
 }
 
 /* ----- Reviews -----*/
