@@ -118,6 +118,31 @@ main.academy-courses-show #curriculum > div a.m-chapter-item > div:last-child {
   display: none !important;
 }
 
+#instructors{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+#instructors > div{
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+#instructors > div > div:first-child{
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
+  border: none !important;
+}
+#instructors > div .media-body{
+  padding-right: 1.5em;
+  padding-left: 3em;
+}
+#instructors > div .media-body h4{
+  font-size: 1.25em;
+}
 /*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
   border: none!important;
