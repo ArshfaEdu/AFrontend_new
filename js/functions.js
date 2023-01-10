@@ -11,15 +11,6 @@ function courseInfo() {
     )
     .forEach((el) => el.remove());
 
-  // Hide all sections' contents except overview section
-  // document
-  //   .querySelectorAll(
-  //     "main > .container > .row > div:first-child > div:not(:first-of-type)"
-  //   )
-  //   .forEach((el) => {
-  //     if (el.getAttribute("id") !== "overview") el.style.display = "none";
-  //   });
-
   // reference the overview section to insert nav before it and add active class
   const overview = document.querySelector("#overview");
   overview.classList.add("active");

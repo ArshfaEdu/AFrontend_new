@@ -88,6 +88,8 @@ main.academy-courses-show #overview p, main.academy-courses-show #overview li{
 main.academy-courses-show #overview .list-style-v2 li:before{
   background-color: var(--ar-primary);
 }
+
+/* ----- Curriculum -----*/
 main.academy-courses-show #curriculum > div{
   box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
   border-radius: 30px !important;
@@ -118,31 +120,55 @@ main.academy-courses-show #curriculum > div a.m-chapter-item > div:last-child {
   display: none !important;
 }
 
-#instructors.active{
+/* ----- Instructors -----*/
+main.academy-courses-show #instructors.active{
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
-#instructors > div{
+main.academy-courses-show #instructors > div{
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
   overflow: hidden;
   transition: all .2s ease-in-out;
 }
-#instructors > div > div:first-child{
+main.academy-courses-show #instructors > div > div:first-child{
   padding: 0 !important;
   margin: 0 !important;
   box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
   border: none !important;
 }
-#instructors > div .media-body{
+main.academy-courses-show #instructors > div .media-body{
   padding-right: 1.5em;
   padding-left: 3em;
 }
-#instructors > div .media-body h4{
+main.academy-courses-show #instructors > div .media-body h4{
   font-size: 1.25em;
 }
+
+/* ----- Reviews -----*/
+main.academy-courses-show #reviews .review-stars svg.review-star{
+  stroke: var(--ar-primary);
+}
+main.academy-courses-show #reviews .review-stars svg.review-star.star-active{
+  fill: var(--ar-primary);
+}
+
+main.academy-courses-show #reviews > div:first-child > div:first-child > div:first-child > div{
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  border-radius: 30px !important;
+  border: none !important;
+}
+main.academy-courses-show #reviews > div:first-child > div:first-child > div:first-child > div h3{
+  font-size: 6em;
+  font-weight: 600 !important;
+}
+
+main.academy-courses-show #reviews > div:first-child > div:first-child > div:last-child > div > div:last-child > div:last-child{
+  color: #000 !important;
+}
+
 /*=========== Left side ===========*/
 main.academy-courses-show > .container > .row > div:last-child > div{
   border: none!important;
