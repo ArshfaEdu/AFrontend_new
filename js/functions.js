@@ -88,27 +88,21 @@ function headerLinks() {
 }
 
 function Footer() {
-  try {
-    // save clone for payments methods
-    const paymentsMethods = document
-      .querySelector("footer .row > div > div:first-of-type")
-      .cloneNode(true);
+  // save clone for payments methods
+  let paymentsMethods = document.querySelector(
+    "footer .row > div > div:first-of-type"
+  );
 
-    // make style changes for the cloned
-    paymentsMethods.style.padding = "1rem 0 1.5rem";
-    console.log(paymentsMethods);
-    // add  the cloned to the page (after footer tag)
-    document.querySelector(".app-layout").appendChild(paymentsMethods);
-
-    // remove the original one
-    document.querySelector("footer .row > div > div:first-of-type").remove();
-  } catch (e) {
-    // footer is not set
-    console.log("footer is not set");
-    return false;
+  if (!paymentsMethods.children[0].classList.contains("payment-logo")) {
+    return;
   }
 
-  // footer is set
-  console.log("footer is set");
-  return true;
+  // make style changes for the cloned
+  paymentsMethods.style.padding = "1rem 0 1.5rem";
+  console.log(paymentsMethods);
+  // add  the cloned to the page (after footer tag)
+  document.querySelector(".app-layout").appendChild(paymentsMethods);
+
+  // remove the original one
+  document.querySelector("footer .row > div > div:first-of-type").remove();
 }
