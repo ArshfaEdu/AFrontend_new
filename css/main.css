@@ -113,13 +113,13 @@ header nav .navbar-collapse .navbar-nav .nav-link{
 header nav .navbar-collapse .navbar-nav .nav-link.active::after {
   content: '';
   position: absolute;
-  width: 12%;
+  width: 10%;
   height: 5px;
   border-radius: 20px;
   background-color: var(--ar-primary);
   background: var(--ar-specificGradientReverse);
-  bottom: -8px;
-  right: -2.75%;
+  bottom: 8px;
+  right: -12px;
   left: 0;
 }
 
@@ -149,7 +149,7 @@ nav#headlessui-menu-items-2{
   border: 1px solid rgba(255, 255, 255, 0.3) !important;
   background-color: #ffffffdd;
 }
-nav#headlessui-menu-items-2 #headlessui-menu-item-11{
+nav#headlessui-menu-items-2 > div:first-child{
   color: #fff !important;
     margin: 0;
     justify-content: center;
