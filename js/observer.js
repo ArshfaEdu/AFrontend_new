@@ -29,9 +29,9 @@ const observer = new MutationObserver((mutations) =>
       headerLinks();
 
       // set Footer once
-      if (!footerIsSet) {
-        footerIsSet = Footer();
-      }
+      //if (!footerIsSet) {
+      footerIsSet = Footer();
+      //}
       switch (pageRoute) {
         case "courses":
           courseInfo();
