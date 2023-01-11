@@ -26,7 +26,7 @@ const observer = new MutationObserver((mutations) =>
       // check the activatibility of header link
       headerLinks();
 
-      //Footer();
+      Footer();
 
       switch (pageRoute) {
         case "courses":
