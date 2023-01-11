@@ -101,12 +101,40 @@ function Footer() {
   let paymentsMethods = document
     .querySelector("footer .row > div > div:first-of-type")
     .cloneNode(true);
+
   // make style changes for the cloned
   paymentsMethods.style.padding = "1rem 0 1.5rem";
-  console.log(paymentsMethods);
+
   // add  the cloned to the page (after footer tag)
   document.querySelector(".app-layout").appendChild(paymentsMethods);
 
   // remove the original one
   document.querySelector("footer .row > div > div:first-of-type").remove();
+
+  //=============== Add logo ===============//
+
+  let logo = `<svg class"logo" width="154" height="73" viewBox="0 0 154 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_51_105)">
+    <path
+      d="M116.585 7.96962C113.752 3.03503 108.471 0 102.752 0H50.4033L92.6715 72.7665L154 73.0106L116.585 7.96962ZM54.9679 3.22605H102.699C107.915 3.22605 112.726 5.99579 115.313 10.4953L149.425 69.7846L93.5054 69.5617L54.9679 3.22605Z"
+      fill="url(#paint0_linear_51_105)" />
+    <path
+      d="M103.597 0H51.2478C45.5287 0 40.2478 3.04565 37.415 7.96962L0 73L61.3285 72.7559L103.597 0Z"
+      fill="white" />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_51_105" x1="50.4033" y1="36.5053" x2="154" y2="36.5053"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" />
+      <stop offset="0.43" stop-color="#4493D0" />
+      <stop offset="0.75" stop-color="#5BC3B5" />
+    </linearGradient>
+    <clipPath id="clip0_51_105">
+      <rect width="154" height="73" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+  `;
+  let footer = document.querySelector("footer");
+  footer.innerHTML = footer.innerHTML + logo.repeat(2);
 }

@@ -159,9 +159,9 @@ nav#headlessui-menu-items-2 .dropdown-divider{
 footer.footer.bg-white{
  background-color :  var(--ar-dark) !important;
  background: var(--ar-gradientDark) !important;
-
+ position: relative;
 }
-footer.footer.bg-white .payment-logo{
+.payment-logo{
   width: 48px;
   border: none !important;
 }
