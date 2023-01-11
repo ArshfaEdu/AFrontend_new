@@ -69,3 +69,20 @@ function clearOther(pagesToObserve) {
     main.classList.remove(pagesToObserve[page]);
   }
 }
+
+function headerLinks() {
+  const navLinks = document.querySelectorAll(
+    "header nav .navbar-collapse .nav-link"
+  );
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+  let path = "/" + location.pathname.split("/")[0];
+  if (path === "/") {
+    navLinks.item(0).classList.add("active");
+  } else if (path === "/university" || path === "/categories") {
+    navLinks.item(1).classList.add("active");
+  } else if (location.pathname === "/account/courses") {
+    navLinks.item(2).classList.add("active");
+  }
+}

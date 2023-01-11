@@ -23,6 +23,9 @@ const observer = new MutationObserver((mutations) =>
       // add style to main tag based on page
       addStyle(pagesToObserve, pageRoute);
 
+      // check the activatibility of header link
+      headerLinks();
+
       switch (pageRoute) {
         case "courses":
           courseInfo();
