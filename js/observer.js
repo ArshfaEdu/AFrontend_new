@@ -1,6 +1,7 @@
 let splitted_url = location.href.split("#")[0];
 splitted_url = splitted_url.split("/");
 let page = splitted_url[splitted_url.length - 2];
+
 const pagesToObserve = {
   courses: "academy-courses-show",
   contents: "academy-contents-show",

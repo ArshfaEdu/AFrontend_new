@@ -1,0 +1,86 @@
+:root{
+  --ar-primary: #5BC3B5; 
+  --ar-secondary: #4493D0; 
+  --ar-accent: #756DB2; 
+  --ar-dark: #052237; 
+  --ar-light: #F5F5F5;
+  --ar-gradient: linear-gradient(180deg, var(--ar-primary) 0%, var(--ar-secondary) 100%);
+
+  --ar-specificGradient: linear-gradient(270deg, var(--ar-primary) 2.19%, var(--ar-secondary) 118.45%);
+
+  --ar-specificGradientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
+}
+.container{
+  max-width: 1140px;
+  margin: 2rem auto;
+}
+.universities-page{
+  display: flex;
+  flex-direction: column;
+}
+.universities-page h2{
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 3.5em;
+  color: var(--ar-primary);
+  background: var(--ar-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.universities-page .universities{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2.5rem;
+  row-gap: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .universities-page .universities{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .universities-page .universities{
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+.universities-page .universities .university-card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  text-decoration: none;
+}
+
+.universities-page .universities .university-card > div{
+  background-color: #FFFFFF;
+  border: 2px solid var(--ar-primary);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.universities-page .universities .university-card .logo{
+  padding: 3rem;
+  box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.universities-page .universities .university-card .logo img{
+  height: auto;
+  width: 160px;
+  text-align: center;
+}
+
+.universities-page .universities .university-card .content{
+  text-align: center;
+  color: var(--ar-primary);
+  font-size: 1.25em;
+  padding: 8px 0;
+}
+.universities-page .universities .university-card .content .name{
+  margin: 0;
+}
