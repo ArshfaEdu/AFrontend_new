@@ -157,6 +157,9 @@ nav#headlessui-menu-items-2 > div:first-child{
     background-color: var(--ar-primary);
     background: var(--ar-specificGradient);
 }
+nav#headlessui-menu-items-2 > div:first-child a{
+  color: #fff !important;
+}
 nav#headlessui-menu-items-2 .dropdown-divider{
   background-color: var(--ar-primary);
 }
