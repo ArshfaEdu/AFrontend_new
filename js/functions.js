@@ -104,6 +104,7 @@ function Footer() {
     document.querySelector("footer .row > div > div:first-of-type").remove();
   } catch (e) {
     // footer is not set
+    console.log("footer is not set");
     return false;
   }
 
