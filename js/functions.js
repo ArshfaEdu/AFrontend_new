@@ -96,7 +96,7 @@ function Footer() {
 
     // make style changes for the cloned
     paymentsMethods.style.padding = "1rem 0 1.5rem";
-
+    console.log(paymentsMethods);
     // add  the cloned to the page (after footer tag)
     document.querySelector(".app-layout").appendChild(paymentsMethods);
 
