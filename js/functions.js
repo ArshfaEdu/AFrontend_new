@@ -98,15 +98,16 @@ function Footer() {
     document.querySelector("footer .row > div > div:first-of-type").remove();
 
     // make style changes for the cloned
-    payments.style.padding = "1rem 0 1.5rem";
+    paymentsMethods.style.padding = "1rem 0 1.5rem";
 
     // add  the cloned to the page (after footer tag)
-    document.querySelector(".app-layout").appendChild(payments);
+    document.querySelector(".app-layout").appendChild(paymentsMethods);
   } catch (e) {
     // footer is not set
     return false;
   }
 
   // footer is set
+  console.log("footer is set");
   return true;
 }
