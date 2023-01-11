@@ -88,15 +88,19 @@ function headerLinks() {
 }
 
 function Footer() {
+  // check if the the div is the payments div
+  if (
+    !document
+      .querySelector("footer .row > div > div:first-of-type")
+      .children[0].classList.contains("payment-logo")
+  ) {
+    return;
+  }
+
   // save clone for payments methods
   let paymentsMethods = document.querySelector(
     "footer .row > div > div:first-of-type"
   );
-
-  if (!paymentsMethods.children[0].classList.contains("payment-logo")) {
-    return;
-  }
-
   // make style changes for the cloned
   paymentsMethods.style.padding = "1rem 0 1.5rem";
   console.log(paymentsMethods);
