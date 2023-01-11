@@ -113,12 +113,12 @@ header nav .navbar-collapse .navbar-nav .nav-link{
 header nav .navbar-collapse .navbar-nav .nav-link.active::after {
   content: '';
   position: absolute;
-  width: 10%;
+  width: 12%;
   height: 5px;
   border-radius: 20px;
   background-color: var(--ar-primary);
   background: var(--ar-specificGradientReverse);
-  bottom: 8px;
+  bottom: -8px;
   right: -12px;
   left: 0;
 }
