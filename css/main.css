@@ -162,33 +162,32 @@ footer.footer.bg-white{
  position: relative;
 }
 footer svg.logo{
-  opacity: .2;
+  position: absolute;
+  width: 112px;
 }
 footer svg:first-of-type {
-  top: 17%;
-  right: -5%;
-  transform: rotate(90deg);
-  width: 128px;
+  top: 3%;
+  right: 3%;
+  transform: rotate(180deg);
 }
 footer svg:last-of-type {
-  bottom: 18%;
-  left: -6%;
-  transform: rotate(-45deg);
+  bottom: 3%;
+  left: 3%;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   footer svg.logo{
-    position: absolute;
-    width: 112px;
+    opacity: .2;
   }
   footer svg:first-of-type {
-    top: 3%;
-    right: 3%;
-    transform: rotate(180deg);
+    top: 17%;
+    right: -5%;
+    transform: rotate(90deg);
+    width: 128px;
   }
   footer svg:last-of-type {
-    bottom: 3%;
-    left: 3%;
+    bottom: 18%;
+    left: -6%;
+    transform: rotate(-45deg);
   }
 }
 
