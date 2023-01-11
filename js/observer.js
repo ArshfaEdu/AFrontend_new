@@ -8,6 +8,8 @@ const pagesToObserve = {
   userCourses: "academy-user-account-courses",
 };
 
+let footerIsSet = false;
+
 const observer = new MutationObserver((mutations) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
@@ -36,6 +38,9 @@ const observer = new MutationObserver((mutations) =>
         default:
           clearOther(pagesToObserve);
           break;
+      }
+      if (!footerIsSet) {
+        footerIsSet = Footer();
       }
     } catch (e) {
       return;

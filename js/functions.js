@@ -86,3 +86,21 @@ function headerLinks() {
     navLinks.item(2).classList.add("active");
   }
 }
+
+function Footer() {
+  // save clone for payments methods
+  const paymentsMethods = document
+    .querySelector("footer .row > div > div:first-of-type")
+    .cloneNode(true);
+
+  // remove the original one
+  document.querySelector("footer .row > div > div:first-of-type").remove();
+
+  // make style changes for the cloned
+  payments.style.padding = "1rem 0 1.5rem";
+
+  // add  the cloned to the page (after footer tag)
+  document.querySelector(".app-layout").appendChild(payments);
+
+  return true;
+}
