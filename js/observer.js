@@ -8,8 +8,6 @@ const pagesToObserve = {
   userCourses: "academy-user-account-courses",
 };
 
-let footerIsSet = false;
-
 const observer = new MutationObserver((mutations) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
@@ -28,10 +26,8 @@ const observer = new MutationObserver((mutations) =>
       // check the activatibility of header link
       headerLinks();
 
-      // set Footer once
-      //if (!footerIsSet) {
-      footerIsSet = Footer();
-      //}
+      //Footer();
+
       switch (pageRoute) {
         case "courses":
           courseInfo();

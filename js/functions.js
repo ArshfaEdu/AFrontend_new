@@ -98,9 +98,9 @@ function Footer() {
   }
 
   // save clone for payments methods
-  let paymentsMethods = document.querySelector(
-    "footer .row > div > div:first-of-type"
-  );
+  let paymentsMethods = document
+    .querySelector("footer .row > div > div:first-of-type")
+    .cloneNode(true);
   // make style changes for the cloned
   paymentsMethods.style.padding = "1rem 0 1.5rem";
   console.log(paymentsMethods);
