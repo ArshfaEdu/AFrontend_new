@@ -141,6 +141,26 @@ header .navbar-light .navbar-nav .nav-link {
     border-radius: 15%;
 }
 
+nav#headlessui-menu-items-2{
+  border-radius: 20px;
+  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: #ffffffdd;
+}
+nav#headlessui-menu-items-2 #headlessui-menu-item-11{
+  color: #fff !important;
+    margin: 0;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--ar-primary);
+    background: var(--ar-specificGradient);
+}
+nav#headlessui-menu-items-2 .dropdown-divider{
+  background-color: var(--ar-primary);
+}
+
 footer.footer.bg-white{
  background-color :  var(--ar-dark) !important;
 
