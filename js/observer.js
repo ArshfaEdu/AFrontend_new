@@ -39,6 +39,8 @@ const observer = new MutationObserver((mutations) =>
           clearOther(pagesToObserve);
           break;
       }
+
+      // set Footer once
       if (!footerIsSet) {
         footerIsSet = Footer();
       }
