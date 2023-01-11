@@ -9,6 +9,8 @@
   --ar-specificGradient: linear-gradient(270deg, var(--ar-primary) 2.19%, var(--ar-secondary) 118.45%);
 
   --ar-specificGradientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
+
+  --ar-gradientDark:linear-gradient(91deg, var(--ar-dark) 0%, var(--ar-secondary) 162.07%);
 }
 
 @font-face {
@@ -153,8 +155,14 @@ nav#headlessui-menu-items-2 .dropdown-divider{
   background-color: var(--ar-primary);
 }
 
+/* ===== Footer =====*/
 footer.footer.bg-white{
  background-color :  var(--ar-dark) !important;
+ background: var(--ar-gradientDark) !important;
 
+}
+footer.footer.bg-white .payment-logo{
+  width: 48px;
+  border: none !important;
 }
 footer *{color:#ffffff !important}

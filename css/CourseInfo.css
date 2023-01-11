@@ -196,7 +196,7 @@ main.academy-courses-show #reviews > div:first-child > div:first-child > div:las
   background-color: var(--ar-primary) !important;
   background: var(--ar-specificGradientReverse) !important;
 }
-main.academy-courses-show #reviews > div:last-child{
+main.academy-courses-show #reviews>div:nth-child(2){
   border: none !important;
   box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%)!important;
   border-radius: 30px !important;
