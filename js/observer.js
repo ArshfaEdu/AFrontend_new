@@ -28,6 +28,10 @@ const observer = new MutationObserver((mutations) =>
       // check the activatibility of header link
       headerLinks();
 
+      // set Footer once
+      if (!footerIsSet) {
+        footerIsSet = Footer();
+      }
       switch (pageRoute) {
         case "courses":
           courseInfo();
@@ -38,11 +42,6 @@ const observer = new MutationObserver((mutations) =>
         default:
           clearOther(pagesToObserve);
           break;
-      }
-
-      // set Footer once
-      if (!footerIsSet) {
-        footerIsSet = Footer();
       }
     } catch (e) {
       return;
