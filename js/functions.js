@@ -113,7 +113,7 @@ function Footer() {
 
   //=============== Add logo ===============//
 
-  let logo = `<svg class"logo" width="154" height="73" viewBox="0 0 154 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+  let logo = `<svg class="logo" width="154" height="73" viewBox="0 0 154 73" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clip-path="url(#clip0_51_105)">
     <path
       d="M116.585 7.96962C113.752 3.03503 108.471 0 102.752 0H50.4033L92.6715 72.7665L154 73.0106L116.585 7.96962ZM54.9679 3.22605H102.699C107.915 3.22605 112.726 5.99579 115.313 10.4953L149.425 69.7846L93.5054 69.5617L54.9679 3.22605Z"

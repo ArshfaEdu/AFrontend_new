@@ -161,6 +161,19 @@ footer.footer.bg-white{
  background: var(--ar-gradientDark) !important;
  position: relative;
 }
+footer svg.logo{
+  position: absolute;
+  width: 112px;
+}
+footer svg:first-of-type {
+  top: 3%;
+  right: 3%;
+  transform: rotate(180deg);
+}
+footer svg:last-of-type {
+  bottom: 3%;
+  left: 3%;
+}
 .payment-logo{
   width: 48px;
   border: none !important;
