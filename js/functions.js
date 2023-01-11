@@ -77,7 +77,7 @@ function headerLinks() {
   navLinks.forEach((link) => {
     link.classList.remove("active");
   });
-  let path = "/" + location.pathname.split("/")[0];
+  let path = "/" + location.pathname.split("/")[1];
   if (path === "/") {
     navLinks.item(0).classList.add("active");
   } else if (path === "/university" || path === "/categories") {
