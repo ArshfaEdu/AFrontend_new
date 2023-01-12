@@ -35,6 +35,7 @@ const observer = new MutationObserver((mutations) =>
 
       Footer();
     } catch (e) {
+      console.log(e);
       return;
     }
   })
