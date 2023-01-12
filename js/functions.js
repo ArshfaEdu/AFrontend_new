@@ -49,6 +49,31 @@ function courseInfo() {
 
 function courseContent() {}
 
+function category() {
+  // get the title to replace
+  const title = document.querySelector(
+    "main .container > div:first-of-type h1"
+  );
+
+  // create img for the logo
+  const logo = document.createElement("img");
+
+  // get the acronym (short name) of the university
+  let currentUniversity = location.pathname.split("/").pop();
+
+  // set the path of the logo image using the acronym
+  logo.setAttribute(
+    "src",
+    `https://cdn.jsdelivr.net/gh/AbdulazizYas/AFrontend/dist/images/${currentUniversity}.svg`
+  );
+
+  // set the alt
+  logo.setAttribute("alt", currentUniversity);
+
+  // replace the title with the new created image
+  title.parentElement.replaceChild(logo, title);
+}
+
 function addStyle(pagesToObserve, pageName) {
   const main = document.querySelector("main");
   if (pagesToObserve[pageName] === undefined) {
@@ -145,6 +170,8 @@ function getPageName(path) {
     return path.includes("courses") ? "userCourses" : "account";
   } else if (path.includes("courses")) {
     return path.includes("contents") ? "contents" : "courses";
+  } else if (path.includes("categories")) {
+    return "category";
   } else {
     return "unknown";
   }

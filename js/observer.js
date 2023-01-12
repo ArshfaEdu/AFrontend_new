@@ -3,6 +3,7 @@ const pagesToObserve = {
   contents: "academy-contents-show",
   account: "academy-user-account",
   userCourses: "academy-user-account-courses",
+  category: "academy-categories-show",
 };
 
 const observer = new MutationObserver((mutations) =>
@@ -34,6 +35,9 @@ const observer = new MutationObserver((mutations) =>
           break;
         case "contents":
           courseContent();
+          break;
+        case "category":
+          category();
           break;
       }
     } catch (e) {
