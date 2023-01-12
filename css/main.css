@@ -63,6 +63,9 @@ body{
   border-color: var(--ar-gradient);
 }
 
+.app-layout{
+  overflow-x: hidden;
+}
 header.bg-white { 
   /* background-color: var(--ar-light) !important; */
   border-bottom: none !important;
