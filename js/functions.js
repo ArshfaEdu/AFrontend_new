@@ -141,12 +141,10 @@ function Footer() {
 }
 
 function getPageName(path) {
-  if (path.includes("courses")) {
-    console.log("courses page");
-    return path.includes("contents") ? "contents" : "courses";
-  } else if (path.includes("account")) {
-    console.log("account page");
+  if (path.includes("account")) {
     return path.includes("courses") ? "userCourses" : "account";
+  } else if (path.includes("courses")) {
+    return path.includes("contents") ? "contents" : "courses";
   } else {
     return "unknown";
   }
