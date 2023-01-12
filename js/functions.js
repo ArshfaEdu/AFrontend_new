@@ -50,45 +50,22 @@ function courseInfo() {
 function courseContent() {}
 
 function addStyle(pagesToObserve, pageRoute) {
-  if (pagesToObserve[pageRoute[0]] === undefined) {
+  const main = document.querySelector("main");
+  if (pagesToObserve[pageRoute] === undefined) {
     return;
   }
-
-  const main = document.querySelector("main");
-
-  let className = pagesToObserve[pageRoute[0]].class;
-  let i = 0;
-  while (i < pageRoute.length) {
-    let currentKeyword = pagesToObserve[pageRoute[i]].keywords;
-    for (let j = 0; j < currentKeyword.length; j++) {
-      if (pageRoute.includes(currentKeyword[j].keyword)) {
-        className = currentKeyword[j].class;
-        break;
-      }
-    }
-    i++;
-  }
-
-  if (main.classList.contains(className)) {
+  if (main.classList.contains(pagesToObserve[pageRoute])) {
     return;
   }
 
   main.setAttribute("class", "");
-  main.classList.add(className);
+  main.classList.add(pagesToObserve[pageRoute]);
 }
 
 function clearOther(pagesToObserve) {
   const main = document.querySelector("main");
-  if (main.classList.length === 0) {
-    return;
-  }
   for (const page in pagesToObserve) {
-    main.classList.remove(pagesToObserve[page].class);
-    let keywords = pagesToObserve[page].keywords;
-
-    for (let i = 0; i < keywords.length; i++) {
-      main.classList.remove(keywords[i].class);
-    }
+    main.classList.remove(pagesToObserve[page]);
   }
 }
 
