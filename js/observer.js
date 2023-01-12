@@ -1,10 +1,7 @@
-let splitted_url = location.href.split("#")[0];
-splitted_url = splitted_url.split("/");
-let page = splitted_url[splitted_url.length - 2];
-
 const pagesToObserve = {
   courses: "academy-courses-show",
   contents: "academy-contents-show",
+  account: "academy-user-account",
   userCourses: "academy-user-account-courses",
 };
 
@@ -15,18 +12,16 @@ const observer = new MutationObserver((mutations) =>
     const node = mutation.addedNodes[0];
     if (!node || !node.querySelector) return;
 
-    let url = location.href.split("#")[0];
-    url = url.split("/");
-    let pageRoute = url[url.length - 2];
+    let pageName = getPageName(location.pathname);
 
     try {
       // add style to main tag based on page
-      addStyle(pagesToObserve, pageRoute);
+      addStyle(pagesToObserve, pageName);
 
       // check the activatibility of header link
       headerLinks();
 
-      switch (pageRoute) {
+      switch (pageName) {
         case "courses":
           courseInfo();
           break;

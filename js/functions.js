@@ -49,17 +49,17 @@ function courseInfo() {
 
 function courseContent() {}
 
-function addStyle(pagesToObserve, pageRoute) {
+function addStyle(pagesToObserve, pageName) {
   const main = document.querySelector("main");
-  if (pagesToObserve[pageRoute] === undefined) {
+  if (pagesToObserve[pageName] === undefined) {
     return;
   }
-  if (main.classList.contains(pagesToObserve[pageRoute])) {
+  if (main.classList.contains(pagesToObserve[pageName])) {
     return;
   }
 
   main.setAttribute("class", "");
-  main.classList.add(pagesToObserve[pageRoute]);
+  main.classList.add(pagesToObserve[pageName]);
 }
 
 function clearOther(pagesToObserve) {
@@ -138,4 +138,14 @@ function Footer() {
   `;
   let footer = document.querySelector("footer");
   footer.innerHTML = footer.innerHTML + logo.repeat(2);
+}
+
+function getPageName(path) {
+  if (path.includes("courses")) {
+    return path.includes("contents") ? "contents" : "courses";
+  } else if (path.includes("account")) {
+    return path.includes("courses") ? "userCourses" : "account";
+  } else {
+    return "unknown";
+  }
 }
