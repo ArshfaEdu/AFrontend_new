@@ -90,12 +90,13 @@ header nav > div > .navbar-nav > .nav-item:not(:last-child) a.nav-link{
   padding: 4px !important;
 }
 
-header nav > div > .navbar-nav > .nav-item:last-child a.nav-link::after{
+header.logged-in nav > div > .navbar-nav > .nav-item:last-child a.nav-link::after{
   content: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWljb24iDQogIHN0eWxlPSJ3aWR0aDogMWVtOyBoZWlnaHQ6IDFlbTt2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO2ZpbGw6ICNmZmY7b3ZlcmZsb3c6IGhpZGRlbjsiDQogIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGgNCiAgICBkPSJNMjk1LjIgNDIxLjRjLTE1IDE1LTE1IDM5LjYgMCA1NC42bDE5MS40IDE5MC44YzE0LjYgMTQuNiAzOC4yIDE1IDUzLjIgMS4ybDE4OC42LTE4OGM3LjYtNy42IDExLjQtMTcuNCAxMS40LTI3LjQgMC05LjgtMy44LTE5LjgtMTEuMi0yNy4yLTE1LTE1LTM5LjQtMTUuMi01NC42IDBsLTE2MiAxNTkuNi0xNjIuMi0xNjMuOGMtMTUtMTUtMzkuNC0xNS01NC42IDAuMnoiIC8+DQogIDxwYXRoDQogICAgZD0iTTk2IDUxMmMwIDIyOS44IDE4Ni4yIDQxNiA0MTYgNDE2czQxNi0xODYuMiA0MTYtNDE2Uzc0MS44IDk2IDUxMiA5NiA5NiAyODIuMiA5NiA1MTJ6IG02NjQuOC0yNDguOEM4MjcuNCAzMjkuNiA4NjQgNDE4IDg2NCA1MTJzLTM2LjYgMTgyLjQtMTAzLjIgMjQ4LjhDNjk0LjQgODI3LjQgNjA2IDg2NCA1MTIgODY0cy0xODIuNC0zNi42LTI0OC44LTEwMy4yQzE5Ni42IDY5NC40IDE2MCA2MDYgMTYwIDUxMnMzNi42LTE4Mi40IDEwMy4yLTI0OC44QzMyOS42IDE5Ni42IDQxOCAxNjAgNTEyIDE2MHMxODIuNCAzNi42IDI0OC44IDEwMy4yeiIgLz4NCjwvc3ZnPg==);
   width: 1.15em;
   height: 1.15em;
   position: relative;
   top: .15em;
+  margin-top: initial !important;
   margin-right: .5rem;
 }
 header nav .navbar-collapse .navbar-nav .nav-link{

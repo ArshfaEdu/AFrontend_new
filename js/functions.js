@@ -165,23 +165,31 @@ function Footer() {
   footer.innerHTML = footer.innerHTML + logo.repeat(2);
 }
 
-function loggedOut() {
+function auth() {
   let navLinks = document.querySelectorAll(
     "header nav .navbar-collapse .navbar-nav .nav-item"
   );
 
   if (document.querySelector("body > .popper-container")) {
+    // logged in
     navLinks.forEach((el) => {
       if (el.children[0].getAttribute("href").includes("account/courses")) {
         el.style.display = "block";
       }
     });
+
+    document.querySelector(".app-layout > header").classList.add("logged-in");
   } else {
     navLinks.forEach((el) => {
+      // logged out
       if (el.children[0].getAttribute("href").includes("account/courses")) {
         el.style.display = "none";
       }
     });
+
+    document
+      .querySelector(".app-layout > header")
+      .classList.remove("logged-in");
   }
 }
 function getPageName(path) {
