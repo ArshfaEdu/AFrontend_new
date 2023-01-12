@@ -160,6 +160,7 @@ footer.footer.bg-white{
  background-color :  var(--ar-dark) !important;
  background: var(--ar-gradientDark) !important;
  position: relative;
+ overflow: hidden;
 }
 footer svg.logo{
   position: absolute;

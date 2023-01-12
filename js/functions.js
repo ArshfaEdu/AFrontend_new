@@ -103,6 +103,8 @@ function Footer() {
 
   // make style changes for the cloned
   paymentsMethods.style.padding = "1rem 0 1.5rem";
+  paymentsMethods.style.flexWrap = "wrap";
+  paymentsMethods.style.justifyContent = "center";
 
   // add  the cloned to the page (after footer tag)
   document.querySelector(".app-layout").appendChild(paymentsMethods);
