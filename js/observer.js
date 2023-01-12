@@ -15,9 +15,6 @@ const observer = new MutationObserver((mutations) =>
     let pageName = getPageName(location.pathname);
 
     try {
-      // add style to main tag based on page
-      addStyle(pagesToObserve, pageName);
-
       // check the activatibility of header link
       headerLinks();
 
@@ -32,6 +29,9 @@ const observer = new MutationObserver((mutations) =>
           clearOther(pagesToObserve);
           break;
       }
+
+      // add style to main tag based on page
+      addStyle(pagesToObserve, pageName);
 
       Footer();
     } catch (e) {
