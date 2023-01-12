@@ -35,16 +35,12 @@ const observer = new MutationObserver((mutations) =>
       // check the activatibility of header link
       headerLinks();
 
-      switch (pageRoute) {
-        case "courses":
-          courseInfo();
-          break;
-        case "contents":
-          courseContent();
-          break;
-        default:
-          clearOther(pagesToObserve);
-          break;
+      if (pageRoute.includes("courses") && !pageRoute.includes("contents")) {
+        courseInfo();
+      } else if (pageRoute.includes("contents")) {
+        courseContent();
+      } else {
+        clearOther(pagesToObserve);
       }
 
       Footer();

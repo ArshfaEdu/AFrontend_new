@@ -79,8 +79,16 @@ function addStyle(pagesToObserve, pageRoute) {
 
 function clearOther(pagesToObserve) {
   const main = document.querySelector("main");
+  if (main.classList.length === 0) {
+    return;
+  }
   for (const page in pagesToObserve) {
-    main.classList.remove(pagesToObserve[page]);
+    main.classList.remove(pagesToObserve[page].class);
+    let keywords = pagesToObserve[page].keywords;
+
+    for (let i = 0; i < keywords.length; i++) {
+      main.classList.remove(keywords[i].class);
+    }
   }
 }
 
