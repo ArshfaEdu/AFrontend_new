@@ -23,15 +23,17 @@ const observer = new MutationObserver((mutations) =>
 
       Footer();
 
+      // clear the styles of main, if the page is unknown
+      if (pageName !== "unknown") {
+        clearOther(pagesToObserve);
+      }
+
       switch (pageName) {
         case "courses":
           courseInfo();
           break;
         case "contents":
           courseContent();
-          break;
-        default:
-          clearOther(pagesToObserve);
           break;
       }
     } catch (e) {
