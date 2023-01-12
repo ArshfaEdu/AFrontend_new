@@ -144,6 +144,7 @@ function getPageName(path) {
   if (path.includes("courses")) {
     return path.includes("contents") ? "contents" : "courses";
   } else if (path.includes("account")) {
+    console.log("yes");
     return path.includes("courses") ? "userCourses" : "account";
   } else {
     return "unknown";
