@@ -50,17 +50,31 @@ function courseInfo() {
 function courseContent() {}
 
 function addStyle(pagesToObserve, pageRoute) {
-  const main = document.querySelector("main");
-
-  if (pagesToObserve[pageRoute] === undefined) {
+  if (pagesToObserve[pageRoute[0]] === undefined) {
     return;
   }
-  if (main.classList.contains(pagesToObserve[pageRoute])) {
+
+  const main = document.querySelector("main");
+
+  let className = pagesToObserve[pageRoute[0]].class;
+  let i = 0;
+  while (i < pageRoute.length) {
+    let currentKeyword = pagesToObserve[pageRoute[i]].keywords;
+    for (let j = 0; j < currentKeyword.length; j++) {
+      if (pageRoute.includes(currentKeyword[j].keyword)) {
+        className = currentKeyword[j].class;
+        break;
+      }
+    }
+    i++;
+  }
+
+  if (main.classList.contains(className)) {
     return;
   }
 
   main.setAttribute("class", "");
-  main.classList.add(pagesToObserve[pageRoute]);
+  main.classList.add(className);
 }
 
 function clearOther(pagesToObserve) {
