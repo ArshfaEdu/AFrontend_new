@@ -165,6 +165,20 @@ function Footer() {
   footer.innerHTML = footer.innerHTML + logo.repeat(2);
 }
 
+function loggedOut() {
+  if (document.querySelector("body > .popper-container")) {
+    return;
+  }
+  let navLinks = document.querySelectorAll(
+    "header nav .navbar-collapse .navbar-nav .nav-item"
+  );
+
+  navLinks.forEach((el) => {
+    if (el.children[0].getAttribute("href").includes("account/courses")) {
+      el.remove();
+    }
+  });
+}
 function getPageName(path) {
   if (path.includes("account")) {
     return path.includes("courses") ? "userCourses" : "account";

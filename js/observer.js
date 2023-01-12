@@ -24,6 +24,8 @@ const observer = new MutationObserver((mutations) =>
 
       Footer();
 
+      loggedOut();
+
       // clear the styles of main, if the page is unknown
       if (pageName === "unknown") {
         clearOther(pagesToObserve);
