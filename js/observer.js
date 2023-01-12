@@ -18,6 +18,11 @@ const observer = new MutationObserver((mutations) =>
       // check the activatibility of header link
       headerLinks();
 
+      // add style to main tag based on page
+      addStyle(pagesToObserve, pageName);
+
+      Footer();
+
       switch (pageName) {
         case "courses":
           courseInfo();
@@ -29,11 +34,6 @@ const observer = new MutationObserver((mutations) =>
           clearOther(pagesToObserve);
           break;
       }
-
-      // add style to main tag based on page
-      addStyle(pagesToObserve, pageName);
-
-      Footer();
     } catch (e) {
       console.log(e);
       return;
