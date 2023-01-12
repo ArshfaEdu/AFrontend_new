@@ -142,9 +142,10 @@ function Footer() {
 
 function getPageName(path) {
   if (path.includes("courses")) {
+    console.log("courses page");
     return path.includes("contents") ? "contents" : "courses";
   } else if (path.includes("account")) {
-    console.log("yes");
+    console.log("account page");
     return path.includes("courses") ? "userCourses" : "account";
   } else {
     return "unknown";
