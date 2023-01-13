@@ -28,6 +28,7 @@ main.academy-contents-show > div > header > div > div > div h3{
   overflow: visible;
   padding-right: 6%;
   font-weight: 600;
+  white-space: nowrap;
 }
 main.academy-contents-show > div > header > div > div > div h3::before{
   content: '';
