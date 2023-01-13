@@ -78,24 +78,24 @@ function courseContent() {
   let childs = contentSection.children;
   let childs_len = childs.length;
 
-  for (let i = 0; i < childs_len; i++) {
-    if (childs[i].querySelector(".plyr")) {
-      videoPlayer = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
-    } else if (childs[i].querySelector("h2")) {
-      title = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
-    } else if (childs[i].querySelector("h2")) {
-      details = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
-    } else if (childs[i].querySelector(".alert-info")) {
-      certificate = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
-    }
-  }
+  // for (let i = 0; i < childs_len; i++) {
+  //   if (childs[i].querySelector(".plyr")) {
+  //     videoPlayer = childs[i].cloneNode(true).outerHTML;
+  //     childs[i].remove();
+  //   } else if (childs[i].querySelector("h2")) {
+  //     title = childs[i].cloneNode(true).outerHTML;
+  //     childs[i].remove();
+  //   } else if (childs[i].querySelector("h2")) {
+  //     details = childs[i].cloneNode(true).outerHTML;
+  //     childs[i].remove();
+  //   } else if (childs[i].querySelector(".alert-info")) {
+  //     certificate = childs[i].cloneNode(true).outerHTML;
+  //     childs[i].remove();
+  //   }
+  // }
 
-  contentSection.innerHTML =
-    videoPlayer + title + certificate + details + contentSection.innerHTML;
+  // contentSection.innerHTML =
+  //   videoPlayer + title + certificate + details + contentSection.innerHTML;
 }
 
 function category() {
