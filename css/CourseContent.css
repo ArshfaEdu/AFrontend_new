@@ -3,7 +3,6 @@
 main.academy-contents-show > div{
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 3fr 1fr;
 }
 
 /* Header style */
@@ -60,14 +59,11 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
   color: var(--ar-light);
 
 }
-/* main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div h2{
-  grid-row: 2;
-}
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section{
-  grid-row: 1;
-} */
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="1"]{
   order: 1;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="1"] .plyr{
+  border-radius: 0 !important;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="2"]{
   order: 2;
@@ -84,12 +80,7 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section .plyr{
   border-radius: 0 !important;
 }
-/* main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .details-section{
-  grid-row: 3;
-}
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .navigation{
-  grid-row: 5;
-} */
+
 main.academy-contents-show > div > section:nth-of-type(1) .alert.alert-warning{
   background-color: transparent;
 }
@@ -98,18 +89,18 @@ main.academy-contents-show > div > section:nth-of-type(1) .alert.alert-warning{
 
 main.academy-contents-show > div > div.sidebar-collapse{
   grid-column: 1/2;
-  grid-row: 1;
+  grid-row: 1/10;
   position: sticky;
   top: 110px;
   border-left: 1px solid #f1f1f1;
-  height: 100vh;
+  height: 100%;
 }
 
 /*-------- Start of styling Sidebar section ----------*/
 main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse{
   border: none;
   box-shadow: none !important;
-  height: 100vh !important;
+  height: 100% !important;
 }
 
 main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll{
