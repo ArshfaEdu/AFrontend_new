@@ -77,23 +77,26 @@ function courseContent() {
 
   let childs = contentSection.children;
   let childs_len = childs.length;
+  let removed_indexes = [];
 
   for (let i = 0; i < childs_len; i++) {
     if (childs[i].querySelector(".plyr")) {
       videoPlayer = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
+      removed_indexes.push(i);
     } else if (childs[i].querySelector("h2")) {
       title = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
+      removed_indexes.push(i);
     } else if (childs[i].querySelector("h2")) {
       details = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
+      removed_indexes.push(i);
     } else if (childs[i].querySelector(".alert-info")) {
       certificate = childs[i].cloneNode(true).outerHTML;
-      childs[i].remove();
+      removed_indexes.push(i);
     }
   }
 
+  removed_indexes.forEach((index) => childs[index].remove());
+  console.log(contentSection.innerHTML);
   contentSection.innerHTML =
     videoPlayer + title + certificate + details + contentSection.innerHTML;
 }
