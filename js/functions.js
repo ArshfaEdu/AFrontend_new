@@ -77,7 +77,8 @@ function courseContent() {
   let certificate = "";
   let details = "";
 
-  contentSection.children.forEach((content) => {
+  let childs = [].slice.call(contentSection.children);
+  childs.forEach((content) => {
     if (content.querySelector(".plyr")) {
       videoPlayer = content.cloneNode(true).outerHTML;
       content.remove();
