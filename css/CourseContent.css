@@ -153,7 +153,7 @@ main.academy-contents-show>div>section:nth-of-type(1) .card h6{
   color: var(--ar-secondary);
   font-weight: 600;
 }
-main.academy-contents-show>div>section:nth-of-type(1) a[download]{
+main.academy-contents-show>div>section a[download]{
   background-color: var(--ar-primary);
   color: #fff !important;
   display: inline-block !important;
@@ -161,7 +161,10 @@ main.academy-contents-show>div>section:nth-of-type(1) a[download]{
   border-radius: 20px;
   background: var(--ar-gradient);
 }
-main.academy-contents-show>div>section:nth-of-type(1) a[download] span{
+main.academy-contents-show>div>section a[download] svg{
+  stroke: #fff;
+}
+main.academy-contents-show>div>section a[download] span{
   color: #fff !important;
 }
 /*-------- End of styling Video player section ----------*/
