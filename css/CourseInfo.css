@@ -76,7 +76,7 @@ main.academy-courses-show > .container > .row > div:first-child > div:not(:first
 
 /* ----- Overview -----*/
 main.academy-courses-show #overview h2, main.academy-courses-show #overview h3{
-  background: linear-gradient(270deg, #4AA5C6 -9.98%, #58BFB8 23.02%);
+  background: var(--ar-specificGradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--ar-primary) !important;
@@ -141,12 +141,12 @@ main.academy-courses-show #instructors>div:hover::before{
 }
 main.academy-courses-show #instructors>div::before{
   position: absolute;
-    content: "";
-    inset: 0;
-    z-index: 0;
-    opacity: 1;
-    transition: opacity .2s ease-in-out;
-    background-color: #fff;
+  content: "";
+  inset: 0;
+  z-index: 0;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  background-color: #fff;
 }
 main.academy-courses-show #instructors > div > div:first-child{
   padding: 0 !important;

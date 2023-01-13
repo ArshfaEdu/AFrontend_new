@@ -48,7 +48,6 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div{
   display: grid;
-  grid-template-rows: 1fr repeat(5, min-content);
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: 100% !important;
@@ -61,18 +60,28 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="1"]{
   order: 1;
+  margin-bottom: 0 !important;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="1"] .plyr{
   border-radius: 0 !important;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="2"]{
   order: 2;
+  font-size: 2.5em !important;
+  font-weight: 600;
+  color: var(--ar-primary) !important;
+  margin-bottom: 3rem;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="3"]{
   order: 3;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="4"]{
   order: 4;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="4"] h2{
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--ar-dark) !important;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"]{
   order: 5;
@@ -83,6 +92,28 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 
 main.academy-contents-show > div > section:nth-of-type(1) .alert.alert-warning{
   background-color: transparent;
+}
+
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > :not([data-order="1"]):not(.alert-info){
+  padding: 0 2rem !important;
+}
+main.academy-contents-show > div > section .add-comment img{
+  width: 48px;
+  height: auto;
+  box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
+}
+main.academy-contents-show > div > section .add-comment label{
+  font-size: 1.25em ;
+}
+main.academy-contents-show > div > section .add-comment textarea{
+  min-height: 8rem;
+  border-radius: 30px;
+  border: 2px solid var(--ar-primary);
+}
+main.academy-contents-show > div > section .add-comment button.btn{
+  font-size: 1.5em;
+  padding: 0 1.5em;
+  background: var(--ar-specificGradient);
 }
 
 /*-------- End of styling Video player section ----------*/
