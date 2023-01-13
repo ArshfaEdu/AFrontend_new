@@ -98,6 +98,7 @@ main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll > div{
 main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapter-item{
   background-color: #fff;
   min-height: initial;
+  border-right: 4px solid transparent;
   border-top: 0 !important;
 }
 main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapter-item.active{
