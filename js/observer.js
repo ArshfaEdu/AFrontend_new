@@ -16,31 +16,35 @@ const observer = new MutationObserver((mutations) =>
     let pageName = getPageName(location.pathname);
     console.log(pageName);
 
-    // check the activatibility of header link
-    tryCatch(headerLinks());
+    try {
+      // check the activatibility of header link
+      headerLinks();
 
-    // add style to main tag based on page
-    tryCatch(addStyle(pagesToObserve, pageName));
+      // add style to main tag based on page
+      addStyle(pagesToObserve, pageName);
 
-    tryCatch(Footer());
+      Footer();
 
-    tryCatch(auth());
+      auth();
 
-    // clear the styles of main, if the page is unknown
-    if (pageName === "unknown") {
-      tryCatch(clearOther(pagesToObserve));
-    }
+      // clear the styles of main, if the page is unknown
+      if (pageName === "unknown") {
+        clearOther(pagesToObserve);
+      }
 
-    switch (pageName) {
-      case "courses":
-        courseInfo();
-        break;
-      case "contents":
-        courseContent();
-        break;
-      case "category":
-        category();
-        break;
+      switch (pageName) {
+        case "courses":
+          courseInfo();
+          break;
+        case "contents":
+          courseContent();
+          break;
+        case "category":
+          category();
+          break;
+      }
+    } catch {
+      return;
     }
   })
 );
