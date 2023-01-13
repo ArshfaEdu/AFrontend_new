@@ -66,18 +66,55 @@ function courseContent() {
   });
 
   // for left side (content)
-  const contentSection = document.querySelector(
-    "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
+  const contents = document.querySelectorAll(
+    "main > div > section:nth-of-type(1) > .container > .row:last-child > div > *"
   );
 
-  let items = contentSection.children;
-  console.log(contentSection.children);
-  console.log(items);
-  let contents = [];
-  for (let i in items) {
-    if (items[i].nodeType === 1) contents.push(items[i]);
-  }
-  console.log(contents);
+  const contentSection = contents[0].parentNode;
+  contents.forEach((content) => {
+    if (content.querySelector(".plyr")) {
+      content.setAttribute("data-order", "1");
+    } else if (content.nodeName === "H2") {
+      content.setAttribute("data-order", "2");
+    } else if (content.classList.contains(".alert-info")) {
+      content.setAttribute("data-order", "3");
+    } else if (content.querySelector("h2")) {
+      content.setAttribute("data-order", "4");
+    } else {
+      content.setAttribute("data-order", "5");
+    }
+  });
+  var contentsList = [].slice.call(contents).sort(function (a, b) {
+    return (
+      parseInt(a.getAttribute("data-order")) -
+      parseInt(a.getAttribute("data-order"))
+    );
+  });
+
+  contentsList.forEach((content) => {
+    contentSection.appendChild(content);
+  });
+  // let items = contentSection.children;
+  // let contents = [];
+  // for (let i in items) {
+  //   if (items[i].nodeType === 1) contents.push(items[i]);
+  // }
+
+  // let videoPlayer = null;
+  // let title = null;
+  // let details = null;
+  // let cert = null;
+  // let alert = null;
+  // contents.forEach((content) => {
+  // if (content.querySelector(".plyr")) {
+  //   videoPlayer = content.cloneNode(true);
+  // } else if (content.querySelector("h2")) {
+  //   title = content.cloneNode(true);
+  // } else if (content.classList.contains(".alert-info")) {
+  //   alert = content.clone;
+  // } else if (content.querySelector("h2")) {
+  // }
+  // });
 }
 
 function category() {
