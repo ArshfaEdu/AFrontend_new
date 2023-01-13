@@ -1,8 +1,8 @@
 function tryCatch(func) {
   try {
     func();
-  } catch (e) {
-    console.log(e);
+  } catch (err) {
+    console.log(err);
   }
 }
 
