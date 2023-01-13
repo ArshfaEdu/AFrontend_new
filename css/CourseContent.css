@@ -3,28 +3,38 @@
 main.academy-contents-show > div{
   display: grid;
   grid-template-columns: 1fr 3fr;
+  padding-top: 0 !important;
+  margin-top: 72px !important;
 }
 
 /* Header style */
 main.academy-contents-show > div > header{
   z-index:4;
-  border-bottom: 4px solid var(--bs-gray-200);
+  border-bottom: 4px solid var(--bs-gray-200) !important;
+}
+main.academy-contents-show > div > header .navbar-brand-img{
+  width: 96px;
 }
 
 main.academy-contents-show > div > header > div > div{
   justify-content: space-between;
 }
 
-/* Wrapper of course title */
-main.academy-contents-show > div > header > div > div > div{
-  margin: 0 !important;
-}
 main.academy-contents-show > div > header > div > div > div h3{
-  background-color: #5a6e79;
-  color: white !important;
-  padding: .3em 1em;
-  border-radius: 50px;
-  box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+  position: relative;
+  overflow: visible;
+  padding-right: 10%;
+  font-weight: 600;
+}
+main.academy-contents-show > div > header > div > div > div h3::before{
+  content: '';
+  height: 100%;
+  width: 5px;
+  background-color: var(--ar-primary);
+  background: var(--ar-gradient);
+  border-radius: 10px;
+  position: absolute;
+  right: -10%;
 }
 
 
