@@ -66,7 +66,16 @@ function courseContent() {
   });
 
   // for left side (content)
- 
+  const contentSection = document.querySelector(
+    "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
+  );
+
+  let items = contentSection.children;
+  let contents = [];
+  for (let i in items) {
+    contents.push(items[i]);
+  }
+  console.log(contents);
 }
 
 function category() {
