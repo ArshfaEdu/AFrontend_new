@@ -102,8 +102,14 @@ main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapte
   border-top: 0 !important;
 }
 main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapter-item.active{
-  border-right: 4px solid var(--ar-primary);
+  border-right-color: var(--ar-primary);
   background-color: #fdfdfd;
+}
+main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapter-item s{
+  text-decoration: none;
+}
+main.academy-contents-show .sidebar-collapse .sidebar-collapse-scroll a.m-chapter-item.finished svg{
+  stroke: var(--ar-secondary);
 }
 main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll > div > button{
   color: var(--ar-dark)!important;

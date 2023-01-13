@@ -47,7 +47,17 @@ function courseInfo() {
   links.forEach((el) => el.addEventListener("click", click));
 }
 
-function courseContent() {}
+function courseContent() {
+  const chapters = document.querySelectorAll(
+    "#chaptersSidebarCollapse .sidebar-collapse-scroll a.m-chapter-item"
+  );
+
+  chapters.forEach((chapter) => {
+    if (chapter.querySelector("s")) {
+      chapter.classList.add("finished");
+    }
+  });
+}
 
 function category() {
   // get the title to replace
