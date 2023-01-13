@@ -70,7 +70,6 @@ function courseContent() {
     "main > div > section:nth-of-type(1) > .container > .row:last-child > div > *"
   );
 
-  const contentSection = contents[0].parentNode;
   contents.forEach((content) => {
     if (content.querySelector(".plyr")) {
       content.setAttribute("data-order", "1");
@@ -83,16 +82,6 @@ function courseContent() {
     } else {
       content.setAttribute("data-order", "5");
     }
-  });
-  var contentsList = [].slice.call(contents).sort(function (a, b) {
-    return (
-      parseInt(a.getAttribute("data-order")) -
-      parseInt(a.getAttribute("data-order"))
-    );
-  });
-
-  contentsList.forEach((content) => {
-    contentSection.appendChild(content);
   });
   // let items = contentSection.children;
   // let contents = [];

@@ -6,7 +6,7 @@ const pagesToObserve = {
   category: "academy-categories-show",
 };
 
-const observer = new MutationObserver((mutations) =>
+const observer = new MutationObserver((mutations, observer) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
       if (mutation.addedNodes.length === 0) return;
