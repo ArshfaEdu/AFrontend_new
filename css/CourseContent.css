@@ -11,6 +11,7 @@ main.academy-contents-show > div{
 main.academy-contents-show > div > header{
   z-index:4;
   border-bottom: 4px solid var(--bs-gray-200) !important;
+  height: initial;
 }
 main.academy-contents-show > div > header .navbar-brand-img{
   width: 96px;
@@ -19,11 +20,13 @@ main.academy-contents-show > div > header .navbar-brand-img{
 main.academy-contents-show > div > header > div > div{
   justify-content: space-between;
 }
-
+main.academy-contents-show > div > header > div > div > div{
+  margin-right: .75rem !important;
+}
 main.academy-contents-show > div > header > div > div > div h3{
   position: relative;
   overflow: visible;
-  padding-right: 10%;
+  padding-right: 6%;
   font-weight: 600;
 }
 main.academy-contents-show > div > header > div > div > div h3::before{
