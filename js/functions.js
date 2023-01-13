@@ -68,7 +68,7 @@ function courseContent() {
   });
 
   // for left side (content)
-  const contentSection = document.querySelectorAll(
+  const contentSection = document.querySelector(
     "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
   );
 
