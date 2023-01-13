@@ -48,6 +48,7 @@ function courseInfo() {
 }
 
 function courseContent() {
+  console.log("bruh");
   const chapters = document.querySelectorAll(
     "#chaptersSidebarCollapse .sidebar-collapse-scroll a.m-chapter-item"
   );
