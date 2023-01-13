@@ -177,6 +177,11 @@ function Footer() {
 }
 
 function auth() {
+  const header = document.querySelector(".app-layout > header");
+  if (!header) {
+    return;
+  }
+
   let navLinks = document.querySelectorAll(
     "header nav .navbar-collapse .navbar-nav .nav-item"
   );
@@ -189,7 +194,7 @@ function auth() {
       }
     });
 
-    document.querySelector(".app-layout > header").classList.add("logged-in");
+    header.classList.add("logged-in");
   } else {
     navLinks.forEach((el) => {
       // logged out
@@ -198,9 +203,7 @@ function auth() {
       }
     });
 
-    document
-      .querySelector(".app-layout > header")
-      .classList.remove("logged-in");
+    header.classList.remove("logged-in");
   }
 }
 function getPageName(path) {
