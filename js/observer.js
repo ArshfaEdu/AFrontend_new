@@ -14,7 +14,7 @@ const observer = new MutationObserver((mutations) =>
     if (!node || !node.querySelector) return;
 
     let pageName = getPageName(location.pathname);
-
+    console.log(pageName);
     try {
       // check the activatibility of header link
       headerLinks();
