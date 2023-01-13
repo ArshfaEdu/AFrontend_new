@@ -75,7 +75,7 @@ function courseContent() {
   console.log(items);
   let contents = [];
   for (let i in items) {
-    contents.push(items[i]);
+    if (items[i].nodeType === 1) contents.push(items[i]);
   }
   console.log(contents);
 }
