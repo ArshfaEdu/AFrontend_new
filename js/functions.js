@@ -60,22 +60,33 @@ function courseContent() {
   });
 
   // for left side (content)
-  const divs = document.querySelectorAll(
-    "main > div > section:nth-of-type(1) > .container > .row:last-child > div > div:not(.alert-info)"
+  const contentSection = document.querySelectorAll(
+    "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
   );
 
-  divs.forEach((div) => {
-    if (div.querySelector(".plyr")) {
-      div.classList.add("player-section");
-    } else if (div.querySelector("h2")) {
-      div.classList.add("details-section");
-    } else if (
-      div.querySelectorAll("a").length <= 2 &&
-      div.querySelectorAll("a").length !== 0
-    ) {
-      div.classList.add("navigation");
+  let videoPlayer = "";
+  let title = "";
+  let certificate = "";
+  let details = "";
+
+  contentSection.children.forEach((content) => {
+    if (content.querySelector(".plyr")) {
+      videoPlayer = content.cloneNode(true).outerHTML;
+      content.remove();
+    } else if (content.querySelector("h2")) {
+      title = content.cloneNode(true).outerHTML;
+      content.remove();
+    } else if (content.querySelector("h2")) {
+      details = content.cloneNode(true).outerHTML;
+      content.remove();
+    } else if (content.querySelector(".alert-info")) {
+      certificate = content.cloneNode(true).outerHTML;
+      content.remove();
     }
   });
+
+  contentSection.innerHTML =
+    videoPlayer + title + certificate + details + contentSection.innerHTML;
 }
 
 function category() {
