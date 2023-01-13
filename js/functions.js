@@ -48,7 +48,7 @@ function courseInfo() {
 }
 
 function courseContent() {
-  console.log("bruh");
+  // for sidebar
   const chapters = document.querySelectorAll(
     "#chaptersSidebarCollapse .sidebar-collapse-scroll a.m-chapter-item"
   );
@@ -56,6 +56,24 @@ function courseContent() {
   chapters.forEach((chapter) => {
     if (chapter.querySelector("s")) {
       chapter.classList.add("finished");
+    }
+  });
+
+  // for left side (content)
+  const divs = document.querySelectorAll(
+    "main > div > section:nth-of-type(1) > .container > .row:last-child > div > div:not(.alert-info)"
+  );
+
+  divs.forEach((div) => {
+    if (div.querySelector(".plyr")) {
+      div.classList.add("player-section");
+    } else if (div.querySelector("h2")) {
+      div.classList.add("details-section");
+    } else if (
+      div.querySelectorAll("a").length <= 2 &&
+      div.querySelectorAll("a").length !== 0
+    ) {
+      div.classList.add("navigation");
     }
   });
 }
@@ -115,7 +133,11 @@ function headerLinks() {
   let path = "/" + location.pathname.split("/")[1];
   if (path === "/") {
     navLinks.item(0).classList.add("active");
-  } else if (path === "/university" || path === "/categories") {
+  } else if (
+    path === "/university" ||
+    path === "/categories" ||
+    path === "/courses"
+  ) {
     navLinks.item(1).classList.add("active");
   } else if (location.pathname === "/account/courses") {
     navLinks.item(2).classList.add("active");

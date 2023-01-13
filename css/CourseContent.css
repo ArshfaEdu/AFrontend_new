@@ -9,6 +9,7 @@ main.academy-contents-show > div{
 /* Header style */
 main.academy-contents-show > div > header{
   z-index:4;
+  border-bottom: 4px solid var(--bs-gray-200);
 }
 
 main.academy-contents-show > div > header > div > div{
@@ -48,22 +49,31 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div{
   display: grid;
-  grid-template-rows: 1fr min-content min-content;
+  grid-template-rows: 1fr repeat(5, min-content);
   padding-left: 0 !important;
   padding-right: 0 !important;
   width: 100% !important;
 }
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div .alert.alert-info{
+  border-radius: 50px;
+  background-color: var(--ar-accent);
+  color: var(--ar-light);
+
+}
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div h2{
   grid-row: 2;
 }
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type{
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section{
   grid-row: 1;
 }
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:first-of-type .plyr{
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section .plyr{
   border-radius: 0 !important;
 }
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > div:last-of-type{
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .details-section{
   grid-row: 3;
+}
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .navigation{
+  grid-row: 5;
 }
 main.academy-contents-show > div > section:nth-of-type(1) .alert.alert-warning{
   background-color: transparent;
@@ -125,16 +135,6 @@ main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-c
 }
 main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll > div > button > div{
   text-align: right !important;
-}
-main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar{
-  width: 5px;
-}
-main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll::-webkit-scrollbar-thumb{
-  border-radius: 10px;
-  background-color: #5c6c7900;
-}
-main.academy-contents-show .sidebar-collapse #chaptersSidebarCollapse .sidebar-collapse-scroll:hover::-webkit-scrollbar-thumb{
-  background-color: #5c6c79aa;
 }
 main.academy-contents-show > div > div.sidebar-collapse > button{
   border-radius: 50px 0 0 50px !important;
