@@ -115,6 +115,10 @@ main.academy-contents-show > div > section .add-comment button.btn{
   padding: 0 1.5em;
   background: var(--ar-specificGradient);
 }
+main.academy-contents-show>div>section:last-of-type .container {
+  max-width: none;
+  padding: 0 2rem;
+}
 
 /*-------- End of styling Video player section ----------*/
 
