@@ -71,6 +71,8 @@ function courseContent() {
   );
 
   let items = contentSection.children;
+  console.log(contentSection.children);
+  console.log(items);
   let contents = [];
   for (let i in items) {
     contents.push(items[i]);
