@@ -1,3 +1,11 @@
+function tryCatch(func) {
+  try {
+    func();
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 function courseInfo() {
   // save the nav
   const nav = document
@@ -135,6 +143,10 @@ function clearOther(pagesToObserve) {
 }
 
 function headerLinks() {
+  if (!document.querySelector(".app-layout > header")) {
+    return;
+  }
+
   const navLinks = document.querySelectorAll(
     "header nav .navbar-collapse .nav-link"
   );
