@@ -66,17 +66,17 @@ function courseContent() {
   });
 
   // for left side (content)
-  const contentSection = document.querySelector(
-    "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
-  );
+  // const contentSection = document.querySelector(
+  //   "main > div > section:nth-of-type(1) > .container > .row:last-child > div"
+  // );
 
-  let videoPlayer = "";
-  let title = "";
-  let certificate = "";
-  let details = "";
+  // let videoPlayer = "";
+  // let title = "";
+  // let certificate = "";
+  // let details = "";
 
-  let childs = contentSection.children;
-  let childs_len = childs.length;
+  // let childs = contentSection.children;
+  // let childs_len = childs.length;
 
   // for (let i = 0; i < childs_len; i++) {
   //   if (childs[i].querySelector(".plyr")) {
