@@ -47,6 +47,11 @@ body{
   color: var(--ar-light);
   background-color: var(--ar-primary);
   background: var(--ar-gradient);
+  background-size: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  -moz-background-clip: initial;
+  -moz-text-fill-color: initial;
 }
 
 .btn-secondary,.card.lift button.btn-primary,

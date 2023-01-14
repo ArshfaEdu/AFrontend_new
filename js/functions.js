@@ -179,18 +179,6 @@ function clearOther(pagesToObserve) {
   }
 }
 
-function swapButtonsStyles(btns) {
-  btns.forEach((btn) => {
-    if (btn.classList.contains("btn-primary")) {
-      btn.classList.remove("btn-primary");
-      btn.classList.add("btn-secondary");
-    } else if (btn.classList.contains("btn-secondary")) {
-      btn.classList.remove("btn-secondary");
-      btn.classList.add("btn-primary");
-    }
-  });
-}
-
 function headerLinks() {
   if (!document.querySelector(".app-layout > header")) {
     return;
