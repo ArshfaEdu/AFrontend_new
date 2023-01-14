@@ -1,7 +1,9 @@
 function tryCatch(func) {
   try {
     func();
-  } catch {}
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 function courseInfo() {
