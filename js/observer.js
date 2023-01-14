@@ -16,6 +16,8 @@ const observer = new MutationObserver((mutations, observer) =>
     let pageName = getPageName(location.pathname);
 
     try {
+      redirects(redirects);
+
       // check the activatibility of header link
       headerLinks();
 
@@ -44,7 +46,6 @@ const observer = new MutationObserver((mutations, observer) =>
           break;
       }
     } catch (err) {
-      console.log(err);
       return;
     }
   })

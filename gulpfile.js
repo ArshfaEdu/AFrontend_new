@@ -14,8 +14,8 @@ const bundleJS = () => {
   return src([
     "./js/**/lockWebsite.js",
     "./js/**/functions.js",
+    "./js/**/redirects.js",
     "./js/**/observer.js",
-    "./js/**/**.js",
   ])
     .pipe(minifyJS())
     .pipe(concat("arshfa.min.js"))

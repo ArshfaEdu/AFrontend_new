@@ -12,5 +12,5 @@ const redirects = {
   "/account/products": "/",
 };
 
-// For do the redirections
+// For doing the redirections
 redirects(redirects);
