@@ -301,3 +301,11 @@ function getPageName(path) {
     return "unknown";
   }
 }
+
+function redirects(links) {
+  for (let link in links) {
+    if (link === location.pathname) {
+      location.href = "https://arshfa.net" + links[link];
+    }
+  }
+}

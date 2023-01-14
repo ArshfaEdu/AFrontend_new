@@ -1,0 +1,6 @@
+main.academy-user-account form > section:last-of-type > .container > div:last-of-type div:last-of-type{
+  display: none !important;
+}
+main.academy-user-account form > section:first-of-type button.btn-primary[type="button"]{
+  border-radius: 50px 0 0 50px !important;
+}
