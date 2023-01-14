@@ -13,4 +13,4 @@ const redirects = {
 };
 
 // For doing the redirections
-redirects(redirects);
+redirect(redirects);

@@ -1,8 +1,8 @@
 function tryCatch(func) {
   try {
     func();
-  } catch (err) {
-    console.log(err);
+  } catch (x) {
+    console.log(x);
   }
 }
 
@@ -302,7 +302,7 @@ function getPageName(path) {
   }
 }
 
-function redirects(links) {
+function redirect(links) {
   console.log("do the redirections");
   for (let link in links) {
     if (link === location.pathname) {
