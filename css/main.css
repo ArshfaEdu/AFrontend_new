@@ -170,7 +170,7 @@ nav#headlessui-menu-items-2 > div:first-child a{
 nav#headlessui-menu-items-2 .dropdown-divider{
   background-color: var(--ar-primary);
 }
-nav#headlessui-menu-items-2 .headlessui-menu-item-6{
+nav#headlessui-menu-items-2 #headlessui-menu-item-6{
   display: none !important;
 }
 /* ===== Footer =====*/
