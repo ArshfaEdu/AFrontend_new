@@ -303,10 +303,9 @@ function getPageName(path) {
 }
 
 function redirect(links) {
-  console.log("do the redirections");
   for (let link in links) {
     if (link === location.pathname) {
-      console.log("yes it is the same and" + links[link]);
+      document.body.innerHTML = "";
       location.href = "https://arshfa.net" + links[link];
     }
   }
