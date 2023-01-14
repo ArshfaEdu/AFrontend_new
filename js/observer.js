@@ -27,6 +27,7 @@ const observer = new MutationObserver((mutations, observer) =>
 
       auth();
 
+      cards();
       // clear the styles of main, if the page is unknown
       if (pageName === "unknown") {
         clearOther(pagesToObserve);

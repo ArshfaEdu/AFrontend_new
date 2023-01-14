@@ -131,6 +131,30 @@ function category() {
   title.parentElement.replaceChild(logo, title);
 }
 
+function cards() {
+  const cards = document.querySelectorAll(".card.lift");
+
+  cards.forEach((card) => {
+    const btns = card.querySelectorAll(
+      ".card-footer>div:last-child>div button.btn"
+    );
+
+    swapButtonsStyles(btns);
+
+    const browseBtn = btns.children[1];
+
+    browseBtn.textContent = "تصفح المادة";
+    browseBtn.addEventListener("click", (e) => {
+      const target = e.target;
+      const cardBody =
+        target.parentElement.parentElement.parentElement.previousElementSibling;
+      const titleLink = cardBody.querySelector("a.stretched-link");
+
+      titleLink.click();
+    });
+  });
+}
+
 function addStyle(pagesToObserve, pageName) {
   const main = document.querySelector("main");
   if (pagesToObserve[pageName] === undefined) {
@@ -149,6 +173,18 @@ function clearOther(pagesToObserve) {
   for (const page in pagesToObserve) {
     main.classList.remove(pagesToObserve[page]);
   }
+}
+
+function swapButtonsStyles(btns) {
+  btns.forEach((btn) => {
+    if (btn.classList.contains("btn-primary")) {
+      btn.classList.remove("btn-primary");
+      btn.classList.add("btn-secondary");
+    } else if (btn.classList.contains("btn-secondary")) {
+      btn.classList.remove("btn-secondary");
+      btn.classList.add("btn-primary");
+    }
+  });
 }
 
 function headerLinks() {

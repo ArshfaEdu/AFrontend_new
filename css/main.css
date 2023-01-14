@@ -73,6 +73,9 @@ header.bg-white {
 header nav > div > .navbar-nav{
   column-gap: 5px;
 }
+header nav>div>.navbar-nav>.nav-item:first-child {
+  display: none !important;
+}
 header nav > div > .navbar-nav > .nav-item a.nav-link{
   background-color: var(--ar-primary);
   color: #fff;
