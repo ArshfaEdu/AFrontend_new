@@ -20,7 +20,7 @@ const observer = new MutationObserver((mutations, observer) =>
     tryCatch(headerLinks());
 
     // add style to main tag based on page
-    tryCatch(addStyle(pagesToObserve, pageName));
+    addStyle(pagesToObserve, pageName);
 
     tryCatch(Footer());
 
