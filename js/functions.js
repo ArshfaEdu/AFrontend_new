@@ -2,7 +2,7 @@ function tryCatch(func) {
   try {
     func();
   } catch (x) {
-    console.log(x);
+    //console.log(x);
   }
 }
 
