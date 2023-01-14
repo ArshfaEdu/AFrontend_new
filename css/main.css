@@ -37,17 +37,20 @@ body{
   border: none;
 }
 .btn:hover{
-  color: var(--ar-primary) !important;
+  opacity: .75;
 }
 .btn:not([class*=btn-outline]){
   border-color: initial !important;
 }
-.btn-primary{
+.btn-primary,.card.lift .btn-secondary,
+.course-details-wrapper .btn-secondary{
   color: var(--ar-light);
   background-color: var(--ar-primary);
   background: var(--ar-gradient);
 }
-.btn-secondary{
+
+.btn-secondary,.card.lift .btn-primary,
+.course-details-wrapper .btn-primary{
   color: var(--ar-primary);
   background: var(--ar-gradient);
   background-size: 100%;
