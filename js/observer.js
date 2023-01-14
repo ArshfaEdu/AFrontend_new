@@ -46,6 +46,7 @@ const observer = new MutationObserver((mutations, observer) =>
           break;
       }
     } catch (err) {
+      console.log(err);
       return;
     }
   })

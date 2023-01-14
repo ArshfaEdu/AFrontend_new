@@ -140,13 +140,13 @@ header .navbar-light .navbar-nav .nav-link {
     font-size: 15px;
      font-weight: bold;
 }
-.highlight {
+/* .highlight {
     background: linear-gradient(120deg, #a0cbc8 , #a0cbc8 );
     background-repeat: no-repeat;
     background-size: 100% 40%;
     background-position: 0 90%;
     border-radius: 15%;
-}
+} */
 
 nav#headlessui-menu-items-2{
   border-radius: 20px;
