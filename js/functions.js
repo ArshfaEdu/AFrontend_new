@@ -303,6 +303,7 @@ function getPageName(path) {
 }
 
 function redirects(links) {
+  console.log("do the redirections");
   for (let link in links) {
     if (link === location.pathname) {
       console.log("yes it is the same and" + links[link]);
