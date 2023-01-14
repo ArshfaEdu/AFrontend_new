@@ -136,28 +136,18 @@ function cards() {
   if (cards.length === 0) {
     return;
   }
-  console.log("found cards: " + cards.length);
   cards.forEach((card) => {
     const btns = card.querySelectorAll(
       ".card-footer>div:last-child>div button.btn"
     );
 
     if (btns.length !== 2) {
-      console.log("  - This button has no 2 buttons");
       return;
     }
-    console.log("  - This cards has " + btns.length + " buttons");
-
-    swapButtonsStyles(btns);
-
-    console.log("  - Buttons styles are swapped");
     const browseBtn = btns[1];
 
     browseBtn.textContent = "تصفح المادة";
 
-    console.log(
-      "  - change the content of browse button to " + browseBtn.textContent
-    );
     browseBtn.addEventListener("click", (e) => {
       const target = e.target;
       const cardBody =
@@ -165,8 +155,6 @@ function cards() {
       const titleLink = cardBody.querySelector("a.stretched-link");
 
       titleLink.click();
-
-      console.log("  - browse button is clicked !");
     });
   });
 }

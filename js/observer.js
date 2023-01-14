@@ -15,37 +15,37 @@ const observer = new MutationObserver((mutations, observer) =>
 
     let pageName = getPageName(location.pathname);
 
-    try {
-      // check the activatibility of header link
-      headerLinks();
+    //try {
+    // check the activatibility of header link
+    tryCatch(headerLinks());
 
-      // add style to main tag based on page
-      addStyle(pagesToObserve, pageName);
+    // add style to main tag based on page
+    tryCatch(addStyle(pagesToObserve, pageName));
 
-      Footer();
+    tryCatch(Footer());
 
-      auth();
+    tryCatch(auth());
 
-      cards();
-      // clear the styles of main, if the page is unknown
-      if (pageName === "unknown") {
-        clearOther(pagesToObserve);
-      }
-
-      switch (pageName) {
-        case "courses":
-          courseInfo();
-          break;
-        case "contents":
-          courseContent();
-          break;
-        case "category":
-          category();
-          break;
-      }
-    } catch {
-      return;
+    tryCatch(cards());
+    // clear the styles of main, if the page is unknown
+    if (pageName === "unknown") {
+      tryCatch(clearOther(pagesToObserve));
     }
+
+    switch (pageName) {
+      case "courses":
+        courseInfo();
+        break;
+      case "contents":
+        courseContent();
+        break;
+      case "category":
+        category();
+        break;
+    }
+    //} catch {
+    //  return;
+    //}
   })
 );
 
