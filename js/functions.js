@@ -151,7 +151,7 @@ function cards() {
     swapButtonsStyles(btns);
 
     console.log("  - Buttons styles are swapped");
-    const browseBtn = btns.children[1];
+    const browseBtn = btns[1];
 
     browseBtn.textContent = "تصفح المادة";
 
