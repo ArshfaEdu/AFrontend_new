@@ -172,6 +172,23 @@ body{
     width: 75%;
   }
 }
+@media screen and (max-width: 330px){
+  .popper-container{
+    transform: translate3d(26px,90.4px,0)!important
+  }
+  .app-layout > header nav .container-fluid{
+    justify-content: space-around;
+  }
+  .app-layout > header nav .navbar-brand{
+    order: 1;
+  }
+  .app-layout>header nav .container-fluid>button.navbar-toggler{
+    order: 2;
+  }
+  .app-layout>header nav .container-fluid>.navbar-nav{
+    margin-top: 1rem;
+  }
+}
 header.bg-white { 
   /* background-color: var(--ar-light) !important; */
   border-bottom: none !important;
