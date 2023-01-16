@@ -108,6 +108,15 @@ body{
   .app-layout > header nav .navbar-collapse .navbar-nav .nav-item .nav-link{
     color: #fff !important;
     text-align: center !important;
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    background-color: #ffffff4f;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-link.active{
+    background-color: #fff;
+    color: var(--ar-primary) !important;
   }
   .app-layout > header nav .navbar-collapse .navbar-nav{
     padding-right: 0 !important;
