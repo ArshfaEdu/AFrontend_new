@@ -95,9 +95,18 @@ body{
   }
   .app-layout > header nav .navbar-collapse button{
     color: #fff !important;
+    border-radius: 50% !important;
+    border: 2px solid #fff !important;
+    padding: 5px;
   }
   .app-layout > header nav .navbar-collapse.show{
     left: 0 !important;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item:first-of-type{
+    margin-top: 2rem;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item .nav-link{
+    text-align: center !important;
   }
 }
 
@@ -107,6 +116,22 @@ body{
     max-height: initial;
     overflow-y: hidden; 
     right: initial;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav{
+    padding-right: 0 !important;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item+.nav-item{
+    border-top: none !important;
+  }
+}
+@media screen and (max-width: 479.99px){
+  .app-layout > header nav .navbar-collapse{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 767.99px){
+  .app-layout > header nav .navbar-collapse{
+    width: 50%;
   }
 }
 header.bg-white { 
