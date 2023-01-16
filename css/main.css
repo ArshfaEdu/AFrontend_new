@@ -103,7 +103,7 @@ body{
     left: 0 !important;
   }
   .app-layout > header nav .navbar-collapse .navbar-nav .nav-item:first-of-type{
-    margin-top: 2rem;
+    margin-top: 3rem ;
   }
   .app-layout > header nav .navbar-collapse .navbar-nav .nav-item .nav-link{
     color: #fff !important;
@@ -133,11 +133,28 @@ body{
   .app-layout > header nav .navbar-collapse .navbar-nav .nav-item+.nav-item{
     border-top: none !important;
   }
+  .app-layout > header nav .container-fluid > .navbar-nav .nav-item{
+    padding: 0 !important;
+  }
 }
 
 @media screen and (max-width: 767.99px){
   .app-layout > header nav .navbar-collapse{
     width: 50%;
+  }
+  .app-layout > header nav .navbar-brand{
+    order: 2;
+  }
+  .app-layout > header nav .navbar-brand img{
+    max-height: 2.8rem;
+  }
+  .app-layout > header nav .container-fluid > .navbar-nav{
+    order: 1;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+  .app-layout > header nav .container-fluid > button.navbar-toggler{
+    order: 3;
   }
 }
 @media screen and (max-width: 479.99px){
