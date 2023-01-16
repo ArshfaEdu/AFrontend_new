@@ -80,62 +80,6 @@ body{
   /* border: 2px solid var(--ar-primary); */
   color: var(--ar-primary) !important;
 }
-
-@media screen and (max-width: 330px){
-  .popper-container{
-    transform: translate3d(26px,90.4px,0)!important
-  }
-  .app-layout > header nav .container-fluid{
-    justify-content: space-around;
-  }
-  .app-layout > header nav .navbar-brand{
-    order: 1;
-  }
-  .app-layout>header nav .container-fluid>button.navbar-toggler{
-    order: 2;
-  }
-  .app-layout>header nav .container-fluid>.navbar-nav{
-    margin-top: 1rem;
-  }
-}
-@media screen and (max-width: 479.99px){
-  .app-layout > header nav .navbar-collapse{
-    width: 75%;
-  }
-}
-@media screen and (max-width: 767.99px){
-  .app-layout > header nav .navbar-collapse{
-    width: 50%;
-  }
-  .app-layout > header nav .navbar-brand{
-    order: 2;
-  }
-  .app-layout > header nav .navbar-brand img{
-    max-height: 2.8rem;
-  }
-  .app-layout > header nav .container-fluid > .navbar-nav{
-    order: 3;
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-  }
-  .app-layout > header nav .container-fluid > button.navbar-toggler{
-    order: 1;
-  }
-}
-@media screen and (max-width: 991.98px){
-  .app-layout > header .navbar-collapse{   
-    border-radius: 0;
-    max-height: initial;
-    overflow-y: hidden; 
-    right: initial;
-  }
-  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item+.nav-item{
-    border-top: none !important;
-  }
-  .app-layout > header nav .container-fluid > .navbar-nav .nav-item{
-    padding: 0 !important;
-  }
-}
 @media screen and (max-width: 1199.99px) {
   .popper-container{
     transform: translate3d(26px, 68.4px, 0px) !important;
@@ -186,6 +130,63 @@ body{
   }
   .app-layout > header nav .navbar-collapse .navbar-nav{
     padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 991.98px){
+  .app-layout > header .navbar-collapse{   
+    border-radius: 0;
+    max-height: initial;
+    overflow-y: hidden; 
+    right: initial;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item+.nav-item{
+    border-top: none !important;
+  }
+  .app-layout > header nav .container-fluid > .navbar-nav .nav-item{
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767.99px){
+  .app-layout > header nav .navbar-collapse{
+    width: 50%;
+  }
+  .app-layout > header nav .navbar-brand{
+    order: 2 !important;
+  }
+  .app-layout > header nav .navbar-brand img{
+    max-height: 2.8rem;
+  }
+  .app-layout > header nav .container-fluid > .navbar-nav{
+    order: 3;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+  .app-layout > header nav .container-fluid > button.navbar-toggler{
+    order: 1 !important;
+  }
+}
+@media screen and (max-width: 479.99px){
+  .app-layout > header nav .navbar-collapse{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 330px){
+  .popper-container{
+    transform: translate3d(26px,90.4px,0)!important
+  }
+  .app-layout > header nav .container-fluid{
+    justify-content: space-around;
+  }
+  .app-layout > header nav .navbar-brand{
+    order: 1;
+  }
+  .app-layout>header nav .container-fluid>button.navbar-toggler{
+    order: 2;
+  }
+  .app-layout>header nav .container-fluid>.navbar-nav{
+    margin-top: 1rem;
   }
 }
 header.bg-white { 
