@@ -105,6 +105,13 @@ body{
   .app-layout > header nav .navbar-collapse.show{
     left: 0 !important;
   }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item {
+    padding: 1.5rem;
+  }
+  .app-layout > header nav .navbar-collapse .navbar-nav .nav-item .nav-link{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
   .app-layout > header nav .navbar-collapse .navbar-nav .nav-item:first-of-type{
     margin-top: 3rem ;
   }
