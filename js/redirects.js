@@ -7,6 +7,7 @@
  * you must not enter / after the path, e.g. "/some/path/" WRONG!, "/some/path" CORRECT!
  */
 
+// "route to be redirected from" : "route to be redirected to",
 const redirects = {
   "/courses": "/university",
   "/account/products": "/",

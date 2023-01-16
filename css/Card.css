@@ -8,8 +8,7 @@
 .card.lift img.card-img{
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  height: 300px;
-  object-fit: cover
+  aspect-ratio: 16 / 9;
 }
 .card.lift .card-body{
   display: flex;
