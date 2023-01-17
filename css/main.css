@@ -151,6 +151,16 @@ body{
 @media screen and (max-width: 767.99px){
   .app-layout > header nav .navbar-collapse{
     width: 50%;
+    right: -100%;
+    left: initial;
+    transition: right .2s ease-in-out;
+  }
+  .app-layout>header nav .navbar-collapse button{
+    left: 80%;
+  }
+  .app-layout>header nav .navbar-collapse.show{
+    left: initial !important;
+    right: 0 !important;
   }
   .app-layout > header nav .navbar-brand{
     order: 2;
@@ -179,12 +189,12 @@ body{
   .app-layout > header nav .container-fluid{
     justify-content: space-around;
   }
-  .app-layout > header nav .navbar-brand{
+  /* .app-layout > header nav .navbar-brand{
     order: 1;
   }
   .app-layout>header nav .container-fluid>button.navbar-toggler{
     order: 2;
-  }
+  } */
   .app-layout>header nav .container-fluid>.navbar-nav{
     margin-top: 1rem;
   }

@@ -27,6 +27,11 @@ main.academy-courses-show > .container > .row > div:first-child nav{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767.99px) {
+  main.academy-courses-show > .container > .row > div:first-child nav{
+    justify-content: center;
+  }
+}
 main.academy-courses-show > .container > .row > div:first-child nav .nav-link{
   transition: all .2s ease-in-out !important;
   border-radius: 50px;
