@@ -101,7 +101,7 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"]{
   order: 5;
 }
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"] a{
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"] > a{
   background-color: var(--ar-dark) !important;
   color: #fff;
 }
