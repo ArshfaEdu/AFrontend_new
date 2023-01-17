@@ -174,7 +174,7 @@ body{
 }
 @media screen and (max-width: 330px){
   .popper-container{
-    transform: translate3d(26px,90.4px,0)!important
+    transform: translate3d(26px,100.4px,0)!important
   }
   .app-layout > header nav .container-fluid{
     justify-content: space-around;
@@ -295,6 +295,9 @@ footer.footer.bg-white{
  background: var(--ar-gradientDark) !important;
  position: relative;
  overflow: hidden;
+}
+footer.footer nav.nav{
+  justify-content: center;
 }
 footer svg.logo{
   position: absolute;
