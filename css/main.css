@@ -175,6 +175,7 @@ body{
   }
   .app-layout > header nav .container-fluid > button.navbar-toggler{
     order: 1 ;
+    transform: rotate(180deg);
   }
 }
 @media screen and (max-width: 479.99px){
