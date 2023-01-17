@@ -297,6 +297,8 @@ function getPageName(path) {
     return path.includes("contents") ? "contents" : "courses";
   } else if (path.includes("categories")) {
     return "category";
+  } else if (path.startsWith("/@")) {
+    return "profile";
   } else {
     return "unknown";
   }

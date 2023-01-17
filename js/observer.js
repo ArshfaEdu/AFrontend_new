@@ -4,6 +4,7 @@ const pagesToObserve = {
   account: "academy-user-account",
   userCourses: "academy-user-account-courses",
   category: "academy-categories-show",
+  profile: "profile-page",
 };
 
 const observer = new MutationObserver((mutations, observer) =>
