@@ -81,7 +81,7 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="2"]{
   order: 2;
-  font-size: 2.5em!important;
+  font-size: 6.5vmin!important;
   font-weight: 600;
   color: var(--ar-dark)!important;
   margin-bottom: 3rem;
@@ -101,6 +101,10 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"]{
   order: 5;
 }
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"] a{
+  background-color: var(--ar-dark) !important;
+  color: #fff;
+}
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section .plyr{
   border-radius: 0 !important;
 }
@@ -119,8 +123,8 @@ main.academy-contents-show > div > section .add-comment img{
   box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
 }
 main.academy-contents-show > div > section .comments-list > h3{
-  font-size: 2.5em;
-  background: linear-gradient(270deg, #4AA5C6 -9.98%, #58BFB8 23.02%);
+  font-size: 6.5vmin;
+  background: linear-gradient(270deg,#4aa5c6 -9.98%,#58bfb8 23.02%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -135,7 +139,7 @@ main.academy-contents-show > div > section .add-comment textarea{
   border: 2px solid var(--ar-primary);
 }
 main.academy-contents-show > div > section .add-comment button.btn{
-  font-size: 1.5em;
+  font-size: 3.5vmin;
   padding: 0 1.5em;
   background: var(--ar-specificGradient);
 }
@@ -322,7 +326,7 @@ main.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
   }
   main.academy-contents-show .sidebar-collapse>.collapse, main.academy-contents-show .sidebar-collapse>#chaptersSidebarCollapse.show{
     transform: translate(0);
-    box-shadow: -200px 0 200px rgb(0 0 0 / 50%) !important;
+    box-shadow: -300px 0 200px 200px rgb(0 0 0 / 50%)!important;
   }
 }
 /*-------- End styling mobile ------------*/
