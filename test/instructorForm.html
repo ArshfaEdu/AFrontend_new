@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="instructorForm.css">
+  <title>Instructor Form</title>
+</head>
+<body>
+
+  <div class="instructor-container">
+    <div class="contact-box">
+      <div class="contact-right">
+        <div class="content">
+          <p>شروط التقديم</p>
+          <div class="text-line"></div>
+          <ul>
+            <li>الإلمام بمحتوى المادة العلمية</li>
+            <li>الالتزام بشرح المحتوى العلمي</li>
+            <li>التمكن من مهارات الشرح وإيصال المعلومة</li>
+            <li> القدرة على مساعدة الطلاب والإجابة على استفساراتهم</li>
+          </ul>
+        </div>
+        <div class="content">
+          <p>المحتوى المسموح به</p>
+          <div class="text-line"></div>
+          <ul>
+            <li>محاضرات مسجلة</li>
+            <li>ملخصات شاملة</li>
+            <li>ملفات مساعدة</li>
+          </ul>
+        </div>
+      </div>
+      <div class="contact-left">
+        <h3>إنشاء حساب</h3>
+        <form id="form">
+          <div class="form-element">
+            <input type="text" name="entry.1587322270" placeholder="الاسم" required>
+          </div>
+          <div class="form-element">
+            <input type="text" name="entry.709250033" placeholder="رقم الجوال">
+          </div>
+          <div class="form-element">
+            <input type="email" name="entry.2047894002" placeholder="البريد الإلكتروني">
+          </div>
+          <div class="form-element">
+            <input type="text" name="entry.830172538" placeholder="الجامعة">
+          </div>
+          <div class="form-element">
+            <input type="text" name="entry.351007286" placeholder="التخصص">
+          </div>
+          <div class="form-element">
+            <input type="text" name="entry.1012610089" placeholder="اسم المادة المراد شرحها">
+          </div>
+          <div class="form-element">
+            <input type="text" name="entry.1651420814" placeholder="درجتك بالمادة المراد شرحها">
+          </div>
+          <div class="form-element">
+            <textarea type="text" name="entry.1431411762" placeholder="ليش مهتم بالانضمام كشارح في منصة أرشفة ؟ "></textarea>
+          </div>
+          <input type="checkbox" name="agree" id="agree" required />
+          <input type="hidden" name="entry.1393528318" disabled>
+          <span for="agree">أوافق على <a href="https://arshfa.net/terms-and-condition" target="_blank">الشروط و الأحكام</a>
+          </span>
+          <button type="submit">إنشاء حساب جديد</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        const agree = document.getElementById("agree")
+        if (agree.checked) {
+          let realAgree = document.querySelector("#form input[type='hidden']")
+          realAgree.setAttribute("value", "أوافق")
+          realAgree.removeAttribute("disabled")
+        }
+        const payload = new URLSearchParams(new FormData(form));
+        fetch("https://docs.google.com/forms/u/2/d/e/1FAIpQLScDj1ezLiXom3ioQSyCiz-5ypgsQf6KkJxLfJr-XsdDrW72xA/formResponse", {
+          method: "POST",
+          body: payload
+        }).then(res => {
+          location.pathname = "/thanks"
+        }).catch(err => {
+          console.log(err)
+          location.pathname = "/thanks"
+        })
+      })
+    </script>
+  </div>
+</body>
+</html>

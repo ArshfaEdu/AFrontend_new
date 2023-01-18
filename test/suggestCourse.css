@@ -1,0 +1,90 @@
+input{
+  border: 1px solid #d0d2e2;
+  line-height: 2;
+  padding: 5px;
+  border-radius: 50px;
+  text-indent: 10px;
+  width: 100%;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #0A2237;
+  background: linear-gradient(264.54deg, #0A2237 2.19%, #4493D0 118.45%);
+  background-blend-mode: darken;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button,.close-button{
+  transition: opacity .2s ease-in-out;
+}
+button:hover,.close-button:hover{
+  opacity: .85;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.popup-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.popup-body header{
+  background-color: #0A2237;
+  background: linear-gradient(264.54deg, #0A2237 2.19%, #4493D0 118.45%);
+  padding: .65rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-body form{
+  padding: 1rem 2.5rem 4rem;
+  background-color: #fff;
+  text-align: center;
+}
+.popup header svg{
+  display: block;
+    width: 13rem;
+}
+.popup form svg{
+  width: 64px;
+}
+.popup .close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1.5em;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+
+.show-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

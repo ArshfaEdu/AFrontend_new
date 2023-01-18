@@ -14,10 +14,9 @@ const observer = new MutationObserver((mutations, observer) =>
     const node = mutation.addedNodes[0];
     if (!node || !node.querySelector) return;
 
-    let pageName = getPageName(location.pathname);
-
-    //try {
     redirect(redirects);
+
+    let pageName = getPageName(location.pathname);
 
     // check the activatibility of header link
     tryCatch(headerLinks());
@@ -46,9 +45,6 @@ const observer = new MutationObserver((mutations, observer) =>
         category();
         break;
     }
-    // } catch (err) {
-    //return;
-    //}
   })
 );
 
