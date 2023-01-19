@@ -19,17 +19,17 @@ const observer = new MutationObserver((mutations, observer) =>
     let pageName = getPageName(location.pathname);
 
     // check the activatibility of header link
-    tryCatch(headerLinks());
+    tryCatch(headerLinks);
 
     // add style to main tag based on page
-    tryCatch(addStyle(pagesToObserve, pageName));
+    tryCatch(() => addStyle(pagesToObserve, pageName));
 
-    tryCatch(auth());
+    tryCatch(auth);
 
-    tryCatch(cards());
+    tryCatch(cards);
     // clear the styles of main, if the page is unknown
     if (pageName === "unknown") {
-      tryCatch(clearOther(pagesToObserve));
+      tryCatch(() => clearOther(pagesToObserve));
     }
 
     switch (pageName) {
@@ -45,5 +45,15 @@ const observer = new MutationObserver((mutations, observer) =>
     }
   })
 );
-setTimeout(Footer, 2500);
 observer.observe(document.body, { subtree: true, childList: true });
+
+// const footerObserver = new MutationObserver((mutations, observer) => {
+//   mutations.forEach((mutation) => {
+//     if (mutation.type !== "childList")
+//       if (mutation.addedNodes.length === 0) return;
+//     const node = mutation.addedNodes[0];
+//     if (!node || !node.querySelector) return;
+
+//     tryCatch(Footer);
+//   });
+// });
