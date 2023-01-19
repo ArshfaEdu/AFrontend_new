@@ -138,6 +138,7 @@ function category() {
     "href",
     `/suggest-course?university=${currentUniversity}`
   );
+  suggestBtn.setAttribute("target", "_blank");
   suggestBtn.setAttribute("class", "btn btn-primary btn-suggestCourse");
   suggestBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 45 90 c -4.418 0 -8 -3.582 -8 -8 V 8 c 0 -4.418 3.582 -8 8 -8 c 4.418 0 8 3.582 8 8 v 74 C 53 86.418 49.418 90 45 90 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff;fill-rule:nonzero;opacity:1" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/><path d="M 82 53 H 8 c -4.418 0 -8 -3.582 -8 -8 c 0 -4.418 3.582 -8 8 -8 h 74 c 4.418 0 8 3.582 8 8 C 90 49.418 86.418 53 82 53 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff;fill-rule:nonzero;opacity:1" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/></g></svg>`;
 
@@ -219,35 +220,29 @@ function headerLinks() {
 
 function Footer() {
   // check if the the div is the payments div
-  if (
-    !document
-      .querySelector("footer .row > div > div:first-of-type")
-      .children[0].classList.contains("payment-logo")
-  ) {
-    return;
-  }
-
-  // save clone for payments methods
-  let paymentsMethods = document
-    .querySelector("footer .row > div > div:first-of-type")
-    .cloneNode(true);
-
-  // make style changes for the cloned
-  paymentsMethods.style.padding = "1rem 0 1.5rem";
-  paymentsMethods.style.flexWrap = "wrap";
-  paymentsMethods.style.justifyContent = "center";
-
-  // add  the cloned to the page (after footer tag)
-  document.querySelector(".app-layout").appendChild(paymentsMethods);
-
-  // remove the original one
-  document.querySelector("footer .row > div > div:first-of-type").remove();
-
-  //=============== Add logo ===============//
-
-  let logo = `<svg class="logo" width="154" height="73" viewBox="0 0 154 73" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_51_105)"><path d="M116.585 7.96962C113.752 3.03503 108.471 0 102.752 0H50.4033L92.6715 72.7665L154 73.0106L116.585 7.96962ZM54.9679 3.22605H102.699C107.915 3.22605 112.726 5.99579 115.313 10.4953L149.425 69.7846L93.5054 69.5617L54.9679 3.22605Z" fill="url(#paint0_linear_51_105)"/><path d="M103.597 0H51.2478C45.5287 0 40.2478 3.04565 37.415 7.96962L0 73L61.3285 72.7559L103.597 0Z" fill="white"/></g><defs><linearGradient id="paint0_linear_51_105" x1="50.4033" y1="36.5053" x2="154" y2="36.5053" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="0.43" stop-color="#4493D0"/><stop offset="0.75" stop-color="#5BC3B5"/></linearGradient><clipPath id="clip0_51_105"><rect width="154" height="73" fill="white"/></clipPath></defs></svg>`;
-  let footer = document.querySelector("footer");
-  footer.innerHTML = footer.innerHTML + logo.repeat(2);
+  // if (
+  //   !document
+  //     .querySelector("footer .row > div > div:first-of-type")
+  //     .children[0].classList.contains("payment-logo")
+  // ) {
+  //   return;
+  // }
+  // // save clone for payments methods
+  // let paymentsMethods = document
+  //   .querySelector("footer .row > div > div:first-of-type")
+  //   .cloneNode(true);
+  // // make style changes for the cloned
+  // paymentsMethods.style.padding = "1rem 0 1.5rem";
+  // paymentsMethods.style.flexWrap = "wrap";
+  // paymentsMethods.style.justifyContent = "center";
+  // // add  the cloned to the page (after footer tag)
+  // document.querySelector(".app-layout").appendChild(paymentsMethods);
+  // // remove the original one
+  // document.querySelector("footer .row > div > div:first-of-type").remove();
+  // //=============== Add logo ===============//
+  // let logo = `<svg class="logo" width="154" height="73" viewBox="0 0 154 73" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_51_105)"><path d="M116.585 7.96962C113.752 3.03503 108.471 0 102.752 0H50.4033L92.6715 72.7665L154 73.0106L116.585 7.96962ZM54.9679 3.22605H102.699C107.915 3.22605 112.726 5.99579 115.313 10.4953L149.425 69.7846L93.5054 69.5617L54.9679 3.22605Z" fill="url(#paint0_linear_51_105)"/><path d="M103.597 0H51.2478C45.5287 0 40.2478 3.04565 37.415 7.96962L0 73L61.3285 72.7559L103.597 0Z" fill="white"/></g><defs><linearGradient id="paint0_linear_51_105" x1="50.4033" y1="36.5053" x2="154" y2="36.5053" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="0.43" stop-color="#4493D0"/><stop offset="0.75" stop-color="#5BC3B5"/></linearGradient><clipPath id="clip0_51_105"><rect width="154" height="73" fill="white"/></clipPath></defs></svg>`;
+  // let footer = document.querySelector("footer");
+  // footer.innerHTML = footer.innerHTML + logo.repeat(2);
 }
 
 function auth() {
