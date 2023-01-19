@@ -198,9 +198,6 @@ function headerLinks() {
     return;
   }
 
-  document
-    .querySelector("header nav .navbar-collapse .navbar-nav")
-    .classList.add("align-items-center");
   const navLinks = document.querySelectorAll(
     "header nav .navbar-collapse .nav-link"
   );

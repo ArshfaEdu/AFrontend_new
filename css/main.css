@@ -241,6 +241,16 @@ header nav .navbar-collapse .navbar-nav .nav-link{
   position: relative;
 }
 @media screen and (min-width: 1200px) {
+  header nav .navbar-collapse .navbar-nav{
+    align-items: center;
+  }
+  header nav .navbar-collapse .navbar-nav .nav-link[href*="instructor"]{
+    padding: .5rem 1rem;
+    background-color: var(--ar-primary);
+    color: #fff;
+    border-radius: 50px;
+    background: var(--ar-specificGradient);
+  }
   header nav .navbar-collapse .navbar-nav .nav-link.active::after{
     content: '';
     position: absolute;
