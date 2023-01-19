@@ -47,13 +47,13 @@ const observer = new MutationObserver((mutations, observer) =>
 );
 observer.observe(document.body, { subtree: true, childList: true });
 
-// const footerObserver = new MutationObserver((mutations, observer) => {
-//   mutations.forEach((mutation) => {
-//     if (mutation.type !== "childList")
-//       if (mutation.addedNodes.length === 0) return;
-//     const node = mutation.addedNodes[0];
-//     if (!node || !node.querySelector) return;
+const footerObserver = new MutationObserver((mutations, observer) => {
+  mutations.forEach((mutation) => {
+    if (mutation.type !== "childList")
+      if (mutation.addedNodes.length === 0) return;
+    const node = mutation.addedNodes[0];
+    if (!node || !node.querySelector) return;
 
-//     tryCatch(Footer);
-//   });
-// });
+    tryCatch(Footer);
+  });
+});
