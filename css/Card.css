@@ -23,8 +23,9 @@
 .card.lift .card-body .card-subtitle{
   font-size: .8em;
   text-align: center;
-  color: #917050;
+  color: var(--ar-secondary);
   font-weight: 700;
+  margin-top: 4px;
 }
 
 .card.lift .card-body > a[href*="categories"]{
@@ -33,7 +34,7 @@ transition: transform .35s ease-in-out;
 
 
 .card.lift .card-body >  a[href*="categories"]:hover{
-transform: scale(1.09);
+transform: scale(1.05);
 }
 
 .card.lift  .card-body .card-title{

@@ -1,6 +1,7 @@
 footer .footer-content{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 footer .footer-content .logo img{
   width: 216px;
@@ -19,32 +20,21 @@ footer .footer-content ul.social li{
   margin: 0 .2rem;
 }
 footer .footer-content ul.social a{
-  width: 36px;
-  height: 36px;
+  width: 24px !important;
+  height: 24px !important;
   display: inline-block;
-  background-color: #fff;
+  background-color: transparent !important;
   border-radius: 50%;
   text-align: center;
-  line-height: 36px;
+  line-height: 24px !important;
 }
-footer .footer-content ul.social a[href*="youtube"]{
-  fill: #ff0000;
-}
-footer .footer-content ul.social a[href*="twitter"]{
-  fill: #1da1f2;
-}
-footer .footer-content ul.social a[href*="wa.me"]{
-  fill: #25d366;
-}
-footer .footer-content ul.social a[href*="tel"]{
-  fill: #0088cc;
-}
-footer .footer-content ul.social a[href*="tel"] svg{
-  transform: scale(1.55);
+footer .footer-content ul.social a{
+  fill: #fff !important;
 }
 
 footer .footer-content nav.links{
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 footer .footer-content nav.links h4{
@@ -69,4 +59,14 @@ footer .footer-content nav.links h4::before{
 footer .copyrights{
   border-top: 2px solid #85b9d6;
   padding-top: 24px;
+}
+
+@media screen and (max-width: 767.99px) {
+  footer .footer-content .logo-and-information{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
