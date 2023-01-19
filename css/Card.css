@@ -29,13 +29,12 @@
 
 .card.lift .card-body > a[href*="categories"]{
 transition: transform .35s ease-in-out;
-display: none;
 }
 
 
-/* .card.lift .card-body >  a[href*="categories"]:hover{
+.card.lift .card-body >  a[href*="categories"]:hover{
 transform: scale(1.09);
-} */
+}
 
 .card.lift  .card-body .card-title{
   font-weight: 900;
