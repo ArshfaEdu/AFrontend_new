@@ -342,7 +342,8 @@ footer svg:last-of-type {
 }
 
 .payment-logo{
-  width: 48px;
-  border: none !important;
+  width: 36px;
+  border: none!important;
+  background-color: #fff;
 }
 footer *{color:#ffffff !important}

@@ -71,12 +71,16 @@
       const form = document.getElementById("form");
       form.addEventListener("submit", e => {
         e.preventDefault();
-        const agree = document.getElementById("agree")
+
+        const select = document.getElementById("select")
+        select.selected != ""
+        select.value
         if (agree.checked) {
           let realAgree = document.querySelector("#form input[type='hidden']")
           realAgree.setAttribute("value", "أوافق")
           realAgree.removeAttribute("disabled")
         }
+
         const payload = new URLSearchParams(new FormData(form));
         fetch("https://docs.google.com/forms/u/2/d/e/1FAIpQLScDj1ezLiXom3ioQSyCiz-5ypgsQf6KkJxLfJr-XsdDrW72xA/formResponse", {
           method: "POST",
