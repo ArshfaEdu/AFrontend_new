@@ -24,7 +24,7 @@ const observer = new MutationObserver((mutations, observer) =>
     // add style to main tag based on page
     tryCatch(addStyle(pagesToObserve, pageName));
 
-    //tryCatch(Footer());
+    tryCatch(Footer());
 
     tryCatch(auth());
 
@@ -48,5 +48,5 @@ const observer = new MutationObserver((mutations, observer) =>
   })
 );
 
-Footer();
+//Footer();
 observer.observe(document.body, { subtree: true, childList: true });
