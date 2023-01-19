@@ -45,5 +45,5 @@ const observer = new MutationObserver((mutations, observer) =>
     }
   })
 );
-setTimeout(Footer(), 500);
+setTimeout(Footer, 2500);
 observer.observe(document.body, { subtree: true, childList: true });
