@@ -1,0 +1,72 @@
+footer .footer-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer-content .logo img{
+  width: 216px;
+}
+footer .footer-content ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-content ul.social{
+  display: flex;
+  justify-content: start;
+  margin: 1rem 0;
+}
+footer .footer-content ul.social li{
+  margin: 0 .2rem;
+}
+footer .footer-content ul.social a{
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+}
+footer .footer-content ul.social a[href*="youtube"]{
+  fill: #ff0000;
+}
+footer .footer-content ul.social a[href*="twitter"]{
+  fill: #1da1f2;
+}
+footer .footer-content ul.social a[href*="wa.me"]{
+  fill: #25d366;
+}
+footer .footer-content ul.social a[href*="tel"]{
+  fill: #0088cc;
+}
+footer .footer-content ul.social a[href*="tel"] svg{
+  transform: scale(1.55);
+}
+
+footer .footer-content nav.links{
+  margin-top: 2rem;
+}
+
+footer .footer-content nav.links h4{
+  color: var(--ar-secondary) !important;
+    font-weight: bold;
+    font-size: 1.45em;
+    position: relative;
+}
+
+
+footer .footer-content nav.links h4::before{
+  content: '';
+  width: 5px;
+  border-radius: 20px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--ar-accent);
+  right: -10%;
+}
+
+
+footer .copyrights{
+  border-top: 2px solid #85b9d6;
+  padding-top: 24px;
+}
