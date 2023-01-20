@@ -92,18 +92,43 @@ display: none !important
 }
 }
 
+@media screen and (max-width: 767.99px) {
+  .card.lift .card-footer{
+    margin-bottom: 4rem;
+  }
+}
 @media screen and (max-width: 459.99px) {
   .card.lift button.btn{
     font-size: .8em;
   }
   
+  .card.lift .card-body .card-title{
+    font-size: 18px;
+  }
+  .card.lift .card-body .card-subtitle{
+    font-size: .75em;
+  }
 }
 @media screen and (max-width: 364.99px) {
+  .card.lift .card-body{
+    margin-top: 0 !important;
+  }
   .card.lift button.btn{
     font-size: .65em;
   }
-  
+  .card.lift .card-body .card-title{
+    font-size: 15px;
+  }
+  .card.lift .card-body .card-subtitle{
+    font-size: .65em;
+  }
   .card.lift .card-footer > div:last-child > div{
     column-gap: 1px;
+  }
+  .card.lift .card-footer{
+    margin-bottom: 1rem;
+  }
+  .card.lift .card-footer>div:first-child{
+    margin-bottom: 0 !important;
   }
 }
