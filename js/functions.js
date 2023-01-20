@@ -7,6 +7,8 @@ function tryCatch(func) {
 }
 
 function courseInfo() {
+  /* ==== For the tabs ==== */
+
   // save the nav
   const nav = document
     .querySelector("main > .container > .row > div:first-child #overview > nav")
@@ -53,6 +55,17 @@ function courseInfo() {
     document.querySelector(navContent).classList.add("active");
   }
   links.forEach((el) => el.addEventListener("click", click));
+
+  /* ==== For instructor ==== */
+  const instructorOriginal = document.querySelector(
+    "#instructors .media-body a"
+  );
+  const instructor = document.querySelector(
+    "main.academy-courses-show>.container>.row>div:first-child>div:first-of-type a[href*='difficulties']"
+  );
+
+  instructorOriginal.textContent = instructor.textContent;
+  instructorOriginal.setAttribute("href", instructor.getAttribute("href"));
 }
 
 function courseContent() {
