@@ -74,6 +74,7 @@ transform: scale(1.05);
 .card.lift button.btn{
   display: inline-block;
   width: 50%;
+  font-size: .9em;
 }
 .card.lift a.btn{
   display: block;
@@ -83,6 +84,12 @@ transform: scale(1.05);
 
 main.academy-user-account-courses .card.lift .card-footer > div:first-child{
 display: none !important
+}
+
+@media (min-width: 992px){
+  .container {
+    max-width: 1200px;
+}
 }
 
 @media screen and (max-width: 459.99px) {
