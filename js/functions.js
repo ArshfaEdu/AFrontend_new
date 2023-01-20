@@ -72,9 +72,13 @@ function courseInfo() {
     location.href = instructor.getAttribute("href");
   });
 
-  instructorContainer.parentElement
-    .querySelector("a.avatar.avatar-custom")
-    .removeAttribute("href");
+  const wrapperAvatar = document.createElement("div");
+  wrapperAvatar.setAttribute("class", "avatar avatar-custom");
+  let avatar = instructorContainer.parentElement.querySelector(
+    "a.avatar.avatar-custom"
+  );
+  wrapperAvatar.innerHTML = avatar.innerHTML;
+  instructorContainer.parentElement.replaceChild(wrapperAvatar, avatar);
 
   instructorContainer.replaceChild(
     button,
