@@ -129,6 +129,11 @@ function category() {
   // set the alt
   logo.setAttribute("alt", currentUniversity);
 
+  // set styles for the image
+  logo.setAttribute("style", "width: 192px;height:auto");
+
+  logo.parentElement.style.marginBottom = "3rem;";
+
   // replace the title with the new created image
   title.parentElement.replaceChild(logo, title);
 
@@ -139,10 +144,10 @@ function category() {
     `/suggest-course?university=${currentUniversity}`
   );
   suggestBtn.setAttribute("target", "_blank");
-  suggestBtn.setAttribute("class", "btn btn-primary btn-suggestCourse");
-  suggestBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"><defs></defs><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"><path d="M 45 90 c -4.418 0 -8 -3.582 -8 -8 V 8 c 0 -4.418 3.582 -8 8 -8 c 4.418 0 8 3.582 8 8 v 74 C 53 86.418 49.418 90 45 90 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff;fill-rule:nonzero;opacity:1" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/><path d="M 82 53 H 8 c -4.418 0 -8 -3.582 -8 -8 c 0 -4.418 3.582 -8 8 -8 h 74 c 4.418 0 8 3.582 8 8 C 90 49.418 86.418 53 82 53 z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff;fill-rule:nonzero;opacity:1" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/></g></svg>`;
+  suggestBtn.setAttribute("class", "btn btn-primary");
+  suggestBtn.textContent = "اقترح مادة";
 
-  logo.parentElement.appendChild(suggestBtn);
+  logo.parentElement.parentElement.nextElementSibling.appendChild(suggestBtn);
 }
 
 function cards() {
