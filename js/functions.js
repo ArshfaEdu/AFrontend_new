@@ -144,10 +144,13 @@ function category() {
     `/suggest-course?university=${currentUniversity}`
   );
   suggestBtn.setAttribute("target", "_blank");
-  suggestBtn.setAttribute("class", "btn btn-primary");
+  suggestBtn.setAttribute("class", "btn btn-primary mb-6");
+  suggestBtn.setAttribute("style", "width: 10%");
   suggestBtn.textContent = "اقترح مادة";
 
-  logo.parentElement.parentElement.nextElementSibling.appendChild(suggestBtn);
+  let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
+  let cardsParent = cardsContainer.children[0];
+  cardsContainer.insertBefore(suggestBtn, cardsParent);
 }
 
 function cards() {
