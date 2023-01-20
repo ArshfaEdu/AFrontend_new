@@ -132,10 +132,10 @@ function category() {
   // set styles for the image
   logo.setAttribute("style", "width: 192px;height:auto");
 
-  logo.parentElement.setAttribute("style", "margin-bottom: 3rem;");
-
   // replace the title with the new created image
   title.parentElement.replaceChild(logo, title);
+
+  logo.parentElement.setAttribute("style", "margin-bottom: 3rem;");
 
   /* Add suggest course button */
   const suggestBtn = document.createElement("a");
