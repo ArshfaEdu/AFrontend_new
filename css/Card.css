@@ -8,7 +8,6 @@
 .card.lift img.card-img{
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  aspect-ratio: 16 / 9;
 }
 .card.lift .card-body{
   display: flex;
@@ -94,7 +93,7 @@ display: none !important
 
 @media screen and (max-width: 767.99px) {
   .card.lift .card-footer{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 459.99px) {
