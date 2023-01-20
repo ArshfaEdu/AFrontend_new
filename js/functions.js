@@ -133,9 +133,9 @@ function category() {
   logo.setAttribute("style", "width: 192px;height:auto");
 
   // replace the title with the new created image
-  title.parentElement.replaceChild(logo, title);
+  title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
 
-  logo.parentElement.setAttribute("style", "margin-bottom: 3rem;");
+  title.parentElement.replaceChild(logo, title);
 
   /* Add suggest course button */
   const suggestBtn = document.createElement("a");
