@@ -21,6 +21,11 @@ const observer = new MutationObserver((mutations, observer) =>
     // check the activatibility of header link
     tryCatch(headerLinks);
 
+    if (document.querySelector(".app-layout footer.footer")) {
+      if (document.querySelector(".app-layout footer.footer .container .row")) {
+        tryCatch(Footer);
+      }
+    }
     // add style to main tag based on page
     tryCatch(() => addStyle(pagesToObserve, pageName));
 
@@ -46,5 +51,3 @@ const observer = new MutationObserver((mutations, observer) =>
   })
 );
 observer.observe(document.body, { subtree: true, childList: true });
-
-setTimeout(Footer, 750);
