@@ -74,7 +74,7 @@
           </div>
           <div class="form-element">
             <label for="university">الجامعة التي يتم تدريس المادة فيها ؟</label>
-            <input type="text" id="university" name="entry.1203211413" placeholder="اسم الجامعة">
+            <input type="text" id="university" name="entry.1203211413" placeholder="اسم الجامعة" required>
           </div>
           <button type="submit">اقترح</button>
         </form>
@@ -88,6 +88,12 @@
       const form = document.getElementById("form");
       form.addEventListener("submit", e => {
         e.preventDefault();
+
+        let submit = document.querySelector("form#form button[type='submit']")
+        submit.setAttribute("disabled", "true");
+        submit.textContent = "جاري الإرسال ..";
+        submit.style.opacity = ".75"
+        submit.style.cursor = "auto"
 
         const payload = new URLSearchParams(new FormData(form));
         fetch("https://docs.google.com/forms/u/9/d/e/1FAIpQLSdWJQcS861hpEvUS7GSusSRe5cPdavtPpwhLCeH07aLqJifsA/formResponse", {

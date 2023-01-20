@@ -153,6 +153,9 @@ main.academy-courses-show #instructors>div::before{
   transition: opacity .2s ease-in-out;
   background-color: #fff;
 }
+main.academy-courses-show #instructors>div:hover button{
+  color: #fff;
+}
 main.academy-courses-show #instructors > div > div:first-child{
   padding: 0 !important;
   margin: 0 !important;
@@ -164,8 +167,10 @@ main.academy-courses-show #instructors > div .media-body{
   padding-left: 3em;
 }
 
-main.academy-courses-show #instructors>div .media-body > a{
+main.academy-courses-show #instructors>div .media-body > button{
   position: relative;
+  background: none;
+  border: none;
 }
 main.academy-courses-show #instructors > div .media-body h4{
   font-size: 1.25em;

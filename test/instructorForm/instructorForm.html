@@ -113,14 +113,14 @@
             <textarea type="text" name="entry.1431411762" placeholder="وش اكثر شيء يحفزك تشرح معانا ؟"></textarea>
           </div>
           <input type="checkbox" name="agree" id="agree" required />
-          <!-- <input type="hidden" name="entry.1393528318" disabled> -->
+          <input type="hidden" name="entry.1500485276" disabled>
           <span for="agree">أوافق على <a href="https://arshfa.net/terms-and-condition">الشروط و الأحكام</a>
           </span>
           <button type="submit">انضم كصانع محتوى</button>
         </form>
       </div>
     </div>
-    <!-- <script>
+    <script>
       const form = document.getElementById("form");
       form.addEventListener("submit", e => {
         e.preventDefault();
@@ -128,12 +128,13 @@
         submit.setAttribute("disabled", "true");
         submit.textContent = "جاري الإرسال ..";
         submit.style.opacity = ".75"
-        //const agree = document.getElementById("agree")
-        /*if (agree.checked) {
+        submit.style.cursor = "auto"
+        const agree = document.getElementById("agree")
+        if (agree.checked) {
           let realAgree = document.querySelector("#form input[type='hidden']")
           realAgree.setAttribute("value", "أوافق")
           realAgree.removeAttribute("disabled")
-        }*/
+        }
 
         const payload = new URLSearchParams(new FormData(form));
         fetch("https://docs.google.com/forms/u/2/d/e/1FAIpQLScDj1ezLiXom3ioQSyCiz-5ypgsQf6KkJxLfJr-XsdDrW72xA/formResponse", {
@@ -146,7 +147,7 @@
           location.pathname = "/thanks"
         })
       })
-    </script> -->
+    </script>
   </div>
   <!-- <div class="instructor-container">
     <div class="contact-box">

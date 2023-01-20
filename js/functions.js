@@ -57,15 +57,29 @@ function courseInfo() {
   links.forEach((el) => el.addEventListener("click", click));
 
   /* ==== For instructor ==== */
-  const instructorOriginal = document.querySelector(
-    "#instructors .media-body a"
+  const instructorContainer = document.querySelector(
+    "#instructors .media-body"
   );
+
   const instructor = document.querySelector(
     "main.academy-courses-show>.container>.row>div:first-child>div:first-of-type a[href*='difficulties']"
   );
 
-  instructorOriginal.textContent = instructor.textContent;
-  instructorOriginal.setAttribute("href", instructor.getAttribute("href"));
+  const button = document.createElement("button");
+  button.setAttribute("class", "d-block");
+  button.textContent = instructor.textContent;
+  button.addEventListener("click", (e) => {
+    location.href = instructor.getAttribute("href");
+  });
+
+  instructorContainer.parentElement
+    .querySelector("a.avatar.avatar-custom")
+    .removeAttribute("href");
+
+  instructorContainer.replaceChild(
+    button,
+    instructorContainer.querySelector("a")
+  );
 }
 
 function courseContent() {

@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 .instructor-container .contact-box {
   background: #fff;
@@ -28,7 +24,7 @@
 }
 
 .instructor-container .text-line {
-  width: 210px;
+  width: 30vmin;
   height: 9px;
   background-image: linear-gradient(95.41deg, #5BC3B5 2.33%, #4493D0 119.49%); 
   border-radius:3rem;
@@ -91,6 +87,12 @@ border-radius: 50px;
 }
 
 @media (max-width:480px) {
+  .instructor-container .contact-left{
+    padding: 40px 20px;
+  }
+  .instructor-container .form-element{
+    font-size: .85em;
+  }
   .instructor-container .content p {
       font-size: 18px;
   }
@@ -99,7 +101,6 @@ border-radius: 50px;
       padding:10px 30px;
     }
 .instructor-container .text-line {
-  width: 190px;
   margin: 1rem 0.9rem 0rem 0rem;
 }
 .instructor-container .contact-right {
