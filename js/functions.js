@@ -132,7 +132,7 @@ function category() {
   // set styles for the image
   logo.setAttribute("style", "width: 192px;height:auto");
 
-  logo.parentElement.style.marginBottom = "3rem;";
+  logo.parentElement.setAttribute("style", "margin-bottom: 3rem;");
 
   // replace the title with the new created image
   title.parentElement.replaceChild(logo, title);
