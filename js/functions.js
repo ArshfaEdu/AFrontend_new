@@ -78,7 +78,9 @@ function courseInfo() {
     "a.avatar.avatar-custom"
   );
   wrapperAvatar.innerHTML = avatar.innerHTML;
-  instructorContainer.parentElement.replaceChild(wrapperAvatar, avatar);
+  instructorContainer.parentElement
+    .querySelector("rounded-circle")
+    .replaceChild(wrapperAvatar, avatar);
 
   instructorContainer.replaceChild(
     button,
