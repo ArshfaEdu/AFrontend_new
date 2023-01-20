@@ -144,8 +144,8 @@ function category() {
     `/suggest-course?university=${currentUniversity}`
   );
   suggestBtn.setAttribute("target", "_blank");
-  suggestBtn.setAttribute("class", "btn btn-primary mb-6");
-  suggestBtn.setAttribute("style", "width: 18%");
+  suggestBtn.setAttribute("class", "btn btn-primary mb-6 suggestBtn");
+  suggestBtn.setAttribute("style", "width: 30vmin");
   suggestBtn.textContent = "اقترح مادة";
 
   let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
