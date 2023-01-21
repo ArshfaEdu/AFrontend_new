@@ -48,10 +48,8 @@ const observer = new MutationObserver((mutations, observer) =>
       case "category":
         category();
         break;
-      case "level":
-        level();
-        break;
     }
   })
 );
+level();
 observer.observe(document.body, { subtree: true, childList: true });
