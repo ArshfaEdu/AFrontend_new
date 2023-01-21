@@ -290,39 +290,39 @@ function getPageName(path) {
   }
 }
 
-function level() {
-  const img = document.createElement("img");
-  img.setAttribute(
-    "src",
-    "https://www.gravatar.com/avatar/e1359d8aedbfa7a6be891f7b2e4ee519?s=80&amp;d=mm&amp;r=g"
-  );
-  img.setAttribute("alt", "instructor");
-  img.setAttribute("class", "avatar-img rounded-circle");
-  img.setAttribute("style", "box-shadow:4px 4px 10px 3px #0000001A;");
+// function level() {
+//   const img = document.createElement("img");
+//   img.setAttribute(
+//     "src",
+//     "https://www.gravatar.com/avatar/e1359d8aedbfa7a6be891f7b2e4ee519?s=80&amp;d=mm&amp;r=g"
+//   );
+//   img.setAttribute("alt", "instructor");
+//   img.setAttribute("class", "avatar-img rounded-circle");
+//   img.setAttribute("style", "box-shadow:4px 4px 10px 3px #0000001A;");
 
-  const avatarWrapper = document.createElement("div");
-  avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
-  avatarWrapper.appendChild(img);
+//   const avatarWrapper = document.createElement("div");
+//   avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
+//   avatarWrapper.appendChild(img);
 
-  let levelName = document.querySelector(
-    "main .container>div:first-of-type>.col-12 h1"
-  );
+//   let levelName = document.querySelector(
+//     "main .container>div:first-of-type>.col-12 h1"
+//   );
 
-  levelName.parentElement.insertBefore(avatarWrapper, levelName);
+//   levelName.parentElement.insertBefore(avatarWrapper, levelName);
 
-  // title of the page
-  let title = document.createElement("h1");
-  title.textContent = "دورات المحاضر";
-  title.setAttribute(
-    "style",
-    "margin:0 2rem 3rem 0;color:var(--ar-secondary)!important;"
-  );
-  let coursesCotainer = document.querySelector(
-    "main.teacher-page .container > mt-30px > .row"
-  );
+//   // title of the page
+//   let title = document.createElement("h1");
+//   title.textContent = "دورات المحاضر";
+//   title.setAttribute(
+//     "style",
+//     "margin:0 2rem 3rem 0;color:var(--ar-secondary)!important;"
+//   );
+//   let coursesCotainer = document.querySelector(
+//     "main.teacher-page .container > mt-30px > .row"
+//   );
 
-  coursesCotainer.parentElement.insertBefore(title, coursesCotainer);
-}
+//   coursesCotainer.parentElement.insertBefore(title, coursesCotainer);
+// }
 function redirect(links) {
   for (let link in links) {
     if (link === location.pathname) {
