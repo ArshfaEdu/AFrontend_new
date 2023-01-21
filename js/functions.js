@@ -174,7 +174,7 @@ function category() {
     let h1 = document.createElement("h1");
     h1.setAttribute(
       "style",
-      "color:var(--ar-dark)!important;font-size:4em;font-weight:bold;"
+      "color:var(--ar-dark)!important;font-size:8vmin;font-weight:bold;text-align:center;"
     );
     h1.textContent = "جايينكم قريب ...";
     container.appendChild(logo);
