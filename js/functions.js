@@ -149,6 +149,7 @@ function category() {
 
   let container = null;
   if (document.querySelector("main").children.length === 0) {
+    console.log("brug");
     container = document.createElement("div");
     container.setAttribute(
       "class",
