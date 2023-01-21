@@ -28,9 +28,12 @@ main.teacher-page .container > div:first-of-type > .col-12 h1{
   font-weight: bold;
   color: var(--ar-secondary) !important;
 }
-main.teacher-page .container > .mt-30px .col{
-  width: 50% !important;
+@media screen and (min-width: 992px){
+  main.teacher-page .container > .mt-30px .col{
+    width: 50% !important;
+  }
 }
+
 main.teacher-page .container nav[aria-label*="navigation"]{
   grid-column: 2;
     padding-bottom: 1.5rem;
