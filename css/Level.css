@@ -1,40 +1,43 @@
-main.teacher-page > section{
-  padding-top: 0 !important;
-}
-main.teacher-page .container{
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-main.teacher-page .container > div:first-of-type{
-  align-items: initial !important;
-  border-left: 7px solid var(--ar-light);
-}
-main.teacher-page .container .row{
-  margin-left: 0;
-  margin-right: 0;
-}
-main.teacher-page .container > div:first-of-type > .col-12{
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-    position: sticky;
-    top: 10%;
-    width: 100%;
-    height: fit-content;
+
+@media screen and (min-width: 992px){
+  main.teacher-page > section{
+    padding-top: 0 !important;
+  }
+  main.teacher-page .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  main.teacher-page .container > div:first-of-type{
+    align-items: initial !important;
+    border-left: 7px solid var(--ar-light);
+  }
+  main.teacher-page .container .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main.teacher-page .container > div:first-of-type > .col-12{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+      position: sticky;
+      top: 10%;
+      width: 100%;
+      height: fit-content;
+  }
+
+  main.teacher-page .container > .mt-30px .col{
+    width: 50% !important;
+  }
+  main.teacher-page .container nav[aria-label*="navigation"]{
+    grid-column: 2;
+      padding-bottom: 1.5rem;
+  }
 }
 main.teacher-page .container > div:first-of-type > .col-12 h1{
   font-size: 2.75em;
   font-weight: bold;
   color: var(--ar-secondary) !important;
 }
-@media screen and (min-width: 992px){
-  main.teacher-page .container > .mt-30px .col{
-    width: 50% !important;
-  }
-}
 
-main.teacher-page .container nav[aria-label*="navigation"]{
-  grid-column: 2;
-    padding-bottom: 1.5rem;
-}
+
