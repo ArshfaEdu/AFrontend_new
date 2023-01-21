@@ -147,7 +147,18 @@ function category() {
   // replace the title with the new created image
   title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
 
-  title.parentElement.replaceChild(logo, title);
+  let container = null;
+  if (document.querySelector("main").children.length === 0) {
+    container = document.createElement("div");
+    container.setAttribute(
+      "class",
+      "d-flex w-75 mx-auto justify-content-center align-items-center text-align-center"
+    );
+    container.setAttribute("style", "flex-direction:column;");
+    container.appendChild(logo);
+  } else {
+    title.parentElement.replaceChild(logo, title);
+  }
 
   /* Add suggest course button */
   const suggestBtn = document.createElement("a");
@@ -162,7 +173,13 @@ function category() {
 
   let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
   let cardsParent = cardsContainer.children[0];
-  cardsContainer.insertBefore(suggestBtn, cardsParent);
+
+  if (container != null) {
+    container.appendChild(suggestBtn);
+    document.querySelector("main").appendChild(container);
+  } else {
+    cardsContainer.insertBefore(suggestBtn, cardsParent);
+  }
 }
 
 function cards() {
