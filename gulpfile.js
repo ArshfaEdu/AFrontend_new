@@ -15,6 +15,7 @@ const bundleJS = () => {
     "./js/**/lockWebsite.js",
     "./js/**/functions.js",
     "./js/**/redirects.js",
+    "./js/**/levelPage.js",
     "./js/**/observer.js",
   ])
     .pipe(minifyJS())
