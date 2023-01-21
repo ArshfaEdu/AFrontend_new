@@ -1,4 +1,6 @@
-
+main.teacher-page > section{
+  padding-top: 0 !important;
+}
 @media screen and (min-width: 992px){
   main.teacher-page > section{
     padding-top: 0 !important;
@@ -10,6 +12,7 @@
   main.teacher-page .container > div:first-of-type{
     align-items: initial !important;
     border-left: 7px solid var(--ar-light);
+    padding-top: 3rem;
   }
   main.teacher-page .container .row{
     margin-left: 0;
@@ -25,7 +28,9 @@
       width: 100%;
       height: fit-content;
   }
-
+  main.teacher-page .container > .mt-30px{
+    padding-top: 3rem;
+  }
   main.teacher-page .container > .mt-30px .col{
     width: 50% !important;
   }
@@ -37,7 +42,7 @@
 main.teacher-page .container > div:first-of-type > .col-12 h1{
   font-size: 2.75em;
   font-weight: bold;
-  color: var(--ar-secondary) !important;
+  color: var(--ar-primary) !important;
 }
 
 

@@ -290,6 +290,22 @@ function getPageName(path) {
   }
 }
 
+function level() {
+  let avatarWrapper = `<div style="width:108px;margin-bottom:1.5rem;"><img src="https://www.gravatar.com/avatar/e1359d8aedbfa7a6be891f7b2e4ee519?s=80&amp;d=mm&amp;r=g" alt="Minor project" class="avatar-img rounded-circle" style="box-shadow:4px 4px 10px 3px #0000001A;"></div>`;
+  let infoContainer = document.querySelector(
+    "main .container>div:first-of-type>.col-12"
+  );
+
+  infoContainer.innerHTML = avatarWrapper + infoContainer.innerHTML;
+
+  // title of the page
+  let title = `<h1 style="margin: 0 2rem 3rem 0;color: var(--ar-secondary) !important;
+  ">دورات المحاضر</h1>`;
+  let coursesCotainer = document.querySelector(
+    "main.teacher-page .container > mt-30px"
+  );
+  coursesCotainer.innerHTML = title + coursesCotainer.innerHTML;
+}
 function redirect(links) {
   for (let link in links) {
     if (link === location.pathname) {
