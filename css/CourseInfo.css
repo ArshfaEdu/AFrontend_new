@@ -162,15 +162,16 @@ main.academy-courses-show #instructors > div > div:first-child{
   box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
   border: none !important;
 }
-main.academy-courses-show #instructors > div .media-body{
+/* main.academy-courses-show #instructors > div .media-body{
   padding-right: 1.5em;
   padding-left: 3em;
-}
-
+} */
 main.academy-courses-show #instructors>div .media-body > button{
   position: relative;
-  background: none;
+  background: 0 0;
   border: none;
+  width: 128px;
+  height: 65px;
 }
 main.academy-courses-show #instructors > div .media-body h4{
   font-size: 1.25em;
