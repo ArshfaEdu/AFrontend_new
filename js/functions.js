@@ -162,13 +162,20 @@ function category() {
   if (
     document.querySelector("main.academy-categories-show").children.length === 0
   ) {
-    console.log("brug");
     container = document.createElement("div");
     container.setAttribute(
       "class",
       "d-flex w-75 mx-auto justify-content-center align-items-center text-align-center"
     );
-    container.setAttribute("style", "flex-direction:column;");
+    container.setAttribute(
+      "style",
+      "flex-direction:column;row-gap:4rem;padding:4rem 0;"
+    );
+    let h1 = document.createElement("h1");
+    h1.setAttribute(
+      "style",
+      "color:var(--ar-dark)!important;font-size:4em;font-weight:bold;"
+    );
     container.appendChild(logo);
     container.appendChild(suggestBtn);
     document.querySelector("main").appendChild(container);
