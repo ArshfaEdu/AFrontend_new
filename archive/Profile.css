@@ -1,0 +1,32 @@
+main.profile-page{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+main.profile-page > div.bg-dark.bg-gradient{
+  margin-bottom: 0 !important;
+  background-color: transparent !important;
+  border-left: 3px solid #EBEBEB;
+  padding-top: 4rem;
+}
+main.profile-page > div.bg-dark.bg-gradient .container .row{
+  justify-content: center;
+  text-align: center;
+}
+main.profile-page > div.bg-dark.bg-gradient .container > .row .row > div:first-of-type{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+main.profile-page > div.bg-dark.bg-gradient .container .row img{
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
+}
+main.profile-page > div.bg-dark.bg-gradient .container .row h4{
+  font-size: 1.75em;
+  color: var(--ar-primary) !important;
+}
+main.profile-page > div.bg-dark.bg-gradient .container .row h4 .badge{
+  font-size: 14px;
+  border-radius: 50px;
+  background-color: var(--ar-dark) !important;
+}

@@ -118,27 +118,6 @@ function courseContent() {
       content.setAttribute("data-order", "5");
     }
   });
-  // let items = contentSection.children;
-  // let contents = [];
-  // for (let i in items) {
-  //   if (items[i].nodeType === 1) contents.push(items[i]);
-  // }
-
-  // let videoPlayer = null;
-  // let title = null;
-  // let details = null;
-  // let cert = null;
-  // let alert = null;
-  // contents.forEach((content) => {
-  // if (content.querySelector(".plyr")) {
-  //   videoPlayer = content.cloneNode(true);
-  // } else if (content.querySelector("h2")) {
-  //   title = content.cloneNode(true);
-  // } else if (content.classList.contains(".alert-info")) {
-  //   alert = content.clone;
-  // } else if (content.querySelector("h2")) {
-  // }
-  // });
 }
 
 function category() {
@@ -304,6 +283,8 @@ function getPageName(path) {
     return "category";
   } else if (path.startsWith("/@")) {
     return "profile";
+  } else if (path.startsWith("/difficulties")) {
+    return "level";
   } else {
     return "unknown";
   }

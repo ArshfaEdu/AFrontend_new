@@ -5,6 +5,7 @@ const pagesToObserve = {
   userCourses: "academy-user-account-courses",
   category: "academy-categories-show",
   profile: "profile-page",
+  level: "teacher-page",
 };
 
 const observer = new MutationObserver((mutations, observer) =>
