@@ -148,7 +148,9 @@ function category() {
   title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
 
   let container = null;
-  if (document.querySelector("main").children.length === 0) {
+  if (
+    document.querySelector("main.academy-categories-show").children.length === 0
+  ) {
     console.log("brug");
     container = document.createElement("div");
     container.setAttribute(
