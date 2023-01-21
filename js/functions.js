@@ -136,7 +136,7 @@ function setLogoCategory(logo) {
   // set styles for the image
   logo.setAttribute("style", "width: 192px;height:auto");
 }
-function setSuggestBtnCategory(btn) {
+function setSuggestBtnCategory(suggestBtn) {
   // get the acronym (short name) of the university
   let currentUniversity = location.pathname.split("/").pop();
 
@@ -155,7 +155,7 @@ function category() {
   setLogoCategory(logo);
 
   /* Add suggest course button */
-  const suggestBtn = document.createElement("a");
+  let suggestBtn = document.createElement("a");
   setSuggestBtnCategory(suggestBtn);
 
   let container = null;
