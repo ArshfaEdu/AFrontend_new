@@ -176,8 +176,10 @@ function category() {
       "style",
       "color:var(--ar-dark)!important;font-size:4em;font-weight:bold;"
     );
+    h1.textContent = "جايينكم قريب ...";
     container.appendChild(logo);
     container.appendChild(suggestBtn);
+    container.appendChild(h1);
     document.querySelector("main").appendChild(container);
   } else {
     // get the title to replace
