@@ -1,6 +1,4 @@
-main.teacher-page > section{
-  padding-top: 0 !important;
-}
+
 @media screen and (min-width: 992px){
   main.teacher-page > section{
     padding-top: 0 !important;
