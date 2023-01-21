@@ -120,15 +120,7 @@ function courseContent() {
   });
 }
 
-function category() {
-  // get the title to replace
-  const title = document.querySelector(
-    "main .container > div:first-of-type h1"
-  );
-
-  // create img for the logo
-  const logo = document.createElement("img");
-
+function setLogoCategory(logo) {
   // get the acronym (short name) of the university
   let currentUniversity = location.pathname.split("/").pop();
 
@@ -143,9 +135,28 @@ function category() {
 
   // set styles for the image
   logo.setAttribute("style", "width: 192px;height:auto");
+}
+function setSuggestBtnCategory(btn) {
+  // get the acronym (short name) of the university
+  let currentUniversity = location.pathname.split("/").pop();
 
-  // replace the title with the new created image
-  title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
+  suggestBtn.setAttribute(
+    "href",
+    `/suggest-course?university=${currentUniversity}`
+  );
+  suggestBtn.setAttribute("target", "_blank");
+  suggestBtn.setAttribute("class", "btn btn-primary mb-6 suggestBtn");
+  suggestBtn.setAttribute("style", "width: 30vmin");
+  suggestBtn.textContent = "اقترح مادة";
+}
+function category() {
+  // create img for the logo
+  let logo = document.createElement("img");
+  setLogoCategory(logo);
+
+  /* Add suggest course button */
+  const suggestBtn = document.createElement("a");
+  setSuggestBtnCategory(suggestBtn);
 
   let container = null;
   if (
@@ -159,28 +170,20 @@ function category() {
     );
     container.setAttribute("style", "flex-direction:column;");
     container.appendChild(logo);
-  } else {
-    title.parentElement.replaceChild(logo, title);
-  }
-
-  /* Add suggest course button */
-  const suggestBtn = document.createElement("a");
-  suggestBtn.setAttribute(
-    "href",
-    `/suggest-course?university=${currentUniversity}`
-  );
-  suggestBtn.setAttribute("target", "_blank");
-  suggestBtn.setAttribute("class", "btn btn-primary mb-6 suggestBtn");
-  suggestBtn.setAttribute("style", "width: 30vmin");
-  suggestBtn.textContent = "اقترح مادة";
-
-  let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
-  let cardsParent = cardsContainer.children[0];
-
-  if (container != null) {
     container.appendChild(suggestBtn);
     document.querySelector("main").appendChild(container);
   } else {
+    // get the title to replace
+    const title = document.querySelector(
+      "main .container > div:first-of-type h1"
+    );
+
+    // replace the title with the new created image
+    title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
+    title.parentElement.replaceChild(logo, title);
+
+    let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
+    let cardsParent = cardsContainer.children[0];
     cardsContainer.insertBefore(suggestBtn, cardsParent);
   }
 }
