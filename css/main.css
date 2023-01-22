@@ -312,17 +312,17 @@ nav#headlessui-menu-items-2 > div:first-child{
     background: var(--ar-specificGradient);
 }
 nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded{
-  background: none;
+  background: none !important;
 }
 nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div{
-  color: #fff;
+  color: #fff !important;
 }
 nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded{
-  background-color: var(--ar-light);
+  background-color: var(--ar-light) !important;
 }
 nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded div{
-  background-color: var(--ar-dark);
-  background: var(--ar-gradientDark);
+  background-color: var(--ar-dark) !important;
+  background: var(--ar-gradientDark) !important;
 }
 nav#headlessui-menu-items-2 > div:first-child a{
   color: #fff !important;
