@@ -198,7 +198,13 @@ function category() {
     cardsContainer.insertBefore(suggestBtn, cardsParent);
   }
 }
-
+function clearElements(elmntsToBeRemoved, pageName) {
+  for (const elem in elmntsToBeRemoved) {
+    if (elmntsToBeRemoved[elem] !== pageName) {
+      document.querySelector(elem).remove();
+    }
+  }
+}
 function cards() {
   const cards = document.querySelectorAll(".card.lift");
   if (cards.length === 0) {

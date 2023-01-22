@@ -8,6 +8,10 @@ const pagesToObserve = {
   level: "teacher-page",
 };
 
+const elmntsToBeRemoved = {
+  ".no-cards": "category",
+};
+
 const observer = new MutationObserver((mutations, observer) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
