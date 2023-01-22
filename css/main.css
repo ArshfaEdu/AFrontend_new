@@ -217,7 +217,11 @@ header nav > div > .navbar-nav > .nav-item a.nav-link{
   background: var(--ar-specificGradient);
   padding: 4px 0;
   border-radius: 30px;
-} 
+}
+header nav > div > .navbar-nav > .nav-item a.nav-link:hover{
+  color: #fff;
+  opacity: .85;
+}
 header nav > div > .navbar-nav > .nav-item a.nav-link .badge{
   background-color: #fff;
   color: var(--ar-primary);
@@ -243,6 +247,11 @@ header nav .navbar-collapse .navbar-nav .nav-link{
 @media screen and (min-width: 1200px) {
   header nav .navbar-collapse .navbar-nav{
     align-items: center;
+  }
+
+  header nav .navbar-collapse .navbar-nav .nav-link[href*="instructor"]:hover{
+    color: #fff;
+    opacity: .85;
   }
   header nav .navbar-collapse .navbar-nav .nav-link[href*="instructor"]{
     padding: .5rem 1rem;
