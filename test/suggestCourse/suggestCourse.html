@@ -76,11 +76,28 @@
             <label for="university">الجامعة التي يتم تدريس المادة فيها ؟</label>
             <input type="text" id="university" name="entry.1203211413" placeholder="اسم الجامعة" required>
           </div>
+          <div class="form-element">
+            <label for="possibleInstructor">(اختياري) اسم أحد ترشحه لشرح المادة؟</label>
+            <input onchange="" type="text" id="possibleInstructor" name="entry.372169537" placeholder="اسم المرشح">
+          </div>
+          <div class="form-element" id="possibleInstructorSocialContainer" style="display:none;">
+            <label for="possibleInstructorSocial">ساعدنا بوسيلة للتواصل معه (اختياري)</label>
+            <input type="text" id="possibleInstructorSocial" name="entry.2000395388" placeholder="طريقة التواصل أو حساب للمرشح">
+          </div>
           <button type="submit">اقترح</button>
         </form>
       </div>
     </div>
     <script>
+      // for showing social number of instructor
+      document.getElementById("possibleInstructor").addEventListener("keyup",(e) => {
+        let value = e.target.value;
+
+        if (value === "") return;
+
+        document.getElementById("possibleInstructorSocialContainer").setAttribute("style", "display:flex;")
+      })
+
       const uni = document.getElementById("university")
       const urlParams = new URLSearchParams(location.search)
       uni.setAttribute("value",urlParams.get("university") || "")
@@ -107,8 +124,6 @@
         })
       })
     </script>
-  </div>
-
-  
+  </div> 
 </body>
 </html>

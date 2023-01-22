@@ -134,7 +134,7 @@ function setLogoCategory(logo) {
   logo.setAttribute("alt", currentUniversity);
 
   // set styles for the image
-  logo.setAttribute("style", "width: 192px;height:auto");
+  logo.setAttribute("style", "width: 192px;height:192px");
 }
 function setSuggestBtnCategory(suggestBtn) {
   // get the acronym (short name) of the university
