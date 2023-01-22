@@ -184,7 +184,7 @@ body{
     width: 75%;
   }
 }
-@media screen and (max-width: 330px){
+@media screen and (max-width: 370px){
   .popper-container{
     transform: translate3d(26px,100.4px,0)!important
   }
@@ -198,7 +198,8 @@ body{
     order: 2;
   } */
   .app-layout>header nav .container-fluid>.navbar-nav{
-    margin-top: 1rem;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
   }
 }
 header.bg-white { 
