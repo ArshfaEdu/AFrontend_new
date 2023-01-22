@@ -162,6 +162,7 @@ function category() {
   if (
     document.querySelector("main.academy-categories-show").children.length === 0
   ) {
+    console.log("no cards");
     container = document.createElement("div");
     container.setAttribute(
       "class",
