@@ -219,7 +219,7 @@ header nav > div > .navbar-nav > .nav-item a.nav-link{
   border-radius: 30px;
 }
 header nav > div > .navbar-nav > .nav-item a.nav-link:hover{
-  color: #fff;
+  color: #fff !important;
   opacity: .85;
 }
 header nav > div > .navbar-nav > .nav-item a.nav-link .badge{
@@ -250,7 +250,7 @@ header nav .navbar-collapse .navbar-nav .nav-link{
   }
 
   header nav .navbar-collapse .navbar-nav .nav-link[href*="instructor"]:hover{
-    color: #fff;
+    color: #fff !important;
     opacity: .85;
   }
   header nav .navbar-collapse .navbar-nav .nav-link[href*="instructor"]{
