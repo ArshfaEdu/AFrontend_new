@@ -201,6 +201,7 @@ function category() {
 function clearElements(elmntsToBeRemoved, pageName) {
   for (const elem in elmntsToBeRemoved) {
     if (elmntsToBeRemoved[elem] !== pageName) {
+      console.log(pageName);
       document.querySelector(elem).remove();
     }
   }
