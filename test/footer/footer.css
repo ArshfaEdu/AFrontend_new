@@ -1,3 +1,4 @@
+
 footer .footer-content{
   display: flex;
   justify-content: space-evenly;
@@ -57,8 +58,9 @@ footer .footer-content nav.links h4::before{
 
 
 footer .copyrights{
-  border-top: 2px solid #85b9d6;
   padding-top: 24px;
+  background-color: #fff;
+  color: var(--ar-dark);
 }
 
 @media screen and (max-width: 767.99px) {

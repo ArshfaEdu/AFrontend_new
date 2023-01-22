@@ -320,6 +320,7 @@ footer.footer.bg-white{
 }
 footer.footer{
   border-top: none !important;
+  padding-bottom: 0 !important;
 }
 footer.footer nav.nav{
   justify-content: center;
