@@ -324,6 +324,7 @@ header .navbar-light .navbar-nav .nav-link {
 .popper-container > nav > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded div{
   background-color: var(--ar-dark) !important;
   background: var(--ar-gradientDark) !important;
+  border-radius: 50px;
 }
 .popper-container > nav > div:first-child a{
   color: #fff !important;

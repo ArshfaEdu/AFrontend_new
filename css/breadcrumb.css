@@ -1,20 +1,21 @@
 nav ol.breadcrumb .breadcrumb-item{
   background: var(--ar-gradient);
-  padding: 2px 10px;
+  padding: 2px 14px;
   color: #fff;
 }
 nav ol.breadcrumb .breadcrumb-item a{
   color: #fff !important;
+  font-size: 2.5vmin;
 }
 nav ol.breadcrumb .breadcrumb-item + .breadcrumb-item:before{
   content: "";
   width: 0;
   height: 0;
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
-  border-right: 6px solid #fff;
-  margin: 5px 2px;
+  border-top: 1.04vmin solid transparent;
+  border-bottom: 1.04vmin solid transparent;
+  border-right: 1.04vmin solid #fff;
   margin-right: -8px;
+  margin-top: 7px;
 }
 
 nav ol.breadcrumb .breadcrumb-item:first-child{

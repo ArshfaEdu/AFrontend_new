@@ -1,7 +1,7 @@
 /*=========== Right side ===========*/
 main.academy-courses-show > .container > .row > div:first-child > h1{
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 7vmin;
+  font-weight: 700;
   position: relative;
   padding-right: 10px;
 
