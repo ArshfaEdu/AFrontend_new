@@ -295,7 +295,7 @@ header .navbar-light .navbar-nav .nav-link {
     border-radius: 15%;
 } */
 
-nav#headlessui-menu-items-2{
+.popper-container > nav{
   border-radius: 20px;
   box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
   backdrop-filter: blur(20px);
@@ -303,7 +303,7 @@ nav#headlessui-menu-items-2{
   border: 1px solid rgba(255, 255, 255, 0.3) !important;
   background-color: #ffffffdd;
 }
-nav#headlessui-menu-items-2 > div:first-child{
+.popper-container > nav > div:first-child{
   color: #fff !important;
     margin: 0;
     justify-content: center;
@@ -311,26 +311,26 @@ nav#headlessui-menu-items-2 > div:first-child{
     background-color: var(--ar-primary);
     background: var(--ar-specificGradient);
 }
-nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded{
+.popper-container > nav > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded{
   background: none !important;
 }
-nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div{
+.popper-container > nav > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div{
   color: #fff !important;
 }
-nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded{
+.popper-container > nav > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded{
   background-color: var(--ar-light) !important;
 }
-nav#headlessui-menu-items-2 > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded div{
+.popper-container > nav > div:first-child.dropdown-item:not(.text-success) .dropdown-link >div.rounded > div:first-child .rounded div{
   background-color: var(--ar-dark) !important;
   background: var(--ar-gradientDark) !important;
 }
-nav#headlessui-menu-items-2 > div:first-child a{
+.popper-container > nav > div:first-child a{
   color: #fff !important;
 }
-nav#headlessui-menu-items-2 .dropdown-divider{
+.popper-container > nav .dropdown-divider{
   background-color: var(--ar-primary);
 }
-nav#headlessui-menu-items-2 #headlessui-menu-item-6{
+.popper-container > nav #headlessui-menu-item-6{
   display: none !important;
 }
 /* ===== Footer =====*/
@@ -361,6 +361,7 @@ footer *{color:#ffffff !important}
 #complete-profile-modal .modal-content .modal-body > .rounded{
   background: var(--ar-specificGradient) !important;
     color: #fff !important;
+    border-radius: 16px !important;
 }
 #complete-profile-modal .modal-content .modal-body > .rounded .ms-progress-bar{
   height: 10px;
@@ -369,6 +370,7 @@ footer *{color:#ffffff !important}
 #complete-profile-modal .modal-content .modal-body > .rounded .ms-progress-bar div{
   background-color: var(--ar-dark) !important;
   background: var(--ar-gradientDark) !important;
+  border-radius: 50px;
 }
 #complete-profile-modal .modal-content input.form-control{
   border-radius: 50px;
