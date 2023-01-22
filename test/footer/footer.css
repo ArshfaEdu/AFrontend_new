@@ -60,7 +60,9 @@ footer .footer-content nav.links h4::before{
 footer .copyrights{
   padding-top: 24px;
   background-color: #fff;
-  color: var(--ar-dark);
+}
+footer .copyrights *{
+  color: var(--ar-dark) !important;
 }
 
 @media screen and (max-width: 767.99px) {
