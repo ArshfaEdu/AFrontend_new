@@ -14,7 +14,7 @@ footer .footer-content ul{
 }
 footer .footer-content ul.social{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin: 1rem 0;
 }
 footer .footer-content ul.social li{
@@ -57,14 +57,25 @@ footer .footer-content nav.links h4::before{
 }
 
 
-footer .copyrights{
-  padding-top: 24px;
+footer .bottom{
+  padding: 1rem 1.5rem;
   background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem !important;
 }
-footer .copyrights *{
+footer .bottom *{
   color: var(--ar-dark) !important;
 }
-
+footer .bottom .left{
+  display: flex;
+  column-gap: 10px;
+}
+footer .bottom .payment-logo{
+  width: 36px;
+  border: none!important;
+  background-color: #eee;
+}
 @media screen and (max-width: 767.99px) {
   footer .footer-content .logo-and-information{
     grid-column: 1/4;
@@ -72,5 +83,13 @@ footer .copyrights *{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 589.99px){
+  footer .bottom{
+    flex-direction: column;
+  }
+  footer .bottom .left{
+    margin-top: .5rem;
   }
 }
