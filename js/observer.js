@@ -23,6 +23,8 @@ const observer = new MutationObserver((mutations, observer) =>
 
     let pageName = getPageName(location.pathname);
 
+    tryCatch(() => clearElements(elmntsToBeRemoved, pageName));
+
     // check the activatibility of header link
     tryCatch(headerLinks);
 
