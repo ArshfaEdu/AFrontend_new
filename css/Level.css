@@ -10,6 +10,7 @@
   main.teacher-page .container > div:first-of-type{
     align-items: initial !important;
     border-left: 7px solid var(--ar-light);
+    border-right: 7px solid var(--ar-light);
     padding-top: 3rem;
   }
   main.teacher-page .container .row{
@@ -25,6 +26,7 @@
       top: 10%;
       width: 100%;
       height: fit-content;
+      text-align: center !important;
   }
   main.teacher-page .container > .mt-30px{
     padding-top: 3rem;
