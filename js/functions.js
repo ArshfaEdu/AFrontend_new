@@ -180,7 +180,9 @@ function category() {
     container.appendChild(logo);
     container.appendChild(suggestBtn);
     container.appendChild(h1);
-    document.querySelector("main").appendChild(container);
+    document
+      .querySelector("main.academy-categories-show")
+      .appendChild(container);
   } else {
     // get the title to replace
     const title = document.querySelector(
