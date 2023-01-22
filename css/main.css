@@ -251,7 +251,7 @@ header nav .navbar-collapse .navbar-nav .nav-link{
     border-radius: 50px;
     background: var(--ar-specificGradient);
   }
-  header nav .navbar-collapse .navbar-nav .nav-link.active::after{
+  header nav .navbar-collapse .navbar-nav .nav-link.active:not(:last-of-type):after{
     content: '';
     position: absolute;
     width: 60%;
