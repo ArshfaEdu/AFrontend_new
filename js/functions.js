@@ -160,12 +160,11 @@ function category() {
 
   let container = null;
   let main = document.querySelector("main.academy-categories-show");
-  if (main.children.length === 0 && !main.querySelector(".no-cards")) {
-    console.log("no cards");
+  if (main.children.length === 0 && !main.querySelector(".no-courses")) {
     container = document.createElement("div");
     container.setAttribute(
       "class",
-      "d-flex no-cards w-75 mx-auto justify-content-center align-items-center text-align-center"
+      "d-flex no-courses w-75 mx-auto justify-content-center align-items-center text-align-center"
     );
     container.setAttribute(
       "style",
@@ -180,9 +179,7 @@ function category() {
     container.appendChild(logo);
     container.appendChild(suggestBtn);
     container.appendChild(h1);
-    document
-      .querySelector("main.academy-categories-show")
-      .appendChild(container);
+    document.querySelector("#app > .app-layout").insertBefore(container, main);
   } else {
     // get the title to replace
     const title = document.querySelector(
