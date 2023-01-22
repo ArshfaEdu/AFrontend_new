@@ -179,9 +179,10 @@ function category() {
     container.appendChild(logo);
     container.appendChild(suggestBtn);
     container.appendChild(h1);
-    // document
-    //   .querySelector("main.academy-categories-show")
-    //   .appendChild(container);
+
+    let comment = document.querySelector("main.academy-categories-show")
+      .childNodes[3];
+    comment.replaceWith(container);
   } else {
     // get the title to replace
     const title = document.querySelector(
@@ -190,7 +191,7 @@ function category() {
 
     // replace the title with the new created image
     title.parentElement.setAttribute("style", "margin-bottom: 3rem;");
-    title.parentElement.replaceChild(logo, title);
+    title.replaceWith(logo);
 
     let cardsContainer = logo.parentElement.parentElement.nextElementSibling;
     let cardsParent = cardsContainer.children[0];
