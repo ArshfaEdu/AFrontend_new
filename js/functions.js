@@ -162,7 +162,7 @@ function category() {
   let main = document.querySelector("main.academy-categories-show");
   if (main.children.length === 0 && !main.querySelector(".no-cards")) {
     console.log("no cards");
-    container = document.createElement("div");
+    container = document.createElement("section");
     container.setAttribute(
       "class",
       "d-flex no-cards w-75 mx-auto justify-content-center align-items-center text-align-center"
