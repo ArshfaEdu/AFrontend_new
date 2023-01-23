@@ -185,7 +185,7 @@ function category() {
     // let comment = document.querySelector("main.academy-categories-show")
     //   .childNodes[3];
     // comment.replaceWith(container);
-    main.parentElement.insertBefore(container, main);
+    main.parentElement.appendChild(container);
   } else {
     // get the title to replace
     const title = document.querySelector(
