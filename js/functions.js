@@ -161,6 +161,7 @@ function category() {
   let container = null;
   let main = document.querySelector("main.academy-categories-show");
 
+  // to add coming soon
   if (main.children.length === 0 && !main.querySelector(".no-courses")) {
     container = document.createElement("div");
     container.setAttribute(
