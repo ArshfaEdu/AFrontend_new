@@ -185,7 +185,7 @@ function category() {
     //   .childNodes[3];
     let comment = document.createComment("");
     main.appendChild(comment);
-    //comment.replaceWith(container);
+    comment.replaceWith(container);
   } else {
     // get the title to replace
     const title = document.querySelector(
