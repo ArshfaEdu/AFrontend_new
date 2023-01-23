@@ -181,10 +181,8 @@ function category() {
     container.appendChild(suggestBtn);
     container.appendChild(h1);
 
-    // let comment = document.querySelector("main.academy-categories-show")
-    //   .childNodes[3];
-    let comment = document.createComment("");
-    main.appendChild(comment);
+    let comment = document.querySelector("main.academy-categories-show")
+      .childNodes[2];
     comment.replaceWith(container);
   } else {
     // get the title to replace
