@@ -160,6 +160,7 @@ function category() {
 
   let container = null;
   let main = document.querySelector("main.academy-categories-show");
+
   if (main.children.length === 0 && !main.querySelector(".no-courses")) {
     container = document.createElement("div");
     container.setAttribute(
@@ -180,9 +181,11 @@ function category() {
     container.appendChild(suggestBtn);
     container.appendChild(h1);
 
-    let comment = document.querySelector("main.academy-categories-show")
-      .childNodes[3];
-    comment.replaceWith(container);
+    // let comment = document.querySelector("main.academy-categories-show")
+    //   .childNodes[3];
+    let comment = document.createComment("");
+    main.appendChild(comment);
+    //comment.replaceWith(container);
   } else {
     // get the title to replace
     const title = document.querySelector(
