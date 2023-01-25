@@ -352,17 +352,17 @@ function level() {
   levelName.parentElement.insertBefore(img, levelName);
 
   // title of the page
-  // let title = document.createElement("h1");
-  // title.textContent = "دورات المحاضر";
-  // title.setAttribute(
-  //   "style",
-  //   "margin:0 2rem 3rem 0;color:var(--ar-secondary)!important;"
-  // );
-  // let coursesCotainer = document.querySelector(
-  //   "main.teacher-page .container > mt-30px > .row"
-  // );
+  let title = document.createElement("h1");
+  title.textContent = "دورات المحاضر";
+  title.setAttribute(
+    "style",
+    "margin:0 2rem 3rem 0;color:var(--ar-secondary)!important;"
+  );
+  let coursesCotainer = document.querySelector(
+    "main.teacher-page .container > mt-30px > .row"
+  );
 
-  // coursesCotainer.parentElement.insertBefore(title, coursesCotainer);
+  coursesCotainer.parentElement.insertBefore(title, coursesCotainer);
 }
 function redirect(links) {
   for (let link in links) {
