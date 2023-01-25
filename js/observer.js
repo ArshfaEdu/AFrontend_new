@@ -36,7 +36,7 @@ const observer = new MutationObserver((mutations, observer) =>
     window.addEventListener("popstate", function (e) {
       console.log("detected");
       if (e.state.url.startsWith("/categories")) {
-        let main = this.document.querySelector("main.academy-categories-show");
+        let main = this.document.querySelector("main");
         console.log("it is category");
         if (main) {
           console.log("found main");
