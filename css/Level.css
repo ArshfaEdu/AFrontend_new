@@ -2,6 +2,7 @@
 @media screen and (min-width: 992px){
   main.teacher-page > section{
     padding-top: 0 !important;
+    text-align: center !important;
   }
   main.teacher-page .container{
     display: grid;
@@ -26,7 +27,6 @@
       top: 10%;
       width: 100%;
       height: fit-content;
-      text-align: center !important;
   }
   main.teacher-page .container > .mt-30px{
     padding-top: 3rem;
