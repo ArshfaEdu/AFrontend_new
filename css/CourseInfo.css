@@ -96,7 +96,7 @@ main.academy-courses-show #overview .list-style-v2 li:before{
 
 /* ----- Curriculum -----*/
 main.academy-courses-show #curriculum > div{
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
   border-radius: 30px !important;
 }
 main.academy-courses-show #curriculum > div > button{
@@ -134,7 +134,7 @@ main.academy-courses-show #instructors.active{
 }
 main.academy-courses-show #instructors > div{
   border-radius: 50px;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
+  box-shadow: var(--ar-boxShadow);
   overflow: hidden;
   transition: all .2s ease-in-out;
   position: relative;
@@ -191,7 +191,7 @@ main.academy-courses-show #reviews .review-stars svg.review-star.star-active{
 }
 
 main.academy-courses-show #reviews > div:first-child > div:first-child > div:first-child > div{
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
   border-radius: 30px !important;
   border: none !important;
 }
@@ -209,7 +209,7 @@ main.academy-courses-show #reviews > div:first-child > div:first-child > div:las
 }
 main.academy-courses-show #reviews>div:nth-child(2){
   border: none !important;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%)!important;
+  box-shadow: var(--ar-boxShadow)!important;
   border-radius: 30px !important;
 }
 main.academy-courses-show #reviews > div:last-child input,main.academy-courses-show #reviews > div:last-child textarea{
@@ -222,7 +222,7 @@ main.academy-courses-show > .container > .row > div:last-child > div{
   border: none!important;
   border-radius: 30px!important;
   background: #FFFFFF;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
 }
 main.academy-courses-show > .container > .row > div:last-child > div > div{
   padding-left: 1.75rem !important;
@@ -232,7 +232,7 @@ main.academy-courses-show > .container > .row > div:last-child > div > div > div
   margin-bottom: 2rem !important;
 }
 main.academy-courses-show > .container > .row > div:last-child > div > div > div:first-child .plyr{
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%);
+  box-shadow: var(--ar-boxShadow);
   border-radius: 15px;
 }
 main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr){

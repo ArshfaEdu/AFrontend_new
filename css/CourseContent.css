@@ -151,7 +151,7 @@ main.academy-contents-show>div>section:last-of-type .container {
 main.academy-contents-show .card{
   border: none !important;
   border-radius: 20px;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
 }
 main.academy-contents-show>div>section:nth-of-type(1) .card h3{
   color: var(--ar-dark);

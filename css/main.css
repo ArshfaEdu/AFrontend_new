@@ -11,6 +11,7 @@
   --ar-specificGradientReverse: linear-gradient(91deg, var(--ar-primary) 4.95%, var(--ar-secondary) 104.55%);
 
   --ar-gradientDark:linear-gradient(91deg, var(--ar-dark) 0%, var(--ar-secondary) 162.07%);
+  --ar-boxShadow: 4px 4px 20px 4px rgb(0 0 0 / 10%); 
 }
 
 @font-face {
@@ -299,7 +300,7 @@ header .navbar-light .navbar-nav .nav-link {
 
 .popper-container > nav{
   border-radius: 20px;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.3) !important;

@@ -3,7 +3,7 @@
   border-radius: 30px;
   overflow: hidden;
   padding: 0!important;
-  box-shadow: 4px 4px 20px 4px rgb(0 0 0 / 10%) !important;
+  box-shadow: var(--ar-boxShadow) !important;
   justify-content: space-between;
 }
 .card.lift img.card-img{
