@@ -16,7 +16,9 @@ window.addEventListener("popstate", function (e) {
   if (e.state.url.startsWith("/categories")) {
     let main = this.document.querySelector("main.academy-categories-show");
     if (main) {
+      console.log("found main");
       if (main.children.length === 0 && !main.querySelector(".no-courses")) {
+        console.log("will build category");
         category();
       }
     }
