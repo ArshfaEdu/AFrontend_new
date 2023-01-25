@@ -329,6 +329,9 @@ function getPageName(path) {
 }
 
 function level() {
+  if (document.querySelector("img[alt='instructor']")) {
+    return;
+  }
   const img = document.createElement("img");
   img.setAttribute(
     "src",
@@ -338,9 +341,9 @@ function level() {
   img.setAttribute("class", "avatar-img rounded-circle");
   img.setAttribute("style", "box-shadow:4px 4px 10px 3px #0000001A;");
 
-  // const avatarWrapper = document.createElement("div");
-  // avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
-  // avatarWrapper.appendChild(img);
+  const avatarWrapper = document.createElement("div");
+  avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
+  avatarWrapper.appendChild(img);
 
   let levelName = document.querySelector(
     "main .container>div:first-of-type>.col-12 h1"
