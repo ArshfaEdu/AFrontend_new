@@ -341,7 +341,7 @@ function level() {
   img.setAttribute("class", "avatar-img");
 
   const avatarWrapper = document.createElement("div");
-  avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
+  avatarWrapper.setAttribute("style", "width:148px;margin-bottom:1.4rem;");
   avatarWrapper.appendChild(img);
 
   let levelName = document.querySelector(
