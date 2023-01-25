@@ -335,7 +335,7 @@ function level() {
   const img = document.createElement("img");
   img.setAttribute(
     "src",
-    "https://www.gravatar.com/avatar/e1359d8aedbfa7a6be891f7b2e4ee519?s=80&amp;d=mm&amp;r=g"
+    "https://cdn.jsdelivr.net/gh/AbdulazizYas/AFrontend/dist/images/avatar.svg"
   );
   img.setAttribute("alt", "instructor");
   img.setAttribute("class", "avatar-img rounded-circle");
