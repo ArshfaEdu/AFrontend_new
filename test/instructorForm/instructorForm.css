@@ -9,6 +9,9 @@
   flex-basis: 60%;
   padding: 40px 60px;
 }
+.instructor-container .contact-left h4 {
+  text-align: center;
+}
 
 .instructor-container .contact-right {
   flex-basis: 60%;
