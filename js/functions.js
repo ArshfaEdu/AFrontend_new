@@ -358,7 +358,7 @@ function level() {
     "margin:0 2rem 3rem 0;color:var(--ar-secondary)!important;"
   );
   let coursesCotainer = document.querySelector(
-    "main.teacher-page .container > mt-30px > .row"
+    "main.teacher-page .container > .mt-30px > .row"
   );
 
   coursesCotainer.parentElement.insertBefore(title, coursesCotainer);
