@@ -13,6 +13,7 @@ const elmntsToBeRemoved = {
 };
 
 window.addEventListener("popstate", function (e) {
+  console.log("detected");
   if (e.state.url.startsWith("/categories")) {
     let main = this.document.querySelector("main.academy-categories-show");
     console.log("it is category");
