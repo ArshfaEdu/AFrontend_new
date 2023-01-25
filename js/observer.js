@@ -12,18 +12,6 @@ const elmntsToBeRemoved = {
   ".no-cards": "category",
 };
 
-window.addEventListener("popstate", function (e) {
-  if (e.state.url.startsWith("/categories")) {
-    let main = this.document.querySelector("main");
-    main.classList.add("academy-categories-show");
-
-    if (main) {
-      if (main.children.length === 0 && !main.querySelector(".no-courses")) {
-        category();
-      }
-    }
-  }
-});
 const observer = new MutationObserver((mutations, observer) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
@@ -64,6 +52,23 @@ const observer = new MutationObserver((mutations, observer) =>
         break;
       case "category":
         category();
+        tryCatch(() =>
+          window.addEventListener("popstate", function (e) {
+            if (e.state.url.startsWith("/categories")) {
+              let main = this.document.querySelector("main");
+              main.classList.add("academy-categories-show");
+
+              if (main) {
+                if (
+                  main.children.length === 0 &&
+                  !main.querySelector(".no-courses")
+                ) {
+                  category();
+                }
+              }
+            }
+          })
+        );
         break;
     }
   })
