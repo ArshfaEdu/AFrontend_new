@@ -73,6 +73,12 @@ body{
   border-color: var(--ar-gradient);
 }
 
+section.cover-image-container .col-12 > div.border.rounded.shadow{
+  border-radius: 50px !important;
+    border: none !important;
+    box-shadow: 0rem 0rem 1rem #8c98a430 !important;
+    margin-bottom: 4rem !important;
+}
 .app-layout > header{
   box-shadow: 0 4px 32px -4px rgb(0 0 0 / 10%);
 }
