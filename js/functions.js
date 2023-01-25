@@ -354,7 +354,7 @@ function level() {
   levelName.parentElement.insertBefore(avatarWrapper, levelName);
 
   // title of the page
-  let title = document.createElement("h1");
+  let title = document.createElement("h2");
   title.textContent = "دورات المحاضر";
   title.setAttribute(
     "style",
