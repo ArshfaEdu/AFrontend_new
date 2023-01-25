@@ -338,8 +338,7 @@ function level() {
     "https://cdn.jsdelivr.net/gh/AbdulazizYas/AFrontend/dist/images/avatar.svg"
   );
   img.setAttribute("alt", "instructor");
-  img.setAttribute("class", "avatar-img rounded-circle");
-  img.setAttribute("style", "box-shadow:4px 4px 10px 3px #0000001A;");
+  img.setAttribute("class", "avatar-img");
 
   const avatarWrapper = document.createElement("div");
   avatarWrapper.setAttribute("style", "width:108px;margin-bottom:1.5rem;");
@@ -349,7 +348,7 @@ function level() {
     "main .container>div:first-of-type>.col-12 h1"
   );
 
-  levelName.parentElement.insertBefore(img, levelName);
+  levelName.parentElement.insertBefore(avatarWrapper, levelName);
 
   // title of the page
   let title = document.createElement("h1");
