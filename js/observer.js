@@ -12,21 +12,6 @@ const elmntsToBeRemoved = {
   ".no-cards": "category",
 };
 
-window.addEventListener("popstate", function (e) {
-  console.log("detected");
-  if (e.state.url.startsWith("/categories")) {
-    let main = this.document.querySelector("main.academy-categories-show");
-    console.log("it is category");
-    if (main) {
-      console.log("found main");
-      if (main.children.length === 0 && !main.querySelector(".no-courses")) {
-        console.log("will build category");
-        category();
-      }
-    }
-  }
-});
-
 const observer = new MutationObserver((mutations, observer) =>
   mutations.forEach((mutation) => {
     if (mutation.type !== "childList")
@@ -48,7 +33,23 @@ const observer = new MutationObserver((mutations, observer) =>
         tryCatch(Footer);
       }
     }
-
+    window.addEventListener("popstate", function (e) {
+      console.log("detected");
+      if (e.state.url.startsWith("/categories")) {
+        let main = this.document.querySelector("main.academy-categories-show");
+        console.log("it is category");
+        if (main) {
+          console.log("found main");
+          if (
+            main.children.length === 0 &&
+            !main.querySelector(".no-courses")
+          ) {
+            console.log("will build category");
+            category();
+          }
+        }
+      }
+    });
     // add style to main tag based on page
     tryCatch(() => addStyle(pagesToObserve, pageName));
 
