@@ -1,10 +1,11 @@
-
+main.teacher-page > section{
+  text-align: center !important;
+}
 @media screen and (min-width: 992px){
   main.teacher-page > section{
     padding-top: 0 !important;
-    text-align: center !important;
   }
-  
+
   main.teacher-page .container{
     display: grid;
     grid-template-columns: 1fr 3fr;
