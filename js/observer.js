@@ -23,8 +23,6 @@ const observer = new MutationObserver((mutations, observer) =>
 
     let pageName = getPageName(location.pathname);
 
-    //clearElements(elmntsToBeRemoved, pageName);
-
     // check the activatibility of header link
     tryCatch(headerLinks);
 
@@ -37,7 +35,7 @@ const observer = new MutationObserver((mutations, observer) =>
       console.log("detected");
       if (e.state.url.startsWith("/categories")) {
         let main = this.document.querySelector("main");
-
+        main.classList.add("academy-categories-show");
         console.log("it is category");
         if (main) {
           console.log("found main");
