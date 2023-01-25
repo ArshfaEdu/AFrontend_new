@@ -4,6 +4,7 @@
     padding-top: 0 !important;
     text-align: center !important;
   }
+  
   main.teacher-page .container{
     display: grid;
     grid-template-columns: 1fr 3fr;
