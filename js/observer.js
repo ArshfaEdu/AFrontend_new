@@ -37,6 +37,7 @@ const observer = new MutationObserver((mutations, observer) =>
       console.log("detected");
       if (e.state.url.startsWith("/categories")) {
         let main = this.document.querySelector("main");
+
         console.log("it is category");
         if (main) {
           console.log("found main");
