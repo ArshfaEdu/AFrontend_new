@@ -27,6 +27,7 @@
       top: 10%;
       width: 100%;
       height: fit-content;
+      text-align: center !important;
   }
   main.teacher-page .container > .mt-30px{
     padding-top: 3rem;
