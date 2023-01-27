@@ -1,29 +1,31 @@
-
-.suggestion-container .suggestion-box {
+.feedback-container .feedback-box {
   background: #fff;
   display: flex;
   overflow-x: hidden;
 }
 
-.suggestion-container .suggestion-left {
+.feedback-container .feedback-left {
   flex-basis: 60%;
   padding: 40px 60px;
 }
 
-.suggestion-container .suggestion-right {
+.feedback-container .feedback-right {
   position: relative;
   flex-basis: 36%;
   background-color: #0A2237;
   background: linear-gradient(156.54deg, #0A2237 -8.64%, #4493D0 167.87%); 
 }
-.suggestion-container .suggestion-right svg{
+.feedback-container .feedback-right svg{
   display: block;
   position: absolute;
   bottom: 5%;
   height: 75%;
   left: 0;
 }
-.suggestion-container h3 {
+
+
+
+.feedback-container h3 {
   text-align: center;
   font-weight: 500;
   font-size: 38px;
@@ -31,26 +33,33 @@
    margin: 1rem;
 }
 
-.suggestion-container .form-element {
+.feedback-container .form-element {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.suggestion-container input ,.suggestion-container textarea{
+.feedback-container input , .feedback-container textarea{
   border: 1px solid #d0d2e2;
   line-height: 2;
   padding: 5px;
   border-radius: 50px;
-  text-indent: 10px;
-
-  
+  text-indent: 10px; 
 }
-.suggestion-container textarea{
+.feedback-container textarea{
   resize: vertical;
 }
 
-.suggestion-container form button {
+.feedback-container select {
+  border: 1px solid #d0d2e2;
+  line-height: 2;
+  padding: 10px;
+  border-radius: 50px;  
+  background-color: #fff;
+  color: gray;
+}
+
+.feedback-container form button {
   width: 100%;
   padding: 10px;
   color: #fff;
@@ -66,29 +75,29 @@ border-radius: 50px;
 
 @media (max-width:480px) {
 
-.suggestion-container form button {
+  .feedback-container form button {
   padding: 5px;
   font-size: 15px;
 }
-.suggestion-container input,.suggestion-container textarea {
+.feedback-container input, .feedback-container textarea {
   padding:1.5px;
 }
-.suggestion-container .suggestion-left {
+.feedback-container .feedback-left {
   padding: 40px 16px;
 }
 }
 @media (max-width:1045px) {
-  .suggestion-container .suggestion-right{
+  .feedback-container .feedback-right{
     height: 228px;
   }
-  .suggestion-container .suggestion-right svg{
+  .feedback-container .feedback-right svg{
     bottom: -55%;
       height: 150%;
       left: 20%;
       transform: rotate(90deg);
   }
 
-  .suggestion-container .suggestion-box {
+  .feedback-container .feedback-box {
       display: block;
   }
     
