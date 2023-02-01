@@ -101,9 +101,11 @@ main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:la
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"]{
   order: 5;
 }
-main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"] > a{
+main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > [data-order="5"] > a.btn-xs{
   background-color: var(--ar-dark) !important;
   color: #fff;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
 }
 main.academy-contents-show > div > section:nth-of-type(1) > .container > .row:last-child > div > .player-section .plyr{
   border-radius: 0 !important;
@@ -311,7 +313,7 @@ main.academy-contents-show .sidebar-collapse>button[aria-expanded=false]{
   }
   main.academy-contents-show > div > div.sidebar-collapse > button{
     display: inline-flex !important;
-    margin-top: 1rem;
+    margin-top: .4rem;
     top: 0 !important;
   }
   main.academy-contents-show > div > div.sidebar-collapse > button[aria-expanded=false]{

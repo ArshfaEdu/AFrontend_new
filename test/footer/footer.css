@@ -94,6 +94,11 @@ footer .bottom .payment-logo{
     margin-top: .5rem;
   }
 }
+@media screen and (max-width: 409.99px){
+  footer .footer-content .logo img{
+    width: 168px;
+  }
+}
 @media screen and (max-width: 344.99px){
   footer .bottom .left{
     flex-direction: column;

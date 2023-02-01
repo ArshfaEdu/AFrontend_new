@@ -36,6 +36,7 @@ main.teacher-page .container > div:first-of-type > .col-12{
   
   main.teacher-page .container > .mt-30px{
     padding-top: 3rem;
+    padding-right: 1rem;
   }
   main.teacher-page .container > .mt-30px > h2{
     text-align: right !important;
