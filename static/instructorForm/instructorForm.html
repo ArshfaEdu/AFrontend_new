@@ -38,10 +38,13 @@
             <div id="instructor">
               <h4>البيانات الشخصية</h4>
               <div class="form-element">
-                <input type="text" name="entry.1587322270" placeholder="الإسم" required>
+                <input type="text" name="entry.1587322270" placeholder="الإسم الرباعي" required>
               </div>
               <div class="form-element">
-                <input type="text" name="entry.709250033" placeholder="رقم الجوال">
+                <input type="text" name="entry.709250033" placeholder="رقم الجوال" required>
+              </div>
+              <div class="form-element">
+                <input type="email" name="entry.1724321823" placeholder="الايميل الشخصي" required>
               </div>
               <div class="form-element">
                 <label for="uni-select"></label>
@@ -92,24 +95,27 @@
               <div class="form-element">
                 <select required name="entry.199459453" id="whereYouHeardUs-select">
                   <option value="">من وين سمعت عنا؟</option>
-                  <option value="برامج التواصل الاجتماعي">برامج التواصل الاجتماعي</option>
-                  <option value="زملائي">زملائي</option>
-                  <option value="وصاني عليكم شخص">وصاني عليكم شخص</option>
+                  <option value="واتساب">واتساب</option>
+                  <option value="تويتر">تويتر</option>
+                  <option value="تيليغرام">تيليغرام</option>
+                  <option value="صديق">صديق</option>
+                  <option value="صانع محتوى في المنصة">صانع محتوى في المنصة</option>
+                  <option value="شخص يعمل في أرشفة">شخص يعمل في أرشفة</option>
                   <option value="أخرى">أخرى</option>
                 </select>
               </div>
               <div class="form-element" id="referalPersonName"  style="display:none;">
-                <input type="text" name="entry.144885387" placeholder="اسم الشخص الرهيب؟">
+                <input type="text" name="entry.144885387" placeholder="اسم الشخص الذي يعمل في أرشفة؟">
               </div>
             </div>
             
             <div id="course">
               <h4>بيانات تخص المادة</h4>
               <div class="form-element">
-                <input type="text" name="entry.1012610089" placeholder="المادة اللي ودك تشرحها">
+                <input type="text" name="entry.1012610089" placeholder="المادة اللي ودك تشرحها" required>
               </div>
               <div class="form-element">
-                <input type="text" name="entry.779016044" placeholder="بأي مستوى / سنة يأخذ الطلاب المادة ؟ ">
+                <input type="text" name="entry.779016044" placeholder="بأي مستوى / سنة يأخذ الطلاب المادة ؟ " required>
               </div>
               <div class="form-element">
                 <label for="degree-select"></label>
@@ -124,7 +130,13 @@
                 </select>
               </div>
               <div class="form-element">
-                <textarea type="text" name="entry.1431411762" placeholder="وش اكثر شيء يحفزك تشرح معانا ؟"></textarea>
+                <textarea type="text" name="entry.1431411762" placeholder="هل كانت لك تجربة شخصية بالشرح؟ شاركنا تفاصيلها(اختياري) "></textarea>
+              </div>
+              <div class="form-element">
+                <textarea type="text" name="entry.438038280" placeholder="وش اكثر شيء يحفزك تشرح معانا ؟" required></textarea>
+              </div>
+              <div class="form-element">
+                <textarea type="text" name="entry.1719002358" placeholder="لماذا تعتقد انك شخص مناسب لتقديم المادة؟" required></textarea>
               </div>
               <input type="checkbox" name="agree" id="agree" required />
               <input type="hidden" name="entry.1500485276" disabled>
@@ -141,7 +153,7 @@
       document.getElementById("whereYouHeardUs-select").addEventListener("change",(e) => {
         let value = e.target.value;
 
-        if (value !== "وصاني عليكم شخص"){
+        if (value !== "شخص يعمل في أرشفة"){
           document.getElementById("referalPersonName").setAttribute("style", "display:none;");
           return
         }

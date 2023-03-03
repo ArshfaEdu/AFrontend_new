@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="feedbackForm.css">
-  <title>Feedback</title>
+  <title>Contact Us</title>
 </head>
 <body>
-  <div class="feedback-container">
-    <div class="feedback-box">
-      <div class="feedback-right">
+  <div class="contactus-container">
+    <div class="contactus-box">
+      <div class="contactus-right">
         <svg width="75" height="698" viewBox="0 0 75 698" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_0_1)">
           <path d="M65.7885 116.614C70.7124 113.763 73.7277 108.471 73.7062 102.751L73.51 50.403L0.902405 92.9436L0.888191 154.273L65.7885 116.614ZM70.3011 54.9796L70.48 102.71C70.4995 107.927 67.7479 112.748 63.2581 115.351L4.09707 149.685L4.11033 93.7654L70.3011 54.9796Z" fill="url(#paint0_linear_0_1)"/>
@@ -65,12 +65,12 @@
           </svg>
           
       </div>
-      <div class="feedback-left">
-        <h3>شاركنا رأيك</h3>
+      <div class="contactus-left">
+        <h3>تواصل معنا</h3>
         <form id="form">
           <div class="form-element">
             <label for="name">الإسم</label>
-            <input type="text" id="name" name="entry.1591633300" placeholder="الاسم الكريم" required>
+            <input type="text" id="name" name="entry.1591633300" placeholder="الإسم الثلاثي" required>
           </div>
           <div class="form-element">
             <label for="phone">رقم الجوال</label>
@@ -89,7 +89,7 @@
           </div>
           <div class="form-element">
             <label for="description">الوصف</label>
-            <textarea id="description" name="entry.485428648" placeholder="وصف الرسالة"></textarea>
+            <textarea id="description" name="entry.485428648" placeholder="وصف الرسالة" required></textarea>
           </div>
           <button type="submit">أرسل</button>
         </form>
@@ -112,10 +112,10 @@
           method: "POST",
           body: payload
         }).then(res => {
-          location.pathname = "/feedback-sent"
+          location.pathname = "/contactus-sent"
         }).catch(err => {
           console.log(err)
-          location.pathname = "/feedback-sent"
+          location.pathname = "/contactus-sent"
         })
       })
     </script>

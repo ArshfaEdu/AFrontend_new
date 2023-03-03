@@ -12,11 +12,12 @@ main.teacher-page .container > div:first-of-type > .col-12{
   main.teacher-page .container{
     display: grid;
     grid-template-columns: 1fr 3fr;
+    max-width: initial !important;
   }
   main.teacher-page .container > div:first-of-type{
     align-items: initial !important;
     border-left: 7px solid var(--ar-light);
-    border-right: 7px solid var(--ar-light);
+    /* border-right: 7px solid var(--ar-light); */
     padding-top: 3rem;
   }
   main.teacher-page .container .row{
@@ -41,9 +42,6 @@ main.teacher-page .container > div:first-of-type > .col-12{
   main.teacher-page .container > .mt-30px > h2{
     text-align: right !important;
   }
-  main.teacher-page .container > .mt-30px .col{
-    width: 50% !important;
-  }
   main.teacher-page .container nav[aria-label*="navigation"]{
     grid-column: 2;
       padding-bottom: 1.5rem;
@@ -55,4 +53,15 @@ main.teacher-page .container > div:first-of-type > .col-12 h1{
   color: var(--ar-primary) !important;
 }
 
+@media screen and (min-width: 1200px){
+  main.teacher-page .container{
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px){
+  main.teacher-page .container > .mt-30px .col{
+    width: 50% !important;
+  }
+}
 

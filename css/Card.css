@@ -58,7 +58,7 @@ transform: scale(1.05);
   display: none !important;
 }
 .card.lift .card-footer > div:first-child ins{
-  font-size: 1em;
+  font-size: 1.75em;
   font-weight: 700;
   color: #3D3535;
 }

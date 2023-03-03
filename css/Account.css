@@ -1,4 +1,4 @@
-main.academy-user-account form > section:last-of-type > .container > div:last-of-type div:last-of-type{
+main.academy-user-account form>section:last-of-type>.container>div:last-of-type div:nth-of-type(2n+3), main.academy-user-account form>section:last-of-type>.container>div:last-of-type div:nth-of-type(4){
   display: none !important;
 }
 main.academy-user-account form > section:first-of-type button.btn-primary[type="button"]{

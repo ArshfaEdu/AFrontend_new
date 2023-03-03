@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.teacher-content {
+  font-weight: 500;
+  text-align: right;
+  color: #0A2237;
+  margin: 3rem;
+}
+.teacher-content h2 {
+font-size: 70px;
+}
+
+.teacher-content p {
+font-size: 34px;
+}
+
+.btn-teacher {
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+   }
+
+.btn-teacher:hover {
+opacity: .85
+}
+.button1-teacher {
+  background: linear-gradient(95.41deg, #5BC3B5 2.33%, #4493D0 119.49%);
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem 3rem;
+  font-size: 32px;
+  display: inline-block;
+  transition: all .3s ease-in-out;
+}
+
+.teacher-features {
+  display:flex;
+align-items:center;
+}
+
+.teacher-features img {
+ aspect-ratio: 1/1;
+object-fit: scale-down;
+object-position: 50% 50%;
+width: auto;
+  height: auto;
+}
+
+.teacher-features-text {
+  font-size: 15px;
+  align-items: center;
+  color: #000000;
+  margin-left: 2.5rem;
+  margin-bottom: unset;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.teachers {
+  display: flex;
+margin:3rem
+}
+
+.successful-content {
+background: linear-gradient(112.09deg, #5BC3B5 -3.69%, #4493D0 109.92%);
+transform: skew(0deg, 10deg) translateY(-50px);
+padding: 40px 0;
+
+}
+
+.create-successful-content {
+  margin-top: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 200px;
+  transform: skew(0deg, -10deg);
+  color: #fff;
+}
+
+.create-successful-content .successful-text{
+  font-size: 44px;
+  padding-top: 4rem;
+  font-weight: bold;
+}
+
+.create-successful-content .successful-text-sec {
+  font-size: 22px;
+  text-align: center;
+  white-space: normal;
+}
+
+.landing-page-features-teacher {
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-wrap: wrap;
+  transform: skew(0deg, -10deg);
+  
+}
+
+.features-card-teacher{
+  margin: 1rem;
+  padding: 1rem;
+  width: 350px;
+height: 240px; 
+background: #FFFFFF;
+box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+}
+
+.features-card-teacher img {
+  width: 5vw;
+  margin-bottom: 1rem;
+}
+
+.features-card-teacher h3 {
+font-weight: bold;
+font-size: 30px;
+text-align: right;
+color: #0A2237;
+}
+
+.features-card-teacher p {
+  font-size: 19px;
+  text-align: right;
+  margin-bottom: 1rem;
+color:#000000;
+}
+
+.image-content {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.left-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 20px 30px 0 rgb(197 197 197 / 20%);
+  position: absolute;
+  bottom: -19rem;
+  left: 0;
+}
+
+.left-image2 img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: -12rem;
+  left: 8rem;
+}
+
+.right-image img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 9rem;
+  right: 24rem;
+}
+
+.right-image2 img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 4rem;
+  right: 5rem;
+}
+
+.right-image3 img{
+  position: absolute;
+  top: 25rem;
+  right: 1rem
+}
+
+
+.container-of-number {
+  background: linear-gradient(96.26deg, #59C0B7 0%, #49A2C7 93.58%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  color: #fff;
+  text-align: center;
+  max-width: 1200px;
+  height: 50px;
+  border-radius: 200px 0px 0px 200px;
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+  
+}
+
+.container-of-number-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: right;
+  margin: 2rem;
+}
+
+.container-of-number-register {
+  width: 470px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 55px;
+}
+
+.container-of-number-register-text-one {
+font-weight: 500;
+font-size: 32px;
+text-align: center;
+color: #4493D0;
+margin: auto;
+
+}
+
+.button2-teacher {
+  background: linear-gradient(275.84deg, #4493D0 -80.77%, #5BC3B5 136.43%);
+  color: white; 
+  margin: 1rem;
+  padding: 0.5rem 4rem;
+  font-size: 32px;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width:480px) {
+.teacher-content {
+  margin: 2.2rem;
+  text-align: center;
+}
+  .teacher-content h2 {
+    font-size: 7.5vmin;
+    font-weight: bold;
+  }
+  .teacher-content p {
+    font-size: 4vmin;
+}
+  .button1-teacher {
+    padding: 0.5em 2em;
+    font-size: 5vmin;
+}
+.teachers {
+  margin:0.2rem;
+}
+.teacher-features img {
+  width: 11vmin;
+  height: 11vmin;
+}
+.teacher-features-text {
+  font-size: 3vmin;
+}
+  .teacher-features {
+  margin-bottom: 1.5rem;
+  
+  }
+  .successful-content {
+      padding: 0 0 ;
+  }
+.create-successful-content {
+      padding: 0 10px;
+  }
+.create-successful-content .successful-text {
+  font-size: 5.5vmin;
+  padding: 4rem 0 0 0;
+  }
+.create-successful-content .successful-text-sec {
+  font-size: 3.8vmin;
+  }
+.features-card-teacher img {
+  width: 13vw;
+}
+  .features-card-teacher {
+      height: 200px;
+  }
+.features-card-teacher img {
+      width: 13vw;
+  }
+.features-card-teacher h3 {
+  font-size: 15px;
+}
+.features-card-teacher p {
+  font-size: 13px;
+}
+.container-of-number {
+   padding: 3rem 1rem;
+   overflow: hidden;
+flex-direction: column;
+  }
+
+.container-of-number-text {
+      font-size: 14px;
+      line-height: 15px;
+      margin: 0.2rem;
+white-space: nowrap;
+  }
+  .container-of-number-register {
+      width: 200px;
+      height: 40px;
+  }
+
+  .container-of-number-register p {
+      font-size: 12px;
+      white-space: nowrap;
+      padding-right: 1rem;
+  }
+
+.button2-teacher {
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 12px;
+}
+.left-image2 img {
+  width: 150px;
+  height: 150px;
+  top: -1rem;
+  left: 1rem;
+}
+
+.left-image img {
+  bottom: -18rem;
+  left: 0;
+}
+
+.right-image img {
+  top: 12rem;
+  right: 7rem;
+}
+
+.right-image2 img {
+  top: 7rem;
+  right: 1rem;
+}
+
+.right-image3 img {
+  top: 21rem;
+  right: 1rem;
+}
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width:481px) and (max-width: 767px) {
+  .teacher-content h2 {
+  font-size: 40px;
+    line-height: 50px;
+}
+  .teacher-content p {
+      font-size: 20px;
+  }
+  .button1-teacher {
+      font-size: 20px;
+  }
+  .teacher-features-text {
+      font-size: 16px;
+  }
+  
+  .teacher-features img {
+      width: 40px;
+      height: 40px; 
+  }
+.teacher-features {
+      padding: 1.5rem 0.5rem 3rem 0.5rem;
+  }
+.features-card-teacher {
+      height: 300px;
+  }
+.features-card-teacher img {
+      width: 10vw;
+  }
+  .successful-content {
+      padding: 0 0 ;
+  }
+  .create-successful-content {
+  padding: 0 10px;
+  }
+  .create-successful-content .successful-text {
+    font-size: 5.5vmin;
+    padding-top: 4rem;
+  }
+.create-successful-content .successful-text-sec {
+  font-size: 2.75vmin;
+}
+  .left-image2 img {
+      width: 150px;
+      height: 150px;
+      top: -1rem;
+      left: 1rem;
+  }
+  
+  .left-image img {
+      bottom: -18rem;
+      left: 0;
+  }
+  
+  .right-image img {
+      top: 12rem;
+      right: 15rem;
+  }
+  
+  .right-image2 img {
+      top: 7rem;
+      right: 1rem;
+  }
+  
+  .right-image3 img {
+      top: 25rem;
+      right: 1rem;
+  }
+.container-of-number {
+   padding: 3rem 1rem;
+   overflow: hidden;
+flex-direction: column;
+  }
+
+.container-of-number-text {
+      font-size: 14px;
+      line-height: 15px;
+      margin: 0.2rem;
+white-space: nowrap;
+  }
+  .container-of-number-register {
+      width: 200px;
+      height: 40px;
+  }
+
+  .container-of-number-register p {
+      font-size: 12px;
+      white-space: nowrap;
+      padding-right: 1rem;
+  }
+
+.button2-teacher {
+  margin: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 12px;
+}
+      }
+      
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+.teacher-features img {
+ width: 40px;
+height: 40px; 
+          }
+.teacher-features {
+padding: 1.5rem 0.5rem 3rem 0.5rem;
+          }
+ .teacher-content h2 {
+   font-size: 60px;
+ }
+ .teacher-content p {
+  font-size: 30px;
+ }
+.create-successful-content {
+ padding: 0 100px;   white-space: nowrap;
+          }
+.create-successful-content .successful-text {
+  font-size: 27px;
+  padding-top: 3rem;
+          }
+.create-successful-content .successful-text-sec {
+ font-size: 17px;
+          }
+.features-card-teacher {
+  width: 350px;
+height: 250px;
+          }
+.features-card-teacher img {
+  width: 7vw;
+}
+.container-of-number {
+flex-direction: row; 
+}
+.container-of-number-text {
+  font-size: 20px;
+  line-height: 25px;
+}
+.container-of-number-register {
+  width: 450px;
+  height: 60px;
+}
+      
+.container-of-number-register p {
+font-size: 23px;
+      }
+      
+.button2-teacher {
+font-size: 16px;
+  margin: 1rem;
+  padding: 0.3rem 3rem;
+      }
+.left-image2 img {
+          width: 150px;
+          height: 150px;
+          top: -1rem;
+          left: 1rem;
+      }
+      
+      .left-image img {
+          bottom: -18rem;
+          left: 0;
+      }
+      
+.right-image img {
+  top: 12rem;
+   right: 15rem;
+      }
+      
+.right-image2 img {
+  top: 7rem;
+  right: 1rem;
+      }
+      
+.right-image3 img {
+ top: 25rem;
+  right: 1rem;
+      }
+      }
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+.create-successful-content .successful-text {
+  font-size: 34px;
+  padding-top: 3rem;
+}
+.create-successful-content .successful-text-sec {
+  font-size: 22px;
+  line-height: 29px;
+}
+.features-card-teacher img {
+  width: 4vw;
+}
+
+.features-card-teacher h3 {
+  font-size: 24px;
+}
+.features-card-teacher p {
+  font-size: 15px;
+}
+.container-of-number {
+  padding: 4rem 1rem;
+  overflow: hidden;
+flex-direction:row;
+}
+.container-of-number-text {
+  font-size: 30px;
+  line-height: 30px;
+padding-left: 3rem;
+}
+.container-of-number-register {
+  width: 370px;
+  height: 60px;
+}
+.container-of-number-register p {
+  font-size: 20px;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+.button2-teacher {
+  margin:0.9rem;
+  padding: 0.3rem 3rem;
+  font-size: 17px;
+          }
+.right-image3 img {
+ top: 23rem;
+  right: 1rem;
+      }
+}
+
+/* Media Query for Large screens */
+@media (min-width:1281px) {
+.teacher-content h2 {
+ font-size: 100px;
+   line-height: 120px;
+          }
+.teacher-content p {
+font-size: 50px;
+line-height: 86px;
+          }
+.button1-teacher {
+ font-size: 42px;
+          }
+.teachers {
+  margin: 3rem;
+}
+.teacher-features-text {
+font-size: 30px;
+          }
+.create-successful-content .successful-text {
+  font-size: 40px;
+  padding: 4.5rem 0 0 0;
+  line-height: 50px;
+}
+.create-successful-content .successful-text-sec {
+  font-size: 28px;
+  line-height: 42px;
+}
+.features-card-teacher {
+  width: 470px;
+  height: 350px;
+}
+.features-card-teacher img {
+  width: 5vw;
+}
+.features-card-teacher h3 {
+  font-size: 35px;
+  line-height: 40px;
+}
+.features-card-teacher p {
+  font-size: 25px;
+}
+.container-of-number {
+  padding: 4rem 1rem;
+  max-width: 2700px;
+ overflow:hidden;
+ flex-direction:row;
+}
+.container-of-number-text {
+  font-size: 34px;
+  line-height: 35px;
+margin-left: 3rem;
+}
+.container-of-number-register {
+  width: 670px;
+  height: 80px;
+}
+.container-of-number-register p {
+  font-size: 32px;
+}
+.button2-teacher {
+  font-size: 29px;
+  margin: 1rem;
+  padding: 0.3rem 3.5rem;
+          }
+
+.left-image img {
+  bottom: -19rem;
+  left: 0;
+  z-index: 2;
+} 
+.left-image2 img {
+  width: 210px;
+  height: 210px;
+  top: -1rem;
+  left: 9rem;
+}
+.right-image img {
+  top: 11rem;
+  right: 25rem;
+}
+.right-image2 img {
+  top: 6rem;
+  right: 5rem;
+}
+.right-image3 img {
+  top: 23rem;
+  right: -4rem;
+}
+                   
+  }
+@media (min-width:1981px) {
+.features-card-teacher {
+  width:500px;
+  height:350px;
+}
+}
