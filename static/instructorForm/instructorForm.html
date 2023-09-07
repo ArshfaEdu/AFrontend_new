@@ -1,197 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="instructorForm.css">
-  <title>Instructor Form</title>
-</head>
-<body>
-  <div class="instructor-container">
-    <div class="contact-box">
-      <div class="contact-right">
-        <div class="content">
-          <p>شروط التقديم</p>
-          <div class="text-line"></div>
-          <ul>
-            <li>الإلمام بمحتوى المادة العلمية</li>
-            <li>الالتزام بشرح المحتوى العلمي</li>
-            <li>التمكن من مهارات الشرح وإيصال المعلومة</li>
-            <li> القدرة على مساعدة الطلاب والإجابة على استفساراتهم</li>
-          </ul>
-        </div>
-        <div class="content">
-          <p>المحتوى المسموح به</p>
-          <div class="text-line"></div>
-          <ul>
-            <li>محاضرات مسجلة</li>
-            <li>ملخصات شاملة</li>
-            <li>ملفات مساعدة</li>
-          </ul>
-        </div>
-      </div>
-      <div class="contact-left">
-        <h3>انضم كصانع محتوى</h3>
-        <form id="form">
-          <div class="info-container">
-            <div id="instructor">
-              <h4>البيانات الشخصية</h4>
-              <div class="form-element">
-                <input type="text" name="entry.1587322270" placeholder="الإسم الرباعي" required>
-              </div>
-              <div class="form-element">
-                <input type="text" name="entry.709250033" placeholder="رقم الجوال" required>
-              </div>
-              <div class="form-element">
-                <input type="email" name="entry.1724321823" placeholder="الايميل الشخصي" required>
-              </div>
-              <div class="form-element">
-                <label for="uni-select"></label>
-                <select required name="entry.830172538" id="uni-select">
-                  <option value="">الجامعة</option>
-                  <option value="جامعة الملك فهد للبترول و المعادن">جامعة الملك فهد للبترول و المعادن</option>
-                  <option value="جامعة الملك سعود">جامعة الملك سعود</option>
-                  <option value="جامعة الملك خالد">جامعة الملك خالد</option>
-                  <option value="جامعة الملك عبدالعزيز">جامعة الملك عبدالعزيز</option>
-                  <option value="جامعة الملك سعود بن عبدالعزيز للعلوم الصحية">جامعة الملك سعود بن عبدالعزيز للعلوم الصحية</option>
-                  <option value="جامعة الملك فيصل">جامعة الملك فيصل</option>
-                  <option value="جامعة جازان">جامعة جازان</option>
-                  <option value="جامعة جدة">جامعة جدة</option>
-                  <option value="جامعة حفر الباطن">جامعة حفر الباطن</option>
-                  <option value="جامعة طيبة">جامعة طيبة</option>
-                  <option value="جامعة فهد بن سلطان">جامعة فهد بن سلطان</option>
-                  <option value="كلية الجبيل الصناعية">كلية الجبيل الصناعية</option>
-                  <option value="كلية ينبع الصناعية">كلية ينبع الصناعية</option>
-                  <option value="جامعة الأمير سلطان">جامعة الأمير سلطان</option>
-                  <option value="جامعة الإمام محمد بن سعود الإسلامية">جامعة الإمام محمد بن سعود الإسلامية</option>
-                  <option value="جامعة الإمام محمد بن سعود بالإحساء">جامعة الإمام محمد بن سعود بالإحساء</option>
-                  <option value="جامعة الطائف">جامعة الطائف</option>
-                  <option value="جامعة أم القرى">جامعة أم القرى</option>
-                  <option value="الجامعة العربية المفتوحة">الجامعة العربية المفتوحة</option>
-                  <option value="جامعة الباحة">جامعة الباحة</option>
-                  <option value="جامعة الحدود الشمالية">جامعة الحدود الشمالية</option>
-                  <option value="جامعة الجوف">جامعة الجوف</option>
-                  <option value="جامعة الأمير محمد بن فهد">جامعة الأمير محمد بن فهد</option>
-                  <option value="جامعة الأمير سطام">جامعة الأمير سطام</option>
-                  <option value="جامعة الأميرة نورة">جامعة الأميرة نورة</option>
-                  <option value="جامعة الأمير مقرن بن عبدالعزيز">جامعة الأمير مقرن بن عبدالعزيز</option>
-                  <option value="جامعة الإمام عبدالرحمن بن فيصل">جامعة الإمام عبدالرحمن بن فيصل</option>
-                  <option value="جامعة الفيصل">جامعة الفيصل</option>
-                  <option value="جامعة اليمامة">جامعة اليمامة</option>
-                  <option value="جامعة دار العلوم">جامعة دار العلوم</option>
-                  <option value="جامعة دار الحكمة">جامعة دار الحكمة</option>
-                  <option value="جامعة القصيم">جامعة القصيم</option>
-                  <option value="جامعة شقراء">جامعة شقراء</option>
-                  <option value="جامعة عفت">جامعة عفت</option>
-                  <option value="جامعة بيشة">جامعة بيشة</option>
-                  <option value="جامعة حائل">جامعة حائل</option>
-                  <option value="جامعة تبوك">جامعة تبوك</option>
-                  <option value="جامعة الأعمال و التكنولوجيا">جامعة الأعمال و التكنولوجيا</option>
-                  <option value="الجامعة السعودية الإلكترونية">الجامعة السعودية الإلكترونية</option>
-                  <option value="الجامعة الإسلامية بالمدينة المنورة">الجامعة الإسلامية بالمدينة المنورة</option>
-                </select>
-              </div>
-              <div class="form-element">
-                <select required name="entry.199459453" id="whereYouHeardUs-select">
-                  <option value="">من وين سمعت عنا؟</option>
-                  <option value="واتساب">واتساب</option>
-                  <option value="تويتر">تويتر</option>
-                  <option value="تيليغرام">تيليغرام</option>
-                  <option value="صديق">صديق</option>
-                  <option value="صانع محتوى في المنصة">صانع محتوى في المنصة</option>
-                  <option value="شخص يعمل في أرشفة">شخص يعمل في أرشفة</option>
-                  <option value="أخرى">أخرى</option>
-                </select>
-              </div>
-              <div class="form-element" id="referalPersonName"  style="display:none;">
-                <input type="text" name="entry.144885387" placeholder="اسم الشخص الذي يعمل في أرشفة؟">
-              </div>
-            </div>
-            
-            <div id="course">
-              <h4>بيانات تخص المادة</h4>
-              <div class="form-element">
-                <input type="text" name="entry.1012610089" placeholder="المادة اللي ودك تشرحها" required>
-              </div>
-              <div class="form-element">
-                <input type="text" name="entry.779016044" placeholder="بأي مستوى / سنة يأخذ الطلاب المادة ؟ " required>
-              </div>
-              <div class="form-element">
-                <label for="degree-select"></label>
-                <select required name="entry.1651420814" id="degree-select">
-                  <option value="">كم جبت بهالمادة ؟</option>
-                  <option value="A+">A+</option>
-                  <option value="A">A</option>
-                  <option value="B+">B+</option>
-                  <option value="B">B</option>
-                  <option value="C+">C+</option>
-                  <option value="C">C</option>
-                </select>
-              </div>
-              <div class="form-element">
-                <textarea type="text" name="entry.1431411762" placeholder="هل كانت لك تجربة شخصية بالشرح؟ شاركنا تفاصيلها(اختياري) "></textarea>
-              </div>
-              <div class="form-element">
-                <textarea type="text" name="entry.438038280" placeholder="وش اكثر شيء يحفزك تشرح معانا ؟" required></textarea>
-              </div>
-              <div class="form-element">
-                <textarea type="text" name="entry.1719002358" placeholder="لماذا تعتقد انك شخص مناسب لتقديم المادة؟" required></textarea>
-              </div>
-              <input type="checkbox" name="agree" id="agree" required />
-              <input type="hidden" name="entry.1500485276" disabled>
-              <span for="agree">أوافق على <a href="https://arshfa.net/terms-and-condition">الشروط و الأحكام</a>
-              </span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="instructorForm.css" />
+    <title>Instructor Form</title>
+  </head>
+  <body>
+    <div class="instructor-container">
+      <div class="contact-box">
+        <div class="contact-right">
+          <div class="content">
+            <p>شروط التقديم</p>
+            <div class="text-line"></div>
+            <ul>
+              <li>الإلمام بمحتوى المادة العلمية</li>
+              <li>الالتزام بشرح المحتوى العلمي</li>
+              <li>التمكن من مهارات الشرح وإيصال المعلومة</li>
+              <li>القدرة على مساعدة الطلاب والإجابة على استفساراتهم</li>
+            </ul>
           </div>
-          <button type="submit">انضم كصانع محتوى</button>
-        </form>
+          <div class="content">
+            <p>المحتوى المسموح به</p>
+            <div class="text-line"></div>
+            <ul>
+              <li>محاضرات مسجلة</li>
+              <li>ملخصات شاملة</li>
+              <li>ملفات مساعدة</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-left">
+          <h3>انضم كصانع محتوى</h3>
+          <form id="form">
+            <div class="info-container">
+              <div id="instructor">
+                <h4>البيانات الشخصية</h4>
+                <div class="form-element">
+                  <input
+                    type="text"
+                    name="entry.1587322270"
+                    placeholder="الإسم الرباعي"
+                    required
+                  />
+                </div>
+                <div class="form-element">
+                  <input
+                    type="text"
+                    name="entry.709250033"
+                    placeholder="رقم الجوال"
+                    required
+                  />
+                </div>
+                <div class="form-element">
+                  <input
+                    type="email"
+                    name="entry.1724321823"
+                    placeholder="الايميل الشخصي"
+                    required
+                  />
+                </div>
+                <div class="form-element">
+                  <label for="uni-select"></label>
+                  <select required name="entry.830172538" id="uni-select">
+                    <option value="">الجامعة</option>
+                    <option value="جامعة الملك فهد للبترول و المعادن">
+                      جامعة الملك فهد للبترول و المعادن
+                    </option>
+                    <option value="جامعة الملك سعود">جامعة الملك سعود</option>
+                    <option value="جامعة الملك خالد">جامعة الملك خالد</option>
+                    <option value="جامعة الملك عبدالعزيز">
+                      جامعة الملك عبدالعزيز
+                    </option>
+                    <option value="جامعة الملك سعود بن عبدالعزيز للعلوم الصحية">
+                      جامعة الملك سعود بن عبدالعزيز للعلوم الصحية
+                    </option>
+                    <option value="جامعة الملك فيصل">جامعة الملك فيصل</option>
+                    <option value="جامعة جازان">جامعة جازان</option>
+                    <option value="جامعة جدة">جامعة جدة</option>
+                    <option value="جامعة حفر الباطن">جامعة حفر الباطن</option>
+                    <option value="جامعة طيبة">جامعة طيبة</option>
+                    <option value="جامعة فهد بن سلطان">
+                      جامعة فهد بن سلطان
+                    </option>
+                    <option value="كلية الجبيل الصناعية">
+                      كلية الجبيل الصناعية
+                    </option>
+                    <option value="كلية ينبع الصناعية">
+                      كلية ينبع الصناعية
+                    </option>
+                    <option value="جامعة الأمير سلطان">
+                      جامعة الأمير سلطان
+                    </option>
+                    <option value="جامعة الإمام محمد بن سعود الإسلامية">
+                      جامعة الإمام محمد بن سعود الإسلامية
+                    </option>
+                    <option value="جامعة الإمام محمد بن سعود بالإحساء">
+                      جامعة الإمام محمد بن سعود بالإحساء
+                    </option>
+                    <option value="جامعة الطائف">جامعة الطائف</option>
+                    <option value="جامعة أم القرى">جامعة أم القرى</option>
+                    <option value="الجامعة العربية المفتوحة">
+                      الجامعة العربية المفتوحة
+                    </option>
+                    <option value="جامعة الباحة">جامعة الباحة</option>
+                    <option value="جامعة الحدود الشمالية">
+                      جامعة الحدود الشمالية
+                    </option>
+                    <option value="جامعة الجوف">جامعة الجوف</option>
+                    <option value="جامعة الأمير محمد بن فهد">
+                      جامعة الأمير محمد بن فهد
+                    </option>
+                    <option value="جامعة الأمير سطام">جامعة الأمير سطام</option>
+                    <option value="جامعة الأميرة نورة">
+                      جامعة الأميرة نورة
+                    </option>
+                    <option value="جامعة الأمير مقرن بن عبدالعزيز">
+                      جامعة الأمير مقرن بن عبدالعزيز
+                    </option>
+                    <option value="جامعة الإمام عبدالرحمن بن فيصل">
+                      جامعة الإمام عبدالرحمن بن فيصل
+                    </option>
+                    <option value="جامعة الفيصل">جامعة الفيصل</option>
+                    <option value="جامعة اليمامة">جامعة اليمامة</option>
+                    <option value="جامعة دار العلوم">جامعة دار العلوم</option>
+                    <option value="جامعة دار الحكمة">جامعة دار الحكمة</option>
+                    <option value="جامعة القصيم">جامعة القصيم</option>
+                    <option value="جامعة شقراء">جامعة شقراء</option>
+                    <option value="جامعة عفت">جامعة عفت</option>
+                    <option value="جامعة بيشة">جامعة بيشة</option>
+                    <option value="جامعة حائل">جامعة حائل</option>
+                    <option value="جامعة تبوك">جامعة تبوك</option>
+                    <option value="جامعة الأعمال و التكنولوجيا">
+                      جامعة الأعمال و التكنولوجيا
+                    </option>
+                    <option value="الجامعة السعودية الإلكترونية">
+                      الجامعة السعودية الإلكترونية
+                    </option>
+                    <option value="الجامعة الإسلامية بالمدينة المنورة">
+                      الجامعة الإسلامية بالمدينة المنورة
+                    </option>
+                  </select>
+                </div>
+                <div class="form-element">
+                  <select
+                    required
+                    name="entry.199459453"
+                    id="whereYouHeardUs-select"
+                  >
+                    <option value="">من وين سمعت عنا؟</option>
+                    <option value="واتساب">واتساب</option>
+                    <option value="تويتر">تويتر</option>
+                    <option value="تيليغرام">تيليغرام</option>
+                    <option value="صديق">صديق</option>
+                    <option value="صانع محتوى في المنصة">
+                      صانع محتوى في المنصة
+                    </option>
+                    <option value="شخص يعمل في أرشفة">شخص يعمل في أرشفة</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                </div>
+                <div
+                  class="form-element"
+                  id="referalPersonName"
+                  style="display: none"
+                >
+                  <input
+                    type="text"
+                    name="entry.144885387"
+                    placeholder="اسم الشخص الذي يعمل في أرشفة؟"
+                  />
+                </div>
+              </div>
+
+              <div id="course">
+                <h4>بيانات تخص المادة</h4>
+                <div class="form-element">
+                  <input
+                    type="text"
+                    name="entry.1012610089"
+                    placeholder="المادة اللي ودك تشرحها"
+                    required
+                  />
+                </div>
+                <div class="form-element">
+                  <input
+                    type="text"
+                    name="entry.779016044"
+                    placeholder="بأي مستوى / سنة يأخذ الطلاب المادة ؟ "
+                    required
+                  />
+                </div>
+                <div class="form-element">
+                  <label for="degree-select"></label>
+                  <select required name="entry.1651420814" id="degree-select">
+                    <option value="">كم جبت بهالمادة ؟</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                  </select>
+                </div>
+                <div class="form-element">
+                  <textarea
+                    type="text"
+                    name="entry.1431411762"
+                    placeholder="هل كانت لك تجربة شخصية بالشرح؟ شاركنا تفاصيلها(اختياري) "
+                  ></textarea>
+                </div>
+                <div class="form-element">
+                  <textarea
+                    type="text"
+                    name="entry.438038280"
+                    placeholder="وش اكثر شيء يحفزك تشرح معانا ؟"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-element">
+                  <textarea
+                    type="text"
+                    name="entry.1719002358"
+                    placeholder="لماذا تعتقد انك شخص مناسب لتقديم المادة؟"
+                    required
+                  ></textarea>
+                </div>
+                <input type="checkbox" name="agree" id="agree" required />
+                <input type="hidden" name="entry.1500485276" disabled />
+                <span for="agree"
+                  >أوافق على
+                  <a href="https://arshfa.net/terms-and-condition"
+                    >الشروط و الأحكام</a
+                  >
+                </span>
+              </div>
+            </div>
+            <button type="submit">انضم كصانع محتوى</button>
+          </form>
+        </div>
       </div>
+      <script>
+        // for showing referral person name
+        document
+          .getElementById("whereYouHeardUs-select")
+          .addEventListener("change", (e) => {
+            let value = e.target.value;
+
+            if (value !== "شخص يعمل في أرشفة") {
+              document
+                .getElementById("referalPersonName")
+                .setAttribute("style", "display:none;");
+              return;
+            }
+
+            document
+              .getElementById("referalPersonName")
+              .setAttribute("style", "display:flex;");
+          });
+
+        const form = document.getElementById("form");
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let submit = document.querySelector(
+            "form#form button[type='submit']"
+          );
+
+          submit.setAttribute("disabled", "true");
+          submit.style.opacity = ".75";
+          submit.style.cursor = "auto";
+          submit.textContent = "جاري الإرسال ..";
+
+          const agree = document.getElementById("agree");
+          if (agree.checked) {
+            let realAgree = document.querySelector(
+              "#form input[type='hidden']"
+            );
+            realAgree.setAttribute("value", "أوافق");
+            realAgree.removeAttribute("disabled");
+          }
+
+          const payload = new URLSearchParams(new FormData(form));
+          fetch(
+            "https://docs.google.com/forms/u/2/d/e/1FAIpQLScDj1ezLiXom3ioQSyCiz-5ypgsQf6KkJxLfJr-XsdDrW72xA/formResponse",
+            {
+              method: "POST",
+              body: payload,
+            }
+          )
+            .then((res) => {
+              location.pathname = "/thanks";
+            })
+            .catch((err) => {
+              console.log(err);
+              location.pathname = "/thanks";
+            });
+
+          const urlParams = new URLSearchParams(window.location.search);
+          const agent = urlParams.get("agent");
+
+          console.log(agent);
+
+          if (agent) {
+            // fetch by backendless
+            fetch(
+              `https://tubularfriction.backendless.app/api/counters/${agent}/increment/get`,
+              {
+                method: "PUT",
+              }
+            )
+              .then((res) => res.json())
+              .then((data) => console.log(data));
+
+            const ninjaHdrs = {
+              method: "GET",
+              headers: {
+                "X-Api-Key": "lPU7w/Yp741rRttudZisQQ==tFE3wdclbAkBU7b2",
+              },
+            };
+            // fetch by Ninja api
+            fetch(
+              `https://api.api-ninjas.com/v1/counter?id=${agent}`,
+              ninjaHdrs
+            )
+              .then((res) => res.json())
+              .then((data) => {
+                if (data.value) {
+                  if (data.value === 1) {
+                    fetch(
+                      `https://api.api-ninjas.com/v1/counter?id=${agent}&value=1`,
+                      ninjaHdrs
+                    );
+                  } else {
+                    fetch(
+                      `https://api.api-ninjas.com/v1/counter?id=${agent}&hit=true`,
+                      ninjaHdrs
+                    );
+                  }
+                }
+              });
+          }
+        });
+      </script>
     </div>
-    <script>
-      // for showing referral person name
-      document.getElementById("whereYouHeardUs-select").addEventListener("change",(e) => {
-        let value = e.target.value;
-
-        if (value !== "شخص يعمل في أرشفة"){
-          document.getElementById("referalPersonName").setAttribute("style", "display:none;");
-          return
-        }
-
-        document.getElementById("referalPersonName").setAttribute("style", "display:flex;")
-      })
-
-      const form = document.getElementById("form");
-      form.addEventListener("submit", e => {
-        e.preventDefault();
-        let submit = document.querySelector("form#form button[type='submit']")
-
-        submit.setAttribute("disabled", "true");
-        submit.style.opacity = ".75"
-        submit.style.cursor = "auto"
-        submit.textContent = "جاري الإرسال ..";
-
-        const agree = document.getElementById("agree")
-        if (agree.checked) {
-          let realAgree = document.querySelector("#form input[type='hidden']")
-          realAgree.setAttribute("value", "أوافق")
-          realAgree.removeAttribute("disabled")
-        }
-
-        const payload = new URLSearchParams(new FormData(form));
-        fetch("https://docs.google.com/forms/u/2/d/e/1FAIpQLScDj1ezLiXom3ioQSyCiz-5ypgsQf6KkJxLfJr-XsdDrW72xA/formResponse", {
-          method: "POST",
-          body: payload
-        }).then(res => {
-          location.pathname = "/thanks"
-        }).catch(err => {
-          console.log(err)
-          location.pathname = "/thanks"
-        })
-      })
-    </script>
-  </div>
-  
-</body>
-
+  </body>
 </html>

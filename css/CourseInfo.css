@@ -1,13 +1,12 @@
 /*=========== Right side ===========*/
-main.academy-courses-show > .container > .row > div:first-child > h1{
+main.academy-courses-show > .container > .row > div:first-child > h1 {
   font-size: 7vmin;
   font-weight: 700;
   position: relative;
   padding-right: 10px;
-
 }
-main.academy-courses-show>.container>.row>div:first-child>h1::before{
-  content: '';
+main.academy-courses-show > .container > .row > div:first-child > h1::before {
+  content: "";
   height: 100%;
   width: 8px;
   background-color: var(--ar-primary);
@@ -16,33 +15,54 @@ main.academy-courses-show>.container>.row>div:first-child>h1::before{
   position: absolute;
   right: -1%;
 }
-main.academy-courses-show > .container > .row > div:first-child > div:first-of-type div:not(:first-child){
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  > div:first-of-type
+  div:not(:first-child) {
   display: none !important;
 }
 
-main.academy-courses-show > .container > .row > div:first-child nav{
-  border: none!important;
-  background-color: #F8F8F8;
+main.academy-courses-show > .container > .row > div:first-child nav {
+  border: none !important;
+  background-color: #f8f8f8;
   border-radius: 50px;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 767.99px) {
-  main.academy-courses-show > .container > .row > div:first-child nav{
+  main.academy-courses-show > .container > .row > div:first-child nav {
     justify-content: center;
   }
 }
-main.academy-courses-show > .container > .row > div:first-child nav .nav-link{
-  transition: all .2s ease-in-out !important;
+main.academy-courses-show > .container > .row > div:first-child nav .nav-link {
+  transition: all 0.2s ease-in-out !important;
   border-radius: 50px;
 }
-main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active){
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  nav
+  .nav-link:not(.active) {
   background: var(--ar-specificGradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--ar-primary);
 }
-main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active):hover, main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.active):focus{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  nav
+  .nav-link:not(.active):hover,
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  nav
+  .nav-link:not(.active):focus {
   background: none;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
@@ -50,56 +70,73 @@ main.academy-courses-show>.container>.row>div:first-child nav .nav-link:not(.act
   color: var(--ar-primary);
 }
 
-main.academy-courses-show > .container > .row > div:first-child nav .nav-link.active{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  nav
+  .nav-link.active {
   background: var(--ar-gradient);
-  color: #fff!important;
+  color: #fff !important;
 }
 
-main.academy-courses-show > .container > .row > div:first-child nav .nav-link.active::after{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  nav
+  .nav-link.active::after {
   display: none !important;
 }
 
-
-
 @keyframes fadeIn {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type){
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  > div:not(:first-of-type) {
   display: none;
   opacity: 0;
 }
-main.academy-courses-show > .container > .row > div:first-child > div:not(:first-of-type).active{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:first-child
+  > div:not(:first-of-type).active {
   display: block;
-  animation: fadeIn .25s ease-in-out forwards;
+  animation: fadeIn 0.25s ease-in-out forwards;
 }
 
-
 /* ----- Overview -----*/
-main.academy-courses-show #overview h2, main.academy-courses-show #overview h3{
+main.academy-courses-show #overview h2,
+main.academy-courses-show #overview h3 {
   background: var(--ar-specificGradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--ar-primary) !important;
   font-size: 2.5rem;
 }
-main.academy-courses-show #overview p, main.academy-courses-show #overview li{
+main.academy-courses-show #overview p,
+main.academy-courses-show #overview li {
   color: var(--ar-dark);
 }
-main.academy-courses-show #overview .list-style-v2 li:before{
+main.academy-courses-show #overview .list-style-v2 li:before {
   background-color: var(--ar-primary);
 }
 
 /* ----- Curriculum -----*/
-main.academy-courses-show #curriculum > div{
+main.academy-courses-show #curriculum > div {
   box-shadow: var(--ar-boxShadow) !important;
   border-radius: 30px !important;
 }
-main.academy-courses-show #curriculum > div > button{
+main.academy-courses-show #curriculum > div > button {
   flex-direction: row-reverse;
 }
 main.academy-courses-show #curriculum > div > button > div {
@@ -119,7 +156,13 @@ main.academy-courses-show #curriculum > div a.m-chapter-item {
   border-top: 0 !important;
   background-color: initial;
 }
-main.academy-courses-show #curriculum > div a.m-chapter-item > div:first-child .chapter-icon svg {
+main.academy-courses-show
+  #curriculum
+  > div
+  a.m-chapter-item
+  > div:first-child
+  .chapter-icon
+  svg {
   stroke: var(--ar-secondary);
 }
 main.academy-courses-show #curriculum > div a.m-chapter-item > div:last-child {
@@ -127,36 +170,36 @@ main.academy-courses-show #curriculum > div a.m-chapter-item > div:last-child {
 }
 
 /* ----- Instructors -----*/
-main.academy-courses-show #instructors.active{
+main.academy-courses-show #instructors.active {
   display: flex;
   flex-direction: column;
   align-items: baseline;
 }
-main.academy-courses-show #instructors > div{
+main.academy-courses-show #instructors > div {
   border-radius: 50px;
   box-shadow: var(--ar-boxShadow);
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   position: relative;
   background-color: var(--ar-primary);
   background: var(--ar-specificGradientReverse);
 }
-main.academy-courses-show #instructors>div:hover::before{
+main.academy-courses-show #instructors > div:hover::before {
   opacity: 0;
 }
-main.academy-courses-show #instructors>div::before{
+main.academy-courses-show #instructors > div::before {
   position: absolute;
   content: "";
   inset: 0;
   z-index: 0;
   opacity: 1;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   background-color: #fff;
 }
-main.academy-courses-show #instructors>div:hover button{
+main.academy-courses-show #instructors > div:hover button {
   color: #fff;
 }
-main.academy-courses-show #instructors > div > div:first-child{
+main.academy-courses-show #instructors > div > div:first-child {
   padding: 0 !important;
   margin: 0 !important;
   box-shadow: 4px 4px 10px 3px rgb(0 0 0 / 10%);
@@ -166,87 +209,157 @@ main.academy-courses-show #instructors > div > div:first-child{
   padding-right: 1.5em;
   padding-left: 3em;
 } */
-main.academy-courses-show #instructors>div .media-body > button{
+main.academy-courses-show #instructors > div .media-body > button {
   position: relative;
   background: 0 0;
   border: none;
   width: 128px;
   height: 65px;
 }
-main.academy-courses-show #instructors > div .media-body h4{
+main.academy-courses-show #instructors > div .media-body h4 {
   font-size: 1.25em;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
-main.academy-courses-show #instructors>div:hover h4{
+main.academy-courses-show #instructors > div:hover h4 {
   color: #fff !important;
 }
 
-
 /* ----- Reviews -----*/
-main.academy-courses-show #reviews .review-stars svg.review-star{
+main.academy-courses-show #reviews .review-stars svg.review-star {
   stroke: var(--ar-primary);
 }
-main.academy-courses-show #reviews .review-stars svg.review-star.star-active{
+main.academy-courses-show #reviews .review-stars svg.review-star.star-active {
   fill: var(--ar-primary);
 }
 
-main.academy-courses-show #reviews > div:first-child > div:first-child > div:first-child > div{
+main.academy-courses-show
+  #reviews
+  > div:first-child
+  > div:first-child
+  > div:first-child
+  > div {
   box-shadow: var(--ar-boxShadow) !important;
   border-radius: 30px !important;
   border: none !important;
 }
-main.academy-courses-show #reviews > div:first-child > div:first-child > div:first-child > div h3{
+main.academy-courses-show
+  #reviews
+  > div:first-child
+  > div:first-child
+  > div:first-child
+  > div
+  h3 {
   font-size: 6em;
   font-weight: 600 !important;
 }
 
-main.academy-courses-show #reviews > div:first-child > div:first-child > div:last-child > div > div:last-child > div:last-child{
+main.academy-courses-show
+  #reviews
+  > div:first-child
+  > div:first-child
+  > div:last-child
+  > div
+  > div:last-child
+  > div:last-child {
   color: #000 !important;
 }
-main.academy-courses-show #reviews > div:first-child > div:first-child > div:last-child > div > div:first-child > div{
+main.academy-courses-show
+  #reviews
+  > div:first-child
+  > div:first-child
+  > div:last-child
+  > div
+  > div:first-child
+  > div {
   background-color: var(--ar-primary) !important;
   background: var(--ar-specificGradientReverse) !important;
 }
-main.academy-courses-show #reviews>div:nth-child(2){
+main.academy-courses-show #reviews > div:nth-child(2) {
   border: none !important;
-  box-shadow: var(--ar-boxShadow)!important;
+  box-shadow: var(--ar-boxShadow) !important;
   border-radius: 30px !important;
 }
-main.academy-courses-show #reviews > div:last-child input,main.academy-courses-show #reviews > div:last-child textarea{
+main.academy-courses-show #reviews > div:last-child input,
+main.academy-courses-show #reviews > div:last-child textarea {
   border-radius: 30px;
-  border-color: #B8B8B8;
+  border-color: #b8b8b8;
 }
 
 /*=========== Left side ===========*/
-main.academy-courses-show > .container > .row > div:last-child > div{
-  border: none!important;
-  border-radius: 30px!important;
-  background: #FFFFFF;
+main.academy-courses-show > .container > .row > div:last-child > div {
+  border: none !important;
+  border-radius: 30px !important;
+  background: #ffffff;
   box-shadow: var(--ar-boxShadow) !important;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div{
+main.academy-courses-show > .container > .row > div:last-child > div > div {
   padding-left: 1.75rem !important;
   padding-right: 1.75rem !important;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div > div:first-child{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  > div:first-child {
   margin-bottom: 2rem !important;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div > div:first-child .plyr{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  > div:first-child
+  .plyr {
   box-shadow: var(--ar-boxShadow);
   border-radius: 15px;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr){
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  > div:not(.plyr) {
   justify-content: center;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr) del{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  > div:not(.plyr)
+  del {
   display: none;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div > div:not(.plyr) ins{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  > div:not(.plyr)
+  ins {
   font: 2.25em;
   font-weight: 800;
   color: var(--ar-dark) !important;
 }
-main.academy-courses-show > .container > .row > div:last-child > div > div .list-group li{
+main.academy-courses-show
+  > .container
+  > .row
+  > div:last-child
+  > div
+  > div
+  .list-group
+  li {
   display: none !important;
 }
 
+/* ============= Bottom side (Tablet and below) ============= */
+
+main.academy-courses-show .container + .bg-white del {
+  display: none;
+}

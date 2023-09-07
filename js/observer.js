@@ -73,6 +73,9 @@ const observer = new MutationObserver((mutations, observer) =>
       case "level":
         level();
         break;
+      case "userCourses":
+        userCourses();
+        break;
     }
   })
 );
