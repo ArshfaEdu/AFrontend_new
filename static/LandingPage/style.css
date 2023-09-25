@@ -13,6 +13,15 @@ body {
     /* Add this line to remove the body margin */
 }
 
+.btn-1 {
+    border: 1px solid #0A2237;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
 /* Header styling */
 header {
     color: #fff;
